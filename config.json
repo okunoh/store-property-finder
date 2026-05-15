@@ -1,0 +1,32 @@
+{
+  "search": {
+    "areas": ["川崎市", "横浜市"],
+    "rent_max": 600000,
+    "area_min": 122,
+    "area_max": null,
+    "walk_minutes_max": 10,
+    "floor_1f_only": true,
+    "keywords": []
+  },
+  "sites": {
+    "athome":      true,
+    "homes":       true,
+    "temposmart":  true,
+    "inshokuten":  true,
+    "sonomama":    true,
+    "tenanto_biz": true,
+    "tenantshop":  true,
+    "tempodas":    true,
+    "inuki_ichiba": true,
+    "temponw":     true,
+    "suumo":       false
+  },
+  "output": {
+    "report_path": "output/report.html",
+    "data_path": "data/properties.json",
+    "new_only": false
+  },
+  "schedule": {
+    "time": "08:00"
+  }
+}
