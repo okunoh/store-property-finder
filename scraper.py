@@ -311,6 +311,7 @@ def scrape_homes(cfg: dict, browser) -> list[Property]:
         "横浜市": "https://www.homes.co.jp/chintai/tempo/kanagawa/yokohama-mcity/list/",
     }
     results = []
+    seen_ids: set[str] = set()
     page = _new_page(browser)
     try:
         for area, base_url in URLS.items():
@@ -324,15 +325,54 @@ def scrape_homes(cfg: dict, browser) -> list[Property]:
                 if not m:
                     continue
                 prop_id = m.group(1)
-                url_full = f"https://www.homes.co.jp{href}" if href.startswith("/") else href
-                parent = a.find_parent("div") or a.find_parent("li")
-                if not parent:
+                if prop_id in seen_ids:
                     continue
-                img = parent.select_one("img[src*='http']")
-                prop = _extract_text_prop(parent, "HOMES", prop_id, url_full,
+                seen_ids.add(prop_id)
+                url_full = f"https://www.homes.co.jp{href}" if href.startswith("/") else href
+
+                # 正しいカード要素を取得（div.moduleInner が物件カードの外枠）
+                card = a.find_parent(class_=re.compile(r"moduleInner"))
+                if not card:
+                    card = a.find_parent("div") or a.find_parent("li")
+                if not card:
+                    continue
+
+                # ── 賃料: <td class="price"> から取得 ──
+                rent = None
+                price_td = card.select_one("td.price, td[class*='price']")
+                if price_td:
+                    rm = re.search(r"([\d.]+)\s*万円", price_td.get_text())
+                    if rm:
+                        rent = int(float(rm.group(1)) * 10000)
+                if rent is None:
+                    rm = re.search(r"([\d.]+)\s*万円", card.get_text())
+                    if rm:
+                        rent = int(float(rm.group(1)) * 10000)
+
+                # ── 面積: ㎡ or 坪 要素を探す ──
+                area_val = None
+                for el in card.find_all(["td", "div", "span", "p"]):
+                    t = el.get_text(strip=True)
+                    am = re.search(r"([\d.]+)\s*㎡", t)
+                    if am:
+                        area_val = float(am.group(1))
+                        break
+                    am = re.search(r"([\d.]+)\s*坪(?!\s*単)", t)
+                    if am:
+                        area_val = round(float(am.group(1)) * 3.30579, 2)
+                        break
+
+                # ── 残りは汎用抽出 ──
+                img = card.select_one("img[src*='http']")
+                prop = _extract_text_prop(card, "HOMES", prop_id, url_full,
                                           _img_src(img), area_hint=area)
-                if prop and _matches_filter(prop, cfg, area_trusted=True):
-                    results.append(prop)
+                if prop:
+                    if rent is not None:
+                        prop.rent = rent
+                    if area_val is not None:
+                        prop.area = area_val
+                    if _matches_filter(prop, cfg, area_trusted=True):
+                        results.append(prop)
     finally:
         page.context.close()
     logger.info(f"HOMES: {len(results)} 件")
@@ -460,20 +500,69 @@ def scrape_tenanto_biz(cfg: dict, browser) -> list[Property]:
                 url = f"https://www.tenanto-office.biz/list.php?ma={code}&p={pg}"
                 html = _load(page, url, wait_ms=3000)
                 soup = BeautifulSoup(html, "lxml")
-                links = list(dict.fromkeys(
-                    a["href"] for a in soup.select("a[href*='detail.php?id=']")
-                ))
-                if not links:
+                a_els = soup.select("a[href*='detail.php?id=']")
+                if not a_els:
                     break
-                for href in links:
+                seen_hrefs: set[str] = set()
+                for a_el in a_els:
+                    href = a_el["href"]
+                    if href in seen_hrefs:
+                        continue
+                    seen_hrefs.add(href)
                     m = re.search(r"id=(\d+)", href)
                     prop_id = m.group(1) if m else href
                     url_full = f"https://www.tenanto-office.biz/{href.lstrip('/')}"
-                    a_el = soup.select_one(f"a[href='{href}']")
-                    parent = a_el.find_parent("tr") or a_el.find_parent("div") if a_el else None
-                    img = parent.select_one("img[src]") if parent else None
-                    prop = _extract_text_prop(parent or a_el, "テナント.biz", prop_id, url_full,
-                                              _img_src(img), area_hint=area)
+                    parent = a_el.find_parent("tr") or a_el.find_parent("div")
+
+                    # ── td位置指定パース ──
+                    # 列順: [空] [駅名] [徒歩] [住所] [所在階X/Y] [面積+坪単価] [総賃料] [築年] ...
+                    tds = parent.find_all("td") if parent else []
+                    prop = None
+                    if len(tds) >= 7:
+                        station_t = tds[1].get_text(strip=True)
+                        walk_t    = tds[2].get_text(strip=True)   # "-5" → 5分
+                        addr_t    = tds[3].get_text(strip=True)
+                        floor_t   = tds[4].get_text(strip=True)   # "3/8"
+                        area_t    = tds[5].get_text(strip=True)   # "52坪8,462"
+                        rent_t    = tds[6].get_text(strip=True)   # "440,000"
+
+                        # 徒歩
+                        wm = re.search(r"(\d+)", walk_t)
+                        walk = int(wm.group(1)) if wm else None
+
+                        # 所在階: "X/Y" → 1F判定用に "X階"
+                        fm = re.match(r"(\d+)/\d+", floor_t)
+                        floor = (fm.group(1) + "階") if fm else ""
+
+                        # 面積 (坪)
+                        am = re.search(r"([\d.]+)坪", area_t)
+                        area_val = round(float(am.group(1)) * 3.30579, 2) if am else None
+
+                        # 総賃料 (円): "440,000" → 440000
+                        rent_clean = rent_t.replace(",", "").replace("\xa0", "")
+                        if rent_clean.isdigit():
+                            rent = int(rent_clean)
+                        else:
+                            rm2 = re.search(r"([\d.]+)\s*万", rent_t)
+                            rent = int(float(rm2.group(1)) * 10000) if rm2 else None
+
+                        prop = Property(
+                            site="テナント.biz",
+                            property_id=prop_id,
+                            name=f"{station_t} {addr_t}"[:50],
+                            address=addr_t,
+                            rent=rent,
+                            area=area_val,
+                            walk_minutes=walk,
+                            nearest_station=station_t,
+                            floor=floor,
+                            url=url_full,
+                        )
+                    else:
+                        img = parent.select_one("img[src]") if parent else None
+                        prop = _extract_text_prop(parent or a_el, "テナント.biz", prop_id,
+                                                  url_full, _img_src(img), area_hint=area)  # type: ignore[arg-type]
+
                     if prop and _matches_filter(prop, cfg, area_trusted=True):
                         results.append(prop)
                 time.sleep(1)
@@ -581,6 +670,7 @@ def scrape_tempodas(cfg: dict, browser) -> list[Property]:
 def scrape_inuki_ichiba(cfg: dict, browser) -> list[Property]:
     BASE = "https://inuki-ichiba.jp/rent/kanagawaken"
     results = []
+    seen_ids: set[str] = set()
     page = _new_page(browser)
     try:
         for pg in range(1, 5):
@@ -595,15 +685,75 @@ def scrape_inuki_ichiba(cfg: dict, browser) -> list[Property]:
                 break
             for href in links:
                 prop_id = href.split("/")[-1]
+                if prop_id in seen_ids:
+                    continue
+                seen_ids.add(prop_id)
                 url_full = f"https://inuki-ichiba.jp{href}"
+
+                # ── 一覧カードから駅・住所を取得 ──
                 a_el = soup.select_one(f"a[href='{href}']")
-                parent = a_el.find_parent("div") or a_el.find_parent("li") if a_el else None
-                img = parent.select_one("img[src]") if parent else None
-                prop = _extract_text_prop(parent or a_el, "居抜き市場", prop_id, url_full,
-                                          _img_src(img))
-                if prop and _matches_filter(prop, cfg):
+                card = a_el.find_parent("div") or a_el.find_parent("li") if a_el else None
+                card_text = re.sub(r"\s+", " ", card.get_text(" ", strip=True)) if card else ""
+
+                # 徒歩・駅名: "石川町駅 | 徒歩2分 | ..."
+                walk, station = None, ""
+                wm = re.search(r"(.{1,15}駅)\s*[|｜]?\s*徒歩\s*(\d+)分", card_text)
+                if wm:
+                    station = wm.group(1)
+                    walk = int(wm.group(2))
+
+                # 住所
+                addr_m = re.search(r"((?:横浜市|川崎市)[^\s　]{3,35})", card_text)
+                address = addr_m.group(1) if addr_m else ""
+
+                # ── 詳細ページから賃料・階数・面積を取得 ──
+                d_html = _load(page, url_full, wait_ms=2000)
+                if not d_html:
+                    continue
+                d_text = re.sub(r"\s+", " ",
+                                BeautifulSoup(d_html, "lxml").get_text(" ", strip=True))
+
+                # 賃料: "賃料 264,000 円(税込)"
+                rent = None
+                rm = re.search(r"賃料\s*([\d,]+)\s*円", d_text)
+                if rm:
+                    rent = int(rm.group(1).replace(",", ""))
+
+                # 階数/面積: "1F / 14.03坪 (46.38㎡)" or "B1F / 40坪"
+                floor, area_val = "", None
+                fm = re.search(
+                    r"階数/面積\s*([BbＢｂ地下]?\d+F)\s*/\s*([\d.]+)\s*坪",
+                    d_text, re.IGNORECASE
+                )
+                if fm:
+                    floor = fm.group(1).upper()
+                    area_val = round(float(fm.group(2)) * 3.30579, 2)
+                else:
+                    # フォールバック: "1F/40坪" や "2F/80㎡" など
+                    fm2 = re.search(
+                        r"([BbＢｂ地下]?\d+F)\s*/\s*([\d.]+)\s*(坪|㎡)",
+                        d_text, re.IGNORECASE
+                    )
+                    if fm2:
+                        floor = fm2.group(1).upper()
+                        v = float(fm2.group(2))
+                        area_val = round(v * 3.30579, 2) if fm2.group(3) == "坪" else v
+
+                prop = Property(
+                    site="居抜き市場",
+                    property_id=prop_id,
+                    name=card_text[:50],
+                    address=address,
+                    rent=rent,
+                    area=area_val,
+                    walk_minutes=walk,
+                    nearest_station=station,
+                    floor=floor,
+                    url=url_full,
+                )
+                if _matches_filter(prop, cfg):
                     results.append(prop)
-            time.sleep(1.5)
+                time.sleep(1.5)
     finally:
         page.context.close()
     logger.info(f"居抜き市場: {len(results)} 件")
@@ -656,8 +806,16 @@ def scrape_temponw(cfg: dict, browser) -> list[Property]:
                 )
                 img = card.select_one("img[src*='http']")
                 prop = _extract_text_prop(card, "店舗ネットワーク", item_no, detail_url, _img_src(img))
-                if prop and _matches_filter(prop, cfg, area_trusted=True):
-                    results.append(prop)
+                if prop:
+                    # ── 使用階を追加抽出 ──
+                    # カードに "使用階 3" or "使用階/部屋番号 1/101A" と表示される
+                    if not prop.floor:
+                        card_text = card.get_text(" ", strip=True)
+                        fm = re.search(r"使用階\s*/?\s*(?:部屋番号)?\s*(\d+)", card_text)
+                        if fm:
+                            prop.floor = fm.group(1) + "階"
+                    if _matches_filter(prop, cfg, area_trusted=True):
+                        results.append(prop)
 
             time.sleep(2)
     finally:

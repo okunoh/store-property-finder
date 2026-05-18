@@ -1,0 +1,40 @@
+name: 店舗物件自動収集
+
+on:
+  schedule:
+    - cron: '0 15 * * *'   # 毎日深夜0時JST (= UTC 15:00)
+  workflow_dispatch:         # 手動実行ボタン
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # git push に必要
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 3.12 をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 依存ライブラリをインストール
+        run: pip install -r requirements.txt
+
+      - name: Playwright Chromium をインストール
+        run: playwright install chromium --with-deps
+
+      - name: git ユーザー設定
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin \
+            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
+      - name: 店舗物件を収集してレポート生成・デプロイ
+        run: python main.py

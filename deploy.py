@@ -37,7 +37,10 @@ def deploy() -> bool:
     shutil.copy(REPORT_SRC, INDEX_DST)
     print(f"[deploy] docs/index.html にコピー完了")
 
+    # docs と data の両方をコミット対象に追加
     git("add", "docs/index.html")
+    git("add", "data/properties.json")
+    git("add", "data/status.json")
 
     # 変更がなければスキップ
     diff = git("diff", "--cached", "--quiet")

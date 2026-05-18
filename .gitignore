@@ -1,6 +1,6 @@
-data/
 logs/
 output/
+data/*.bak
 __pycache__/
 *.pyc
 *.pyo
