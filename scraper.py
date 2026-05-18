@@ -6,12 +6,22 @@ import re
 import time
 import logging
 from dataclasses import dataclass, asdict
+from pathlib import Path
 from typing import Optional
 from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
+
+# playwright-stealth（任意）
+try:
+    from playwright_stealth import Stealth as _Stealth
+    _STEALTH = _Stealth(navigator_languages_override=("ja-JP", "ja"))
+    _HAS_STEALTH = True
+except ImportError:
+    _STEALTH = None
+    _HAS_STEALTH = False
 
 # ── temponw 区コード（川崎市・横浜市） ──────────────────
 TEMPONW_YOKOHAMA = list(range(101, 119))        # 101〜118
@@ -139,8 +149,8 @@ def _load(page, url: str, wait_sel: str = None, wait_ms: int = 4000) -> str:
         return ""
 
 
-def _new_page(browser):
-    return browser.new_context(
+def _new_page(browser, stealth: bool = False):
+    ctx = browser.new_context(
         user_agent=(
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -148,7 +158,18 @@ def _new_page(browser):
         ),
         locale="ja-JP",
         viewport={"width": 1280, "height": 900},
-    ).new_page()
+    )
+    page = ctx.new_page()
+    # ── ボット検知回避: navigator.webdriver を隠す ──
+    page.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+        Object.defineProperty(navigator, 'plugins', {get: () => [1,2,3,4,5]});
+        Object.defineProperty(navigator, 'languages', {get: () => ['ja-JP','ja','en-US','en']});
+        window.chrome = {runtime: {}};
+    """)
+    if stealth and _HAS_STEALTH:
+        _STEALTH.apply_stealth_sync(page)
+    return page
 
 
 def _img_src(img) -> str:
@@ -247,55 +268,139 @@ def _extract_text_prop(item, site: str, prop_id: str, url: str, image_url: str =
 # 1. アットホーム
 # ═══════════════════════════════════════════════════════
 def scrape_athome(cfg: dict, browser) -> list[Property]:
-    # 店舗 + 事務所 の両セクションをスクレイプ
-    SECTION_URLS = {
-        "川崎市": [
-            ("https://www.athome.co.jp/rent_store/kanagawa/kawasaki-locate/list/",
-             re.compile(r"/rent_store/\d+")),
-            ("https://www.athome.co.jp/chintai/jimusho/kanagawa/kawasaki-mcity/list/",
-             re.compile(r"/chintai/b-\d+|/jimusho/\d+")),
-        ],
-        "横浜市": [
-            ("https://www.athome.co.jp/rent_store/kanagawa/yokohama-locate/list/",
-             re.compile(r"/rent_store/\d+")),
-            ("https://www.athome.co.jp/chintai/jimusho/kanagawa/yokohama-mcity/list/",
-             re.compile(r"/chintai/b-\d+|/jimusho/\d+")),
-        ],
+    """
+    athome.co.jp/rent_store/ から川崎市・横浜市の店舗物件を収集。
+    --disable-blink-features=AutomationControlled + stealth で CAPTCHA を回避。
+
+    カード構造（li.card-box > a > table.area-inner__right > tr.tr-top > td[0..4]）:
+      td[0]: 駅名 + 徒歩 + 住所
+      td[1]: 賃料（万円）
+      td[2]: 敷金/礼金
+      td[3]: 面積（m²/坪）
+      td[4]: 築年
+    """
+    AREA_URLS = {
+        "川崎市": "https://www.athome.co.jp/rent_store/kanagawa/kawasaki-locate/list/",
+        "横浜市": "https://www.athome.co.jp/rent_store/kanagawa/yokohama-locate/list/",
     }
+
     results = []
-    page = _new_page(browser)
+    seen_ids: set[str] = set()
+    page = _new_page(browser, stealth=True)
     try:
-        for area, sections in SECTION_URLS.items():
+        # ウォームアップ: トップページを先に訪問
+        try:
+            page.goto("https://www.athome.co.jp/", timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(2000)
+            page.evaluate("window.scrollTo(0, 500)")
+            page.wait_for_timeout(1000)
+        except Exception:
+            pass
+
+        for area, base_url in AREA_URLS.items():
             if area not in cfg["areas"]:
                 continue
-            for base_url, link_pat in sections:
-                for pg in range(1, 4):
-                    url = base_url if pg == 1 else base_url.rstrip("/") + f"/page{pg}/"
-                    html = _load(page, url, wait_sel=".area-inner", wait_ms=6000)
-                    if len(html) < 30000 or "認証にご協力" in html:
-                        logger.warning(f"アットホーム: ボット認証検出 ({url[:60]}...)")
-                        break
-                    soup = BeautifulSoup(html, "lxml")
-                    items = soup.find_all(class_="area-inner")
-                    if not items:
-                        break
-                    for item in items:
-                        a = item.find("a", href=link_pat)
-                        if not a:
-                            # フォールバック: 任意のアットホーム物件リンク
-                            a = item.find("a", href=re.compile(r"/rent_store/\d+|/chintai/b-\d+"))
-                        if not a:
+            for pg in range(1, 11):   # 最大10ページ（1ページ30件）
+                url = base_url if pg == 1 else base_url.rstrip("/") + f"/page{pg}/"
+                html = _load(page, url, wait_sel="li.card-box", wait_ms=8000)
+
+                # CAPTCHA / ブロック検出
+                logger.info(f"アットホーム: HTML {len(html)} bytes ({url[:60]}...)")
+                if not html or len(html) < 50000:
+                    logger.warning(f"アットホーム: ページ取得失敗 ({url[:60]}...)")
+                    break
+                if "認証にご協力" in html:
+                    logger.warning(f"アットホーム: ボット認証検出 ({url[:60]}...)")
+                    break
+
+                soup = BeautifulSoup(html, "lxml")
+                cards = soup.select("li.card-box")
+                logger.info(f"アットホーム: li.card-box={len(cards)}, noindex={'noindex' in html[:500]}")
+                if not cards:
+                    # デバッグ用: HTMLをファイルに保存
+                    _dbg = Path(__file__).parent / "logs" / "athome_debug.html"
+                    _dbg.write_text(html[:200000], encoding="utf-8", errors="replace")
+                    logger.warning(f"アットホーム: カード0件 → {_dbg} に保存 ({url[:60]})")
+                    break
+
+                for card in cards:
+                    # 物件ID取得
+                    inp = card.find("input", attrs={"name": "bukken-check[]"})
+                    prop_id = inp["value"] if inp else None
+                    if not prop_id:
+                        a_link = card.select_one("a[href*='/rent_store/']")
+                        if not a_link:
                             continue
-                        href = a["href"].split("?")[0]  # クエリパラム除去
-                        prop_id = re.search(r"/(\d{10,})", href)
-                        prop_id = prop_id.group(1) if prop_id else href
-                        url_full = f"https://www.athome.co.jp{href}" if href.startswith("/") else href
-                        img = item.select_one("img[src*='athome.co.jp']")
-                        prop = _extract_text_prop(item, "アットホーム", prop_id, url_full,
-                                                  _img_src(img), area_hint=area)
-                        if prop and _matches_filter(prop, cfg, area_trusted=True):
-                            results.append(prop)
-                    time.sleep(1)
+                        m = re.search(r"/rent_store/(\d+)", a_link["href"])
+                        prop_id = m.group(1) if m else None
+                    if not prop_id or prop_id in seen_ids:
+                        continue
+                    seen_ids.add(prop_id)
+                    url_full = f"https://www.athome.co.jp/rent_store/{prop_id}/"
+
+                    # 画像
+                    img = card.select_one("img[src*='athome.co.jp']")
+
+                    # テーブルセルからデータ取得
+                    tds = card.select("tr.tr-top > td")
+                    rent = area_val = walk = None
+                    station = address = ""
+
+                    if len(tds) >= 4:
+                        # td[0]: 駅名・徒歩・住所
+                        td0_text = re.sub(r"\s+", " ", tds[0].get_text(" ", strip=True))
+                        wm = re.search(r"(.{1,20}?駅)[^徒]*徒歩\s*(\d+)分", td0_text)
+                        if wm:
+                            station = wm.group(1)
+                            walk = int(wm.group(2))
+                        else:
+                            wm2 = re.search(r"徒歩\s*(\d+)分", td0_text)
+                            if wm2:
+                                walk = int(wm2.group(1))
+                        am_addr = re.search(r"((?:川崎市|横浜市)[^\s　]{3,35})", td0_text)
+                        address = am_addr.group(1) if am_addr else ""
+
+                        # td[1]: 賃料
+                        td1_text = re.sub(r"\s+", "", tds[1].get_text(" ", strip=True))
+                        rm = re.search(r"([\d.]+)万円", td1_text)
+                        if rm:
+                            rent = int(float(rm.group(1)) * 10000)
+
+                        # td[3]: 面積
+                        td3_text = tds[3].get_text(" ", strip=True)
+                        am = re.search(r"([\d.]+)\s*m", td3_text)
+                        if am:
+                            area_val = float(am.group(1))
+                        else:
+                            am2 = re.search(r"([\d.]+)\s*坪", td3_text)
+                            if am2:
+                                area_val = round(float(am2.group(1)) * 3.30579, 2)
+
+                    # タイトルから物件名
+                    title_el = card.select_one(".area-title__text")
+                    name = title_el.get_text(strip=True)[:50] if title_el else f"アットホーム {prop_id}"
+
+                    prop = Property(
+                        site="アットホーム",
+                        property_id=prop_id,
+                        name=name,
+                        address=address,
+                        rent=rent,
+                        area=area_val,
+                        walk_minutes=walk,
+                        nearest_station=station,
+                        floor="",   # 一覧には階数なし
+                        url=url_full,
+                        image_url=_img_src(img),
+                    )
+                    if _matches_filter(prop, cfg, area_trusted=True):
+                        results.append(prop)
+
+                # ページ送り: カードが30件未満なら最終ページ
+                if len(cards) < 30:
+                    break
+                page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                time.sleep(2)
     finally:
         page.context.close()
     logger.info(f"アットホーム: {len(results)} 件")
@@ -827,7 +932,8 @@ def scrape_temponw(cfg: dict, browser) -> list[Property]:
 # ═══════════════════════════════════════════════════════
 # メインエントリ
 # ═══════════════════════════════════════════════════════
-SCRAPERS = {
+# アットホームは別ブラウザで実行（セッション汚染を避けるため）
+SCRAPERS_MAIN = {
     "homes":        scrape_homes,
     "temposmart":   scrape_temposmart,
     "inshokuten":   scrape_inshokuten,
@@ -837,8 +943,21 @@ SCRAPERS = {
     "tempodas":     scrape_tempodas,
     "inuki_ichiba": scrape_inuki_ichiba,
     "temponw":      scrape_temponw,
-    "athome":       scrape_athome,   # 最後に実行（セッションウォームアップ後がCAPTCHA回避しやすい）
 }
+SCRAPERS_STEALTH = {
+    "athome": scrape_athome,   # 専用ブラウザ起動（CAPTCHA回避）
+}
+
+
+def _launch_browser(pw):
+    return pw.chromium.launch(
+        headless=True,
+        args=[
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+            "--disable-blink-features=AutomationControlled",
+        ],
+    )
 
 
 def run_scraper(config: dict) -> list[Property]:
@@ -849,11 +968,9 @@ def run_scraper(config: dict) -> list[Property]:
     all_props: list[Property] = []
 
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(
-            headless=True,
-            args=["--no-sandbox", "--disable-dev-shm-usage"],
-        )
-        for site_key, scraper_fn in SCRAPERS.items():
+        # ── 通常サイト（共有ブラウザ） ──
+        browser = _launch_browser(pw)
+        for site_key, scraper_fn in SCRAPERS_MAIN.items():
             if not sites_cfg.get(site_key, True):
                 continue
             logger.info(f"── {site_key} 開始 ──")
@@ -863,6 +980,20 @@ def run_scraper(config: dict) -> list[Property]:
             except Exception as e:
                 logger.error(f"{site_key} エラー: {e}")
         browser.close()
+
+        # ── アットホーム（専用ブラウザ・セッション汚染なし） ──
+        for site_key, scraper_fn in SCRAPERS_STEALTH.items():
+            if not sites_cfg.get(site_key, True):
+                continue
+            logger.info(f"── {site_key} 開始 ──")
+            browser2 = _launch_browser(pw)
+            try:
+                props = scraper_fn(cfg_search, browser2)
+                all_props.extend(props)
+            except Exception as e:
+                logger.error(f"{site_key} エラー: {e}")
+            finally:
+                browser2.close()
 
     # 重複除去（サイト+ID）
     seen = set()
