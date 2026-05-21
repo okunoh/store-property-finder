@@ -265,6 +265,64 @@ def _extract_text_prop(item, site: str, prop_id: str, url: str, image_url: str =
 
 
 # ═══════════════════════════════════════════════════════
+# 1. アットホーム — ヘルパー
+# ═══════════════════════════════════════════════════════
+def _athome_floor_from_name(name: str) -> str:
+    """
+    アットホーム一覧の物件名から所在階を抽出。
+    例:
+      "セントラルビル 地下1階の貸店舗"  → "地下1階"
+      "司生堂ビル 2階の貸店舗・事務所"  → "2階"
+      "第２アーバン東横 1階の貸店舗"    → "1階"
+      "百合丘 地下1階/地上4階地下1階建" → "地下1階"
+      "新塚越 6階/地上18階地下2階建"    → "6階"
+      "ルリエ新川崎 6階の貸店舗"        → "6階"
+      "松本ビル 2F"                     → "2F"
+    """
+    # パターン1: "X階/地上Y階" — 所在階/建物階建 形式
+    m = re.search(r"(地下\s*\d+\s*[階FfＦｆ]|\d+\s*[FfＦｆ階])\s*/\s*(?:地上|地下)?\d+", name)
+    if m:
+        return m.group(1).replace(" ", "")
+    # パターン2: "X階の貸〜" or "地下X階の貸〜"
+    m = re.search(r"(地下\s*\d+\s*[FfＦｆ階]|\d+\s*[FfＦｆ階])\s*の貸", name)
+    if m:
+        return m.group(1).replace(" ", "")
+    # パターン3: 末尾の "XF" or "X階"
+    m = re.search(r"([BbＢｂ]?\d+[FfＦｆ階])\s*$", name)
+    if m:
+        return m.group(1)
+    return ""
+
+
+def _athome_detail_floor(soup) -> str:
+    """
+    アットホーム詳細ページから所在階を取得。
+    th/dt ラベルまたはテキスト全体から抽出。
+    """
+    # th/dt → td/dd ペア
+    for th in soup.select("th, dt"):
+        label = th.get_text(strip=True)
+        if label in ("所在階", "階数", "所在・利用階", "所在階数", "利用階"):
+            td = th.find_next_sibling("td") or th.find_next_sibling("dd")
+            if td:
+                v = td.get_text(strip=True)
+                if v:
+                    return v
+    # テキスト全体パターン
+    text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
+    m = re.search(
+        r"(?:所在階|所在・利用階|利用階|使用階)\s*[：:・]?\s*"
+        r"(地下\s*\d+\s*[FfＦｆ階]?|建物全部|[BbＢｂ]?\d+\s*[FfＦｆ階])",
+        text,
+    )
+    if m:
+        return m.group(1).replace(" ", "")
+    if "建物全部" in text:
+        return "建物全部"
+    return ""
+
+
+# ═══════════════════════════════════════════════════════
 # 1. アットホーム
 # ═══════════════════════════════════════════════════════
 def scrape_athome(cfg: dict, browser) -> list[Property]:
@@ -376,9 +434,10 @@ def scrape_athome(cfg: dict, browser) -> list[Property]:
                             if am2:
                                 area_val = round(float(am2.group(1)) * 3.30579, 2)
 
-                    # タイトルから物件名
+                    # タイトルから物件名 + 階数抽出
                     title_el = card.select_one(".area-title__text")
                     name = title_el.get_text(strip=True)[:50] if title_el else f"アットホーム {prop_id}"
+                    floor = _athome_floor_from_name(name)
 
                     prop = Property(
                         site="アットホーム",
@@ -389,10 +448,32 @@ def scrape_athome(cfg: dict, browser) -> list[Property]:
                         area=area_val,
                         walk_minutes=walk,
                         nearest_station=station,
-                        floor="",   # 一覧には階数なし
+                        floor=floor,
                         url=url_full,
                         image_url=_img_src(img),
                     )
+
+                    # 階数以外のフィルタで事前絞り込み
+                    cfg_no_floor = {**cfg, "floor_1f_only": False}
+                    if not _matches_filter(prop, cfg_no_floor, area_trusted=True):
+                        continue
+
+                    # 1Fフィルタ有効 かつ 名前から階数不明 → 詳細ページで確認
+                    if cfg.get("floor_1f_only") and not prop.floor:
+                        try:
+                            d_html = _load(page, url_full, wait_ms=3000)
+                            if d_html and "認証にご協力" not in d_html and len(d_html) > 10000:
+                                d_soup = BeautifulSoup(d_html, "lxml")
+                                detail_floor = _athome_detail_floor(d_soup)
+                                if detail_floor:
+                                    prop.floor = detail_floor
+                                    logger.debug(f"アットホーム詳細: {prop_id} 所在階={detail_floor}")
+                            else:
+                                logger.debug(f"アットホーム詳細: {prop_id} CAPTCHA/取得失敗 → 階数不明扱い")
+                        except Exception as e:
+                            logger.debug(f"アットホーム詳細取得失敗 {prop_id}: {e}")
+                        time.sleep(4)   # 詳細ページ間のウェイト
+
                     if _matches_filter(prop, cfg, area_trusted=True):
                         results.append(prop)
 
