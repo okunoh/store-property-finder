@@ -432,7 +432,7 @@ def scrape_homes(cfg: dict, browser) -> list[Property]:
                 prop_id = m.group(1)
                 if prop_id in seen_ids:
                     continue
-                seen_ids.add(prop_id)
+                # seen_ids への追加は面積取得成功後に行う（PRテザーカードをスキップするため）
                 url_full = f"https://www.homes.co.jp{href}" if href.startswith("/") else href
 
                 # 正しいカード要素を取得（div.moduleInner が物件カードの外枠）
@@ -442,30 +442,75 @@ def scrape_homes(cfg: dict, browser) -> list[Property]:
                 if not card:
                     continue
 
-                # ── 賃料: <td class="price"> から取得 ──
-                rent = None
-                price_td = card.select_one("td.price, td[class*='price']")
-                if price_td:
-                    rm = re.search(r"([\d.]+)\s*万円", price_td.get_text())
-                    if rm:
-                        rent = int(float(rm.group(1)) * 10000)
+                # ── テーブル構造解析（階数・賃料・面積）──
+                # HOMES一覧テーブル構造:
+                #   tr: ['面積/坪数', '135.5m²/40.98坪']
+                #   tr: ['', '階数', '部屋', '賃料/管理費等', '坪単価', ..., '面積', ...]  ← ヘッダー行
+                #   tr: ['', '-',   '-',   '23万円/-',      ...,           '135.5m²', ...] ← データ行
+                rent = area_val = None
+                floor_hint = ""
+
+                trs = card.select("tr")
+                header_row_idx = None
+                floor_col = rent_col = -1
+
+                for i, tr in enumerate(trs):
+                    cells = [td.get_text(strip=True) for td in tr.select("td,th")]
+                    if not cells:
+                        continue
+
+                    # 「面積/坪数」行 → 面積取得（㎡ / m² / 坪）
+                    if cells[0] and "面積" in cells[0] and len(cells) >= 2:
+                        t = cells[1] if len(cells) > 1 else ""
+                        # "135.5m²/40.98坪" or "135.5㎡" or "40.98坪"
+                        am = re.search(r"([\d.]+)\s*(?:㎡|m[\S]?)", t)
+                        if am:
+                            area_val = float(am.group(1))
+                        else:
+                            am = re.search(r"([\d.]+)\s*坪(?!\s*単)", t)
+                            if am:
+                                area_val = round(float(am.group(1)) * 3.30579, 2)
+
+                    # 「階数」がヘッダーにある行を検出
+                    if "階数" in cells:
+                        header_row_idx = i
+                        floor_col = cells.index("階数")
+                        rent_col = next(
+                            (j for j, c in enumerate(cells) if "賃料" in c), -1
+                        )
+
+                    # ヘッダーの直後がデータ行
+                    elif header_row_idx is not None and i == header_row_idx + 1:
+                        if 0 <= floor_col < len(cells):
+                            fv = cells[floor_col]
+                            if fv and fv != "-":
+                                floor_hint = fv          # "1階", "2階" など
+                            elif fv == "-":
+                                floor_hint = "不明"      # 明示的に不明 → 1Fフィルタで除外
+                        if 0 <= rent_col < len(cells) and rent is None:
+                            rm = re.search(r"([\d.]+)万円", cells[rent_col])
+                            if rm:
+                                rent = int(float(rm.group(1)) * 10000)
+                        header_row_idx = None
+
+                # 「建物全部」= 建物一棟丸ごと → 1Fとはみなさない
+                card_text_full = card.get_text(" ", strip=True)
+                if "建物全部" in card_text_full:
+                    floor_hint = "建物全部"
+
+                # 賃料フォールバック
                 if rent is None:
-                    rm = re.search(r"([\d.]+)\s*万円", card.get_text())
+                    rm = re.search(r"([\d.]+)\s*万円", card_text_full)
                     if rm:
                         rent = int(float(rm.group(1)) * 10000)
 
-                # ── 面積: ㎡ or 坪 要素を探す ──
-                area_val = None
-                for el in card.find_all(["td", "div", "span", "p"]):
-                    t = el.get_text(strip=True)
-                    am = re.search(r"([\d.]+)\s*㎡", t)
-                    if am:
-                        area_val = float(am.group(1))
-                        break
-                    am = re.search(r"([\d.]+)\s*坪(?!\s*単)", t)
-                    if am:
-                        area_val = round(float(am.group(1)) * 3.30579, 2)
-                        break
+                # PRテザーカード（面積なし・階数なし）はスキップ
+                # → 同じIDの完全カードが後に出てくるので seen_ids に入れず再処理させる
+                if area_val is None and not floor_hint:
+                    continue  # seen_ids には追加しない
+
+                # 完全カード確認済み → seen_ids に登録
+                seen_ids.add(prop_id)
 
                 # ── 残りは汎用抽出 ──
                 img = card.select_one("img[src*='http']")
@@ -476,6 +521,8 @@ def scrape_homes(cfg: dict, browser) -> list[Property]:
                         prop.rent = rent
                     if area_val is not None:
                         prop.area = area_val
+                    if floor_hint:          # テーブル解析結果を優先
+                        prop.floor = floor_hint
                     if _matches_filter(prop, cfg, area_trusted=True):
                         results.append(prop)
     finally:
