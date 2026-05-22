@@ -93,6 +93,9 @@ header h1{font-size:1.2rem;font-weight:700}
 .site-sel{padding:5px 8px;border:1px solid #ddd;border-radius:16px;font-size:0.78rem;background:#fff;cursor:pointer}
 .btn-export{padding:5px 12px;border-radius:16px;border:1px solid #1a73e8;background:#fff;color:#1a73e8;font-size:0.78rem;font-weight:600;cursor:pointer;margin-left:auto}
 .btn-export:hover{background:#e8f0fe}
+.btn-sync{padding:5px 12px;border-radius:16px;border:1px solid #188038;background:#fff;color:#188038;font-size:0.78rem;font-weight:600;cursor:pointer}
+.btn-sync:hover{background:#e6f4ea}
+.btn-sync.syncing{opacity:.6;pointer-events:none}
 
 /* グリッド */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:10px;padding:10px 20px}
@@ -311,6 +314,99 @@ function exportStatus() {
   URL.revokeObjectURL(a.href);
 }
 
+// ── GitHub 同期 ───────────────────────────────────────────────
+const GH_REPO = 'okunoh/store-property-finder';
+const GH_FILE = 'data/status.json';
+
+async function githubSync() {
+  const btn = document.getElementById('btn-sync');
+
+  // トークン取得（初回のみ入力）
+  let token = localStorage.getItem('gh_pat');
+  if (!token) {
+    token = prompt(
+      'GitHub Personal Access Token を入力してください\n\n' +
+      '取得方法: GitHub → Settings → Developer settings\n' +
+      '→ Personal access tokens → Fine-grained tokens\n' +
+      '→ Repository: store-property-finder\n' +
+      '→ Permissions: Contents = Read and Write'
+    );
+    if (!token) return;
+    localStorage.setItem('gh_pat', token.trim());
+    token = token.trim();
+  }
+
+  btn.classList.add('syncing');
+  btn.textContent = '🔄 同期中…';
+
+  try {
+    // localStorage + PREV_STATUSES をマージ（localStorageが優先）
+    const local  = getStoredStatuses();
+    const prev   = (typeof PREV_STATUSES !== 'undefined') ? PREV_STATUSES : {};
+    const merged = Object.assign({}, prev, local);
+
+    const content = JSON.stringify(merged, null, 2);
+    // UTF-8対応 base64
+    const encoded = btoa(unescape(encodeURIComponent(content)));
+
+    // 現在のSHAを取得（ファイル更新に必要）
+    const getRes = await fetch(
+      `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`,
+      { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
+    );
+    let sha = null;
+    if (getRes.ok) {
+      const meta = await getRes.json();
+      sha = meta.sha;
+    }
+
+    // ファイルを作成 or 更新
+    const body = {
+      message: 'status: sync from browser ' + new Date().toLocaleString('ja-JP'),
+      content: encoded,
+    };
+    if (sha) body.sha = sha;
+
+    const putRes = await fetch(
+      `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`,
+      {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(body),
+      }
+    );
+
+    if (putRes.ok) {
+      alert('✅ GitHubに同期しました。\n次回の自動実行（深夜0時）後にほかの端末でも同じ状態になります。');
+    } else {
+      const err = await putRes.json();
+      if (putRes.status === 401) {
+        localStorage.removeItem('gh_pat');
+        alert('❌ トークンが無効です。再度入力してください。\n（エラー: ' + err.message + '）');
+      } else {
+        alert('❌ 同期に失敗しました: ' + err.message);
+      }
+    }
+  } catch (e) {
+    alert('❌ エラー: ' + e.message);
+  } finally {
+    btn.classList.remove('syncing');
+    btn.textContent = '🔄 GitHub同期';
+  }
+}
+
+// トークンをリセット
+function resetToken() {
+  if (confirm('保存済みのGitHub Tokenを削除しますか？')) {
+    localStorage.removeItem('gh_pat');
+    alert('削除しました。');
+  }
+}
+
 window.addEventListener('DOMContentLoaded', initStatuses);
 """
 
@@ -469,7 +565,8 @@ def generate_report(
   <div class="tab-group">{status_tabs}</div>
   <div class="sep"></div>
   <select class="site-sel" onchange="filterSite(this)">{site_opts}</select>
-  <button class="btn-export" onclick="exportStatus()">💾 ステータス保存</button>
+  <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
+  <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">{main_cards}
