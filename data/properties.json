@@ -2,7 +2,7 @@
   {
     "site": "テンポスマート",
     "property_id": "203712",
-    "name": "ID 203712 登戸駅 徒歩5分 1F スケルトン物件 【業種相談】 賃料 595,000 円 ",
+    "name": "ID 203712 登戸駅 徒歩5分 1F スケルトン物件 【和をコンセプトにした飲食店】 賃料 5",
     "address": "神奈川県川崎市多摩区登戸",
     "rent": 595000,
     "area": 126.58,
@@ -316,6 +316,21 @@
   },
   {
     "site": "アットホーム",
+    "property_id": "6987801263",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
     "property_id": "6987836237",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -326,21 +341,6 @@
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987836237/",
     "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6987801263",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987801263/",
-    "image_url": "https://www.athome.co.jp/image_files/path/n8a0RWc75ziDTYJi2O0U5w==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false
   }
