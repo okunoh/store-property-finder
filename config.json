@@ -4,7 +4,7 @@
     "rent_max": 600000,
     "area_min": 122,
     "area_max": null,
-    "walk_minutes_max": 10,
+    "walk_minutes_max": null,
     "floor_1f_only": true,
     "keywords": []
   },
