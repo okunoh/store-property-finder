@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "204338",
+    "name": "ID 204338 新杉田駅 徒歩5分 1F 現況:その他 その他居抜きなど物件 【軽飲食可】 賃料",
+    "address": "神奈川県横浜市磯子区杉田四丁目",
+    "rent": 326700,
+    "area": 146.28,
+    "walk_minutes": 5,
+    "nearest_station": "ID 204338 新杉田駅 徒歩5分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/204338",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "204257",
     "name": "ID 204257 未公開物件！ロードサイド駐車場付き！駐車場５台＋１台、２４時間利用可、天高３ｍ以",
     "address": "神奈川県川崎市宮前区菅生一丁目",
@@ -10,7 +25,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/204257",
-    "image_url": "https://www.temposmart.jp/assets/tenant/images/img_estate_item_noimage_medium.jpg",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -130,21 +145,6 @@
     "nearest_station": "D 202056 みなとみらい駅徒歩2分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/202056",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "201850",
-    "name": "ID 201850 希少☆視認性良好☆1階路面☆ 内装美麗☆スイーツ店居抜き！！！ 賃料 350,9",
-    "address": "神奈川県川崎市宮前区神木本町四丁目",
-    "rent": 350900,
-    "area": 170.84,
-    "walk_minutes": 27,
-    "nearest_station": ",789 円/坪 最寄駅 久地駅 徒歩 27分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/201850",
     "image_url": "",
     "description": "",
     "is_new": false
@@ -700,7 +700,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6969105311/",
-    "image_url": "https://www.athome.co.jp/image_files/path/CRdKBvWwzxAaWx26K0aRgw==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -811,21 +811,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987836237",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987836237/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987801263",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -835,6 +820,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987836237",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987836237/",
     "image_url": "",
     "description": "",
     "is_new": false
