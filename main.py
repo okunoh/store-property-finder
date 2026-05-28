@@ -93,6 +93,13 @@ def main():
             status_map = json.load(f)
         logger.info(f"ステータス読み込み: {len(status_map)} 件")
 
+    notes_path = BASE_DIR / "data" / "notes.json"
+    notes_map: dict = {}
+    if notes_path.exists():
+        with open(notes_path, encoding="utf-8") as f:
+            notes_map = json.load(f)
+        logger.info(f"メモ読み込み: {len(notes_map)} 件")
+
     # スクレイピング実行
     from scraper import run_scraper
     properties = run_scraper(config)
@@ -113,7 +120,7 @@ def main():
 
     # HTMLレポート生成
     from report import generate_report
-    generate_report(properties, config, str(report_path), prev_keys, status_map)
+    generate_report(properties, config, str(report_path), prev_keys, status_map, notes_map)
     logger.info(f"レポート生成完了: {report_path}")
 
     new_count = sum(1 for p in properties if p.is_new)

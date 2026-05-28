@@ -124,6 +124,9 @@ header h1{font-size:1.2rem;font-weight:700}
 .card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:2px}
 .status-sel{font-size:0.72rem;padding:3px 6px;border:1px solid #ddd;border-radius:5px;cursor:pointer;background:#fff;max-width:90px}
 .card-link{font-size:0.71rem;color:#1a73e8}
+.note-input{width:100%;min-height:38px;resize:vertical;border:1px solid #e0e0e0;border-radius:6px;padding:6px 7px;font-family:inherit;font-size:0.72rem;line-height:1.35;background:#fafafa;color:#333}
+.note-input:focus{outline:none;border-color:#1a73e8;background:#fff;box-shadow:0 0 0 2px rgba(26,115,232,.12)}
+.note-input::placeholder{color:#aaa}
 
 /* 見送りセクション */
 .miokuri-section{margin:4px 20px 10px;border-radius:8px;overflow:hidden;border:1px solid #ffe0b2}
@@ -160,6 +163,13 @@ function getStoredStatuses() {
 function saveStoredStatuses(s) {
   localStorage.setItem('store_prop_status', JSON.stringify(s));
 }
+function getStoredNotes() {
+  try { return JSON.parse(localStorage.getItem('store_prop_notes') || '{}'); }
+  catch { return {}; }
+}
+function saveStoredNotes(n) {
+  localStorage.setItem('store_prop_notes', JSON.stringify(n));
+}
 
 // ── 初期化（ページロード時） ──────────────────────────────────
 function initStatuses() {
@@ -171,10 +181,15 @@ function initStatuses() {
   document.querySelectorAll('.card').forEach(card => {
     const key    = card.dataset.key;
     const status = stored[key] || prev[key] || '未調査';
+    const notes  = getStoredNotes();
+    const prevNotes = (typeof PREV_NOTES !== 'undefined') ? PREV_NOTES : {};
+    const note = (notes[key] !== undefined) ? notes[key] : (prevNotes[key] || '');
 
     card.dataset.status = status;
     const sel = card.querySelector('.status-sel');
     if (sel) sel.value = status;
+    const noteInput = card.querySelector('.note-input');
+    if (noteInput) noteInput.value = note;
 
     if (status === '削除') {
       card.remove();
@@ -186,6 +201,18 @@ function initStatuses() {
 
   updateCounts();
   applyFilters();
+}
+
+// ── メモ保存 ─────────────────────────────────────────────────
+function setNote(key, value) {
+  const stored = getStoredNotes();
+  const note = value.trimEnd();
+  if (note) {
+    stored[key] = note;
+  } else {
+    delete stored[key];
+  }
+  saveStoredNotes(stored);
 }
 
 // ── ステータス変更 ────────────────────────────────────────────
@@ -316,7 +343,49 @@ function exportStatus() {
 
 // ── GitHub 同期 ───────────────────────────────────────────────
 const GH_REPO = 'okunoh/store-property-finder';
-const GH_FILE = 'data/status.json';
+const GH_STATUS_FILE = 'data/status.json';
+const GH_NOTES_FILE = 'data/notes.json';
+
+async function putGithubJson(path, data, token, messagePrefix) {
+  const content = JSON.stringify(data, null, 2);
+  const encoded = btoa(unescape(encodeURIComponent(content)));
+
+  const getRes = await fetch(
+    `https://api.github.com/repos/${GH_REPO}/contents/${path}`,
+    { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
+  );
+  let sha = null;
+  if (getRes.ok) {
+    const meta = await getRes.json();
+    sha = meta.sha;
+  }
+
+  const body = {
+    message: messagePrefix + ' ' + new Date().toLocaleString('ja-JP'),
+    content: encoded,
+  };
+  if (sha) body.sha = sha;
+
+  const putRes = await fetch(
+    `https://api.github.com/repos/${GH_REPO}/contents/${path}`,
+    {
+      method: 'PUT',
+      headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    }
+  );
+
+  if (!putRes.ok) {
+    const err = await putRes.json();
+    const e = new Error(err.message || 'GitHub update failed');
+    e.status = putRes.status;
+    throw e;
+  }
+}
 
 async function githubSync() {
   const btn = document.getElementById('btn-sync');
@@ -341,58 +410,24 @@ async function githubSync() {
 
   try {
     // localStorage + PREV_STATUSES をマージ（localStorageが優先）
-    const local  = getStoredStatuses();
-    const prev   = (typeof PREV_STATUSES !== 'undefined') ? PREV_STATUSES : {};
-    const merged = Object.assign({}, prev, local);
+    const localStatuses = getStoredStatuses();
+    const prevStatuses  = (typeof PREV_STATUSES !== 'undefined') ? PREV_STATUSES : {};
+    const mergedStatuses = Object.assign({}, prevStatuses, localStatuses);
 
-    const content = JSON.stringify(merged, null, 2);
-    // UTF-8対応 base64
-    const encoded = btoa(unescape(encodeURIComponent(content)));
+    const localNotes = getStoredNotes();
+    const prevNotes  = (typeof PREV_NOTES !== 'undefined') ? PREV_NOTES : {};
+    const mergedNotes = Object.assign({}, prevNotes, localNotes);
 
-    // 現在のSHAを取得（ファイル更新に必要）
-    const getRes = await fetch(
-      `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`,
-      { headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' } }
-    );
-    let sha = null;
-    if (getRes.ok) {
-      const meta = await getRes.json();
-      sha = meta.sha;
-    }
-
-    // ファイルを作成 or 更新
-    const body = {
-      message: 'status: sync from browser ' + new Date().toLocaleString('ja-JP'),
-      content: encoded,
-    };
-    if (sha) body.sha = sha;
-
-    const putRes = await fetch(
-      `https://api.github.com/repos/${GH_REPO}/contents/${GH_FILE}`,
-      {
-        method: 'PUT',
-        headers: {
-          'Authorization': `token ${token}`,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(body),
-      }
-    );
-
-    if (putRes.ok) {
-      alert('✅ GitHubに同期しました。\n次回の自動実行（深夜0時）後にほかの端末でも同じ状態になります。');
-    } else {
-      const err = await putRes.json();
-      if (putRes.status === 401) {
-        localStorage.removeItem('gh_pat');
-        alert('❌ トークンが無効です。再度入力してください。\n（エラー: ' + err.message + '）');
-      } else {
-        alert('❌ 同期に失敗しました: ' + err.message);
-      }
-    }
+    await putGithubJson(GH_STATUS_FILE, mergedStatuses, token, 'status: sync from browser');
+    await putGithubJson(GH_NOTES_FILE, mergedNotes, token, 'notes: sync from browser');
+    alert('✅ GitHubに同期しました。\nステータスとメモが保存されました。次回の自動実行後にほかの端末でも同じ状態になります。');
   } catch (e) {
-    alert('❌ エラー: ' + e.message);
+    if (e.status === 401) {
+      localStorage.removeItem('gh_pat');
+      alert('❌ トークンが無効です。再度入力してください。\n（エラー: ' + e.message + '）');
+    } else {
+      alert('❌ 同期に失敗しました: ' + e.message);
+    }
   } finally {
     btn.classList.remove('syncing');
     btn.textContent = '🔄 GitHub同期';
@@ -411,7 +446,7 @@ window.addEventListener('DOMContentLoaded', initStatuses);
 """
 
 
-def _card_html(prop, prev_status: str = "") -> str:
+def _card_html(prop, prev_status: str = "", note: str = "") -> str:
     bg, fg = SITE_BADGE.get(prop.site, ("#f3e5f5", "#6a1b9a"))
     is_new_attr = "true" if prop.is_new else "false"
     key = _esc(prop.unique_key)
@@ -441,6 +476,7 @@ def _card_html(prop, prev_status: str = "") -> str:
     <span class="spec"><span class="sk">階</span> <span class="sv">{_esc(prop.floor or '—')}</span></span>
   </div>
   <div class="card-location">{_esc(location_str)}</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('{key}', this.value)">{_esc(note)}</textarea>
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('{key}', this.value)">{opts}</select>
     <a class="card-link" href="{_esc(prop.url)}" target="_blank" rel="noopener">詳細 →</a>
@@ -467,9 +503,11 @@ def generate_report(
     output_path: str,
     prev_keys: set = None,
     status_map: dict = None,
+    notes_map: dict = None,
 ) -> None:
     prev_keys  = prev_keys or set()
     status_map = status_map or {}
+    notes_map = notes_map or {}
     cfg_search = config.get("search", {})
 
     # 新着フラグ付与
@@ -501,8 +539,9 @@ def generate_report(
     if cfg_search.get("floor_1f_only"):
         conds.append("階数: 1F限定")
 
-    # PREV_STATUSES 埋め込み用JSON
+    # PREV_STATUSES / PREV_NOTES 埋め込み用JSON
     prev_statuses_js = json.dumps(status_map, ensure_ascii=False)
+    prev_notes_js = json.dumps(notes_map, ensure_ascii=False)
 
     # サイトフィルタ options
     site_opts = '<option value="all">すべてのサイト</option>'
@@ -520,7 +559,8 @@ def generate_report(
     miokuri_cards = ""
     for p in sorted_props:
         st = status_map.get(p.unique_key, "未調査")
-        c  = _card_html(p, prev_status=st)
+        note = notes_map.get(p.unique_key, "")
+        c  = _card_html(p, prev_status=st, note=note)
         if st == "見送り":
             miokuri_cards += "\n" + c
         else:
@@ -586,6 +626,7 @@ def generate_report(
 
 <script>
 const PREV_STATUSES = {prev_statuses_js};
+const PREV_NOTES = {prev_notes_js};
 {JS}
 </script>
 </body>

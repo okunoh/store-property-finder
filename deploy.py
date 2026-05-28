@@ -40,7 +40,9 @@ def deploy() -> bool:
     # docs と data の両方をコミット対象に追加
     git("add", "docs/index.html")
     git("add", "data/properties.json")
-    git("add", "data/status.json")
+    for optional_file in ["data/status.json", "data/notes.json"]:
+        if (BASE_DIR / optional_file).exists():
+            git("add", optional_file)
 
     # 変更がなければスキップ
     diff = git("diff", "--cached", "--quiet")
