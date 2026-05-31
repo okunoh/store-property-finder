@@ -40,7 +40,7 @@
     "nearest_station": "ID 203853 黒川駅 徒歩13分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/203853",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/203853/images/17794981537979CLUkHHZiqk6wyJSoNOHOEAHIj4.png.webp",
     "description": "",
     "is_new": false
   },
@@ -655,7 +655,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6969105311/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/CRdKBvWwzxAaWx26K0aRgw==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false
   },
@@ -766,21 +766,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987836237",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987836237/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987801263",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -790,6 +775,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987836237",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987836237/",
     "image_url": "",
     "description": "",
     "is_new": false
