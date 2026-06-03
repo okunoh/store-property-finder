@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "205344",
+    "name": "ID 205344 小机駅 徒歩15分／横浜上麻生道路沿い／事務所仕様の大箱物件【軽飲食程度相談】 ",
+    "address": "神奈川県横浜市港北区小机町",
+    "rent": 583000,
+    "area": 258.51,
+    "walk_minutes": 15,
+    "nearest_station": "ID 205344 小机駅 徒歩15分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/205344",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/205344/images/17804720189529iG8Un2750ZPUBgPmapQe1hAvje.JPG.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "204914",
     "name": "ID 204914 センター南駅徒歩17分 飲食不可 賃料 572,000 円 (税込) 坪単価 9",
     "address": "神奈川県横浜市都筑区平台",
@@ -55,7 +70,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/204257",
-    "image_url": "",
+    "image_url": "https://www.temposmart.jp/assets/tenant/images/img_estate_item_noimage_medium.jpg",
     "description": "",
     "is_new": false
   },
@@ -85,7 +100,7 @@
     "nearest_station": "ID 203712 登戸駅 徒歩5分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/203712",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/203712/images/17794182881821O58cIXeaaqQfXe8o7Lan4t2K1T.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -570,36 +585,6 @@
     "is_new": false
   },
   {
-    "site": "テンポダス",
-    "property_id": "2095920",
-    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県平台の店舗物件",
-    "rent": 572000,
-    "area": 200.66,
-    "walk_minutes": 17,
-    "nearest_station": " 横浜市都筑区 > センター南駅 徒歩17分",
-    "floor": "1階",
-    "url": "https://tempodas.com/search/detail/2095920/",
-    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260602%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260602T185704Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=31ebb1525be9e6a9bfa39c6aa95a06526ee98c7e89c8563f3fa3d6741d25869f6be33d20f40f9654899ac924cdbecec4c16bf55e38eac8a16548d59ede9dbc620094a915ba97ba484bb4764094085b632097eccadb3c3de39c5c7d733d1396ecad7304b833da5dc9d42db832ce93fef13c1bee0c4e5a893e43b9222a907f2cb628aff97963d2aac831d9eda5eaff86b35da1d6c9f6f77b34b628b65dc3833f2f51016755d0ada17d8df8cea9875ceccdf2fca45ef2d820f3034442b17e05c378b488371a0dc58526749457c47752bc8c6f3ec11db7d2cba4ffe32a31a3a871575112f6704599f6dc8857a16b8677ca01c448a6941aaeae8af0ceb6c800e644f3",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポダス",
-    "property_id": "2095919",
-    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県平台の店舗物件",
-    "rent": 572000,
-    "area": 200.66,
-    "walk_minutes": 17,
-    "nearest_station": " 横浜市都筑区 > センター南駅 徒歩17分",
-    "floor": "1階",
-    "url": "https://tempodas.com/search/detail/2095919/",
-    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260602%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260602T185710Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=1f581b29ae959a9f2017a7493e10cabb1efaae4522790794f5487005f79f263f5b7391e8459ac420a293a032bd80bd199410580d946b74cc5a2e1eb2d81c03fea45f576dc65eb207f5a9c4d11776d025cf43ce9c341fa9af2fc1ed5fc779bd70ef1d9e521ba468d08b5f80607646f2e044e7dc821e1142101fb42da7883041a85d14f792723fea2060b81d61ab91684bd97c28f25fbc5ec77009b12ffb09682e5c23b32824d068ba76683358928e0936afe583113182518912c7499513cf2b0589e0b6a88f0f6ed9fc2d239fd5c708eb924eaca4a347fe6aeba0b23b030509da659f6b8ae24d794740b652de126e7c17844656be9e4b9d2df525714ceb1bf6ff",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "居抜き市場",
     "property_id": "51521",
     "name": "久地駅 | 徒歩27分 | 川崎市宮前区神木本町4丁目 バス",
@@ -655,7 +640,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/dX-cCe99o3iUb9dwG_6jyg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false
   },
