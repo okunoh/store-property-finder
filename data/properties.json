@@ -10,7 +10,7 @@
     "nearest_station": "69 円/坪 最寄駅 十日市場駅 徒歩 48分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/205782",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/205782/images/178065480684959vaR3puIoLfpslsCsctfMIdbFF.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -25,7 +25,7 @@
     "nearest_station": "ID 205344 小机駅 徒歩15分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/205344",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/205344/images/17804720189529iG8Un2750ZPUBgPmapQe1hAvje.JPG.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -85,7 +85,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/204257",
-    "image_url": "https://www.temposmart.jp/assets/tenant/images/img_estate_item_noimage_medium.jpg",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -676,21 +676,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987801263",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987801263/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987836237",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -700,6 +685,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987836237/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987801263",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987801263/",
     "image_url": "",
     "description": "",
     "is_new": false
