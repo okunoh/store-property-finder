@@ -75,36 +75,6 @@
     "is_new": false
   },
   {
-    "site": "テンポスマート",
-    "property_id": "204338",
-    "name": "ID 204338 新杉田駅 徒歩5分 現況:その他 その他居抜きなど物件 【軽飲食可】 募集階は1",
-    "address": "神奈川県横浜市磯子区杉田四丁目",
-    "rent": 297000,
-    "area": 146.28,
-    "walk_minutes": 5,
-    "nearest_station": "ID 204338 新杉田駅 徒歩5分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/204338",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "204257",
-    "name": "ID 204257 未公開物件！ロードサイド駐車場付き！駐車場５台＋１台、２４時間利用可、天高３ｍ以",
-    "address": "神奈川県川崎市宮前区菅生一丁目",
-    "rent": 600000,
-    "area": 154.84,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/204257",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "テナント.biz",
     "property_id": "64104",
     "name": "東急田園都市線梶が谷 川崎市宮前区神木本町4-22-2",
@@ -551,6 +521,21 @@
     "floor": "1階",
     "url": "https://www.tenant-shop.com/detail/e-163035/",
     "image_url": "/contents/images/header/logo.gif?t=1",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポダス",
+    "property_id": "2122208",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県天王町の店舗物件",
+    "rent": 495000,
+    "area": 212.23,
+    "walk_minutes": 9,
+    "nearest_station": " 横浜市保土ケ谷区 > 天王町駅 徒歩9分",
+    "floor": "1階",
+    "url": "https://tempodas.com/search/detail/2122208/",
+    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260610%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260610T181224Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=cc93f241298582aee82fb772cfa594a3704595b26d6a3b6ff03172d28863a229a9f218845e51ded26f665cc72ad1e733ae19425824c8652970a38b2c204780c441151850228477b51797783a2d40a887a26868c611e55af1ee54824923e8d7f5bf2b5899048e024064b1bde96c0b8d7013e3484fb7f7aea7a86f9d772d29cfdba3431b98ea8b8ac966d234a5d205f01e8322a80ec3b917678613d61a1e44a06287d2c568af2de856fdb922a19e1307a3d4babf41815922ad353d30bb0b3a4a81e3e638bd5ebb34991a628607088d3d11ea2a73b04131d190fb865b88b7f6428661aee612a50122a7cf4f8efb968b154795fdcc355e3b5be65be8e2c2787cef28",
     "description": "",
     "is_new": false
   },
