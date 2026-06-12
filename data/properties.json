@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "206736",
+    "name": "ID 206736 飲食店等も出店しているロードサイド店舗！ 賃料 ご相談 坪単価 ご相談 最寄駅 ",
+    "address": "神奈川県横浜市港南区日限山二丁目",
+    "rent": null,
+    "area": 399.9,
+    "walk_minutes": 9,
+    "nearest_station": "坪単価 ご相談 最寄駅 下永谷駅 徒歩 9分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/206736",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "205965",
     "name": "ID 205965 詳細は担当者までお問合せくださいませ。 賃料 ご相談 坪単価 ご相談 最寄駅 星",
     "address": "神奈川県横浜市保土ケ谷区星川一丁目",
@@ -661,21 +676,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987801263",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987801263/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987836237",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -685,6 +685,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987836237/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987801263",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987801263/",
     "image_url": "",
     "description": "",
     "is_new": false
