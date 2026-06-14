@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "206869",
+    "name": "ID 206869 都筑ふれあいの丘駅 徒歩2分 1F スケルトン物件 【飲食不可】 賃料 528,",
+    "address": "神奈川県横浜市都筑区葛が谷",
+    "rent": 528000,
+    "area": 173.39,
+    "walk_minutes": 2,
+    "nearest_station": "206869 都筑ふれあいの丘駅 徒歩2分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/206869",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/206869/images/17813948431201FaCusRRgLGj0EWN3FNMMRyH0vj.jpg.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "206736",
     "name": "ID 206736 飲食店等も出店しているロードサイド店舗！ 賃料 ご相談 坪単価 ご相談 最寄駅 ",
     "address": "神奈川県横浜市港南区日限山二丁目",
@@ -540,21 +555,6 @@
     "is_new": false
   },
   {
-    "site": "テンポダス",
-    "property_id": "2131720",
-    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県神木本町の店舗物件",
-    "rent": 495000,
-    "area": 201.32,
-    "walk_minutes": 20,
-    "nearest_station": " > 川崎市宮前区 > 宮崎台駅 徒歩20分",
-    "floor": "1階",
-    "url": "https://tempodas.com/search/detail/2131720/",
-    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260613%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260613T162941Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=cfd64a44e654e84e53283fce30000848b157cdc6a258f0a1ef35a764c3b70129cfb9486d8d567d4f055f05c31df320ae7ee5ce107b14a92d2237ef27094e5313da9be601fa0b1afc2b1b4e49f34ed642225081a46ae127357dc2711bc973a9cb8c999e139c4e8553b5dbfaae97d312a57a1ff949866eb2ca122f9e5740f73296138a52576220b4a1054571a26d7fcc3586c669ffcfd651dd6ccd3255474cd86743f305cf6dce84e9ade723994a95300b98a26637a202652241f70a3f6cad57c4c731e13f6f3bfecbdadd2b7b960db31806b4a6076c6110630da404ee6873a298db7fe4cf1e6c172de463e5ecf176b8bf057faed87f8a9fe803376e59eee2c533",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "居抜き市場",
     "property_id": "51521",
     "name": "久地駅 | 徒歩27分 | 川崎市宮前区神木本町4丁目 バス",
@@ -691,21 +691,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987836237",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987836237/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987801263",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -715,6 +700,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987836237",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987836237/",
     "image_url": "",
     "description": "",
     "is_new": false
