@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年06月15日 19:32</title>
+<title>店舗物件候補 — 2026年06月16日 19:25</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -91,19 +91,19 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年06月15日 19:32</span>
+    <span>2026年06月16日 19:25</span>
     <span id="new-pill" class="new-pill" onclick="toggleNew()" title="新着のみ表示">
-      🆕 本日の新着 <span class="cnt">2</span>件
+      🆕 本日の新着 <span class="cnt">3</span>件
     </span>
   </div>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="num" id="total-count">49</div><div class="lbl">総件数</div></div>
-  <div class="stat red"><div class="num">2</div><div class="lbl">新着</div></div>
-  <div class="stat"><div class="num">5</div><div class="lbl">サイト数</div></div>
-  <div class="stat"><div class="num">45.3万円</div><div class="lbl">平均賃料</div></div>
-  <div class="stat"><div class="num">192㎡</div><div class="lbl">平均面積</div></div>
+  <div class="stat"><div class="num" id="total-count">50</div><div class="lbl">総件数</div></div>
+  <div class="stat red"><div class="num">3</div><div class="lbl">新着</div></div>
+  <div class="stat"><div class="num">6</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">44.7万円</div><div class="lbl">平均賃料</div></div>
+  <div class="stat"><div class="num">191㎡</div><div class="lbl">平均面積</div></div>
 </div>
 
 <div class="conditions">
@@ -113,46 +113,64 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <div class="toolbar">
   <div class="tab-group"><button class="tab active" data-status="all" onclick="filterStatus('all',this)">すべて<span class="tab-cnt"></span></button><button class="tab" data-status="未調査" onclick="filterStatus('未調査',this)">未調査<span class="tab-cnt"></span></button><button class="tab" data-status="調査中" onclick="filterStatus('調査中',this)">調査中<span class="tab-cnt"></span></button><button class="tab" data-status="検討中" onclick="filterStatus('検討中',this)">検討中<span class="tab-cnt"></span></button></div>
   <div class="sep"></div>
-  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="居抜き市場">居抜き市場</option></select>
+  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="居抜き市場">居抜き市場</option><option value="店舗ネットワーク">店舗ネットワーク</option></select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">
-<div class="card" data-key="テンポスマート:206959" data-site="テンポスマート" data-status="未調査" data-new="true">
+<div class="card" data-key="テンポスマート:207093" data-site="テンポスマート" data-status="未調査" data-new="true">
   <div class="card-top">
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/206959" target="_blank" rel="noopener">ID 206959 ■山手駅 徒歩31分、バス 15分 バス停 本牧 停歩4分 現況:1F鮮⿂店、2</a></span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/207093" target="_blank" rel="noopener">ID 207093 鶴見小野駅 徒歩4分 1F〜3F 現況:その他 その他居抜きなど物件 【業種相談</a></span>
   </div>
-  <div class="card-rent">43万円</div>
+  <div class="card-rent">60万円</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">165.4㎡ (50.0坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">31分</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">223.5㎡ (67.6坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">4分</span></span>
     <span class="spec"><span class="sk">階</span> <span class="sv">1F</span></span>
   </div>
-  <div class="card-location">🚉 ID 206959 ■山手駅 徒歩31分　📍 神奈川県横浜市中区本牧三之谷</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:206959', this.value)"></textarea>
+  <div class="card-location">🚉 ID 207093 鶴見小野駅 徒歩4分　📍 神奈川県横浜市鶴見区汐入町一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:207093', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:206959', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/206959" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('テンポスマート:207093', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/207093" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="テンポスマート:206906" data-site="テンポスマート" data-status="未調査" data-new="true">
+<div class="card" data-key="店舗ネットワーク:00000000000000087324" data-site="店舗ネットワーク" data-status="未調査" data-new="true">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/206906" target="_blank" rel="noopener">ID 206906 都筑ふれあいの丘駅 徒歩2分 駅近好立地店舗 1階 賃料 528,000 円 (</a></span>
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
+    <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=99&amp;item_no=00000000000000087324&amp;prefectures_code=14" target="_blank" rel="noopener">ドリームハイツ 201 賃料 月額 27.5万円 税込 所在地 神奈川県横浜市戸塚区俣野町1404-</a></span>
   </div>
-  <div class="card-rent">52.8万円</div>
+  <div class="card-rent">27.5万円</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">173.4㎡ (52.5坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">162.8㎡ (49.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
     <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">🚉 206906 都筑ふれあいの丘駅 徒歩2　📍 神奈川県横浜市都筑区葛が谷</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:206906', this.value)"></textarea>
+  <div class="card-location">📍 神奈川県横浜市戸塚区俣野町1404-8</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('店舗ネットワーク:00000000000000087324', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:206906', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/206906" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('店舗ネットワーク:00000000000000087324', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temponw.com/store_detail?source_system_code=99&amp;item_no=00000000000000087324&amp;prefectures_code=14" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="店舗ネットワーク:00000000000220011051" data-site="店舗ネットワーク" data-status="未調査" data-new="true">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
+    <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=01&amp;item_no=00000000000220011051&amp;prefectures_code=14" target="_blank" rel="noopener">ネスティングパーク黒川 １階 ポイント ここで 人生、いーとこ どり 働く、遊ぶ、暮らすのあいだ。ネ</a></span>
+  </div>
+  <div class="card-rent">要確認</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">199.2㎡ (60.3坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">１階</span></span>
+  </div>
+  <div class="card-location">📍 神奈川県川崎市麻生区南黒川4-2</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('店舗ネットワーク:00000000000220011051', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('店舗ネットワーク:00000000000220011051', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temponw.com/store_detail?source_system_code=01&amp;item_no=00000000000220011051&amp;prefectures_code=14" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="アットホーム:6990871219" data-site="アットホーム" data-status="未調査" data-new="false">
@@ -857,6 +875,42 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.tenant-shop.com/detail/e-163035/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
+<div class="card" data-key="テンポスマート:206959" data-site="テンポスマート" data-status="未調査" data-new="false">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/206959" target="_blank" rel="noopener">ID 206959 ■山手駅 徒歩31分、バス 15分 バス停 本牧 停歩4分 現況:1F鮮⿂店、2</a></span>
+  </div>
+  <div class="card-rent">43万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">165.4㎡ (50.0坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">31分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1F</span></span>
+  </div>
+  <div class="card-location">🚉 ID 206959 ■山手駅 徒歩31分　📍 神奈川県横浜市中区本牧三之谷</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:206959', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:206959', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/206959" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:206906" data-site="テンポスマート" data-status="未調査" data-new="false">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/206906" target="_blank" rel="noopener">ID 206906 都筑ふれあいの丘駅 徒歩2分 駅近好立地店舗 1階 賃料 528,000 円 (</a></span>
+  </div>
+  <div class="card-rent">52.8万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">173.4㎡ (52.5坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉 206906 都筑ふれあいの丘駅 徒歩2　📍 神奈川県横浜市都筑区葛が谷</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:206906', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:206906', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/206906" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
 <div class="card" data-key="テンポスマート:206869" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
@@ -947,42 +1001,6 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.temposmart.jp/estates/205344" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="テンポスマート:204914" data-site="テンポスマート" data-status="未調査" data-new="false">
-  <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/204914" target="_blank" rel="noopener">ID 204914 センター南駅徒歩17分 飲食不可 賃料 572,000 円 (税込) 坪単価 9</a></span>
-  </div>
-  <div class="card-rent">57.2万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">200.8㎡ (60.8坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">17分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">🚉 ID 204914 センター南駅徒歩17　📍 神奈川県横浜市都筑区平台</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:204914', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:204914', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/204914" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="テンポスマート:204902" data-site="テンポスマート" data-status="未調査" data-new="false">
-  <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/204902" target="_blank" rel="noopener">ID 204902 小机駅 徒歩15分 1F スケルトン物件 賃料 583,000 円 (税込) 坪</a></span>
-  </div>
-  <div class="card-rent">58.3万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">258.5㎡ (78.2坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">15分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">🚉 ID 204902 小机駅 徒歩15分　📍 神奈川県横浜市港北区小机町</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:204902', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:204902', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/204902" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
 <div class="card" data-key="居抜き市場:51521" data-site="居抜き市場" data-status="未調査" data-new="false">
   <div class="card-top">
     <span class="site-badge" style="background:#fbe9e7;color:#bf360c">居抜き市場</span>
@@ -1013,7 +1031,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年06月15日 19:32 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年06月16日 19:25 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
