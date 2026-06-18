@@ -1,5 +1,20 @@
 [
   {
+    "site": "HOMES",
+    "property_id": "1004430031978",
+    "name": "賃貸 店舗事務所 KY倉庫綱島東3丁目 所在地 神奈川県横浜市港北区綱島東3丁目5-58 交通 東急",
+    "address": "神奈川県横浜市港北区綱島東3丁目5-58",
+    "rent": 450000,
+    "area": 146.67,
+    "walk_minutes": 10,
+    "nearest_station": "8 交通 東急新横浜線 新綱島駅 徒歩10分",
+    "floor": "1階",
+    "url": "https://www.homes.co.jp/chintai/b-1004430031978/",
+    "image_url": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100443%2Frent%2F31978%2F2%2F1%2Frvej.jpg",
+    "description": "",
+    "is_new": false
+  },
+  {
     "site": "テンポスマート",
     "property_id": "207093",
     "name": "ID 207093 鶴見小野駅 徒歩4分 1F〜3F 現況:その他 その他居抜きなど物件 【業種相談",
@@ -585,36 +600,6 @@
     "is_new": false
   },
   {
-    "site": "店舗ネットワーク",
-    "property_id": "00000000000000087324",
-    "name": "ドリームハイツ 201 賃料 月額 27.5万円 税込 所在地 神奈川県横浜市戸塚区俣野町1404-",
-    "address": "神奈川県横浜市戸塚区俣野町1404-8",
-    "rent": 275000,
-    "area": 162.75,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.temponw.com/store_detail?source_system_code=99&item_no=00000000000000087324&prefectures_code=14",
-    "image_url": "https://www.temponw.com/storage/tpn/00000000000000087324/HiUQgE8zZVBTW6NMGvne7RIUgyoAjHdK8TJgo6wn.jpg",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "店舗ネットワーク",
-    "property_id": "00000000000220011051",
-    "name": "ネスティングパーク黒川 １階 ポイント ここで 人生、いーとこ どり 働く、遊ぶ、暮らすのあいだ。ネ",
-    "address": "神奈川県川崎市麻生区南黒川4-2",
-    "rent": null,
-    "area": 199.2,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "１階",
-    "url": "https://www.temponw.com/store_detail?source_system_code=01&item_no=00000000000220011051&prefectures_code=14",
-    "image_url": "https://www.temponw.com/storage/tps/220011051/22dcdce1bf14a70c0ff1479b7d668de5.jpg",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "アットホーム",
     "property_id": "6990871219",
     "name": "川崎市幸区 小倉２丁目(矢向駅) の住居付き貸店舗（一括）",
@@ -640,7 +625,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
-    "image_url": "https://www.athome.co.jp/image_files/path/dX-cCe99o3iUb9dwG_6jyg==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
