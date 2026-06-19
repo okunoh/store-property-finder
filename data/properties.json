@@ -585,21 +585,6 @@
     "is_new": false
   },
   {
-    "site": "居抜き市場",
-    "property_id": "51521",
-    "name": "久地駅 | 徒歩27分 | 川崎市宮前区神木本町4丁目 バス",
-    "address": "川崎市宮前区神木本町4丁目",
-    "rent": 350900,
-    "area": 170.84,
-    "walk_minutes": 27,
-    "nearest_station": "久地駅",
-    "floor": "1F",
-    "url": "https://inuki-ichiba.jp/rent/51521",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "アットホーム",
     "property_id": "6990871219",
     "name": "川崎市幸区 小倉２丁目(矢向駅) の住居付き貸店舗（一括）",
