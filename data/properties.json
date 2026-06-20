@@ -120,21 +120,6 @@
     "is_new": false
   },
   {
-    "site": "テンポスマート",
-    "property_id": "205344",
-    "name": "ID 205344 小机駅 徒歩15分／横浜上麻生道路沿い／事務所仕様の大箱物件【軽飲食程度相談】 ",
-    "address": "神奈川県横浜市港北区小机町",
-    "rent": 583000,
-    "area": 258.51,
-    "walk_minutes": 15,
-    "nearest_station": "ID 205344 小机駅 徒歩15分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/205344",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
     "site": "テナント.biz",
     "property_id": "64104",
     "name": "東急田園都市線梶が谷 川崎市宮前区神木本町4-22-2",
@@ -691,21 +676,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6987836237",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987836237/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6987801263",
     "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
     "address": "川崎市中原区新丸子町",
@@ -715,6 +685,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987836237",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987836237/",
     "image_url": "",
     "description": "",
     "is_new": false
