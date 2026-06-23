@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "208116",
+    "name": "ID 208116 八丁畷駅徒歩11分 飲食不可 賃料 429,000 円 (税込) 坪単価 8,8",
+    "address": "神奈川県川崎市川崎区京町一丁目",
+    "rent": 429000,
+    "area": 160.0,
+    "walk_minutes": 11,
+    "nearest_station": "ID 208116 八丁畷駅徒歩11分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/208116",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/208116/images/178218924780202TnF5u4OrgE6e4Sa59dMuflzZ3.jpg.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "207093",
     "name": "ID 207093 鶴見小野駅 徒歩4分 1F〜3F 現況:その他 その他居抜きなど物件 【業種相談",
     "address": "神奈川県横浜市鶴見区汐入町一丁目",
@@ -10,7 +25,7 @@
     "nearest_station": "ID 207093 鶴見小野駅 徒歩4分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/207093",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/207093/images/17815866006370fW52tlf1MzGZpeSdCcTVbkV5Il.png.webp",
     "description": "",
     "is_new": false
   },
@@ -100,6 +115,21 @@
     "nearest_station": "69 円/坪 最寄駅 十日市場駅 徒歩 48分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/205782",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "店舗そのままオークション",
+    "property_id": "73955",
+    "name": "飲食店 居酒屋 神奈川県 横浜市中区 ( 阪東橋駅 ) 55.79坪 1階 37.4 万円 賃料の6",
+    "address": "",
+    "rent": 374000,
+    "area": 184.43,
+    "walk_minutes": 2,
+    "nearest_station": "55 ] <造作無償！>阪東橋駅徒歩2分",
+    "floor": "1階",
+    "url": "https://sonomama.net/app/?action=public_property_detail&pid=73955",
     "image_url": "",
     "description": "",
     "is_new": false
