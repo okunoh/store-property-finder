@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年06月23日 17:45</title>
+<title>店舗物件候補 — 2026年06月24日 17:33</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -91,18 +91,18 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年06月23日 17:45</span>
+    <span>2026年06月24日 17:33</span>
     <span id="new-pill" class="new-pill" onclick="toggleNew()" title="新着のみ表示">
-      🆕 本日の新着 <span class="cnt">2</span>件
+      🆕 本日の新着 <span class="cnt">3</span>件
     </span>
   </div>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="num" id="total-count">45</div><div class="lbl">総件数</div></div>
-  <div class="stat red"><div class="num">2</div><div class="lbl">新着</div></div>
-  <div class="stat"><div class="num">5</div><div class="lbl">サイト数</div></div>
-  <div class="stat"><div class="num">45.3万円</div><div class="lbl">平均賃料</div></div>
+  <div class="stat"><div class="num" id="total-count">48</div><div class="lbl">総件数</div></div>
+  <div class="stat red"><div class="num">3</div><div class="lbl">新着</div></div>
+  <div class="stat"><div class="num">7</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">44.6万円</div><div class="lbl">平均賃料</div></div>
   <div class="stat"><div class="num">193㎡</div><div class="lbl">平均面積</div></div>
 </div>
 
@@ -113,46 +113,64 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <div class="toolbar">
   <div class="tab-group"><button class="tab active" data-status="all" onclick="filterStatus('all',this)">すべて<span class="tab-cnt"></span></button><button class="tab" data-status="未調査" onclick="filterStatus('未調査',this)">未調査<span class="tab-cnt"></span></button><button class="tab" data-status="調査中" onclick="filterStatus('調査中',this)">調査中<span class="tab-cnt"></span></button><button class="tab" data-status="検討中" onclick="filterStatus('検討中',this)">検討中<span class="tab-cnt"></span></button></div>
   <div class="sep"></div>
-  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="店舗そのままオークション">店舗そのままオークション</option></select>
+  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="HOMES">HOMES</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option><option value="店舗そのままオークション">店舗そのままオークション</option></select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">
-<div class="card" data-key="テンポスマート:208116" data-site="テンポスマート" data-status="未調査" data-new="true">
+<div class="card" data-key="HOMES:1004430031978" data-site="HOMES" data-status="未調査" data-new="true">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/208116" target="_blank" rel="noopener">ID 208116 八丁畷駅徒歩11分 飲食不可 賃料 429,000 円 (税込) 坪単価 8,8</a></span>
+    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
+    <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-1004430031978/" target="_blank" rel="noopener">賃貸 店舗事務所 KY倉庫綱島東3丁目 所在地 神奈川県横浜市港北区綱島東3丁目5-58 交通 東急</a></span>
   </div>
-  <div class="card-rent">42.9万円</div>
+  <div class="card-rent">45万円</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">160.0㎡ (48.4坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">11分</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">146.7㎡ (44.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">10分</span></span>
     <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">🚉 ID 208116 八丁畷駅徒歩11分　📍 神奈川県川崎市川崎区京町一丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:208116', this.value)"></textarea>
+  <div class="card-location">🚉 8 交通 東急新横浜線 新綱島駅 徒歩1　📍 神奈川県横浜市港北区綱島東3丁目5-58</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('HOMES:1004430031978', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:208116', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/208116" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('HOMES:1004430031978', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.homes.co.jp/chintai/b-1004430031978/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="店舗そのままオークション:73955" data-site="店舗そのままオークション" data-status="未調査" data-new="true">
+<div class="card" data-key="テンポスマート:208355" data-site="テンポスマート" data-status="未調査" data-new="true">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff8e1;color:#f57f17">店舗そのままオークション</span>
-    <span class="card-name"><a href="https://sonomama.net/app/?action=public_property_detail&amp;pid=73955" target="_blank" rel="noopener">飲食店 居酒屋 神奈川県 横浜市中区 ( 阪東橋駅 ) 55.79坪 1階 37.4 万円 賃料の6</a></span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/208355" target="_blank" rel="noopener">ID 208355 阪東橋駅 徒歩2分 1F〜2F 現況:居酒屋 飲食居抜き物件 【飲食可】 賃料 </a></span>
   </div>
   <div class="card-rent">37.4万円</div>
   <div class="card-specs">
     <span class="spec"><span class="sk">面積</span> <span class="sv">184.4㎡ (55.8坪)</span></span>
     <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1F</span></span>
+  </div>
+  <div class="card-location">🚉 ID 208355 阪東橋駅 徒歩2分　📍 神奈川県横浜市中区弥生町四丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:208355', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:208355', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/208355" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポダス:2163602" data-site="テンポダス" data-status="未調査" data-new="true">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e8f4ea;color:#2e7d32">テンポダス</span>
+    <span class="card-name"><a href="https://tempodas.com/search/detail/2163602/" target="_blank" rel="noopener">不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp</a></span>
+  </div>
+  <div class="card-rent">20.6万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">247.6㎡ (74.9坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">22分</span></span>
     <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">🚉 55 ] &lt;造作無償！&gt;阪東橋駅徒歩2分</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('店舗そのままオークション:73955', this.value)"></textarea>
+  <div class="card-location">🚉  &gt; 横浜市戸塚区 &gt; 東戸塚駅 徒歩2　📍 神奈川県平戸の店舗物件</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポダス:2163602', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('店舗そのままオークション:73955', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://sonomama.net/app/?action=public_property_detail&amp;pid=73955" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('テンポダス:2163602', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://tempodas.com/search/detail/2163602/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="アットホーム:6990871219" data-site="アットホーム" data-status="未調査" data-new="false">
@@ -803,6 +821,24 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.tenant-shop.com/detail/e-163202/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
+<div class="card" data-key="テンポスマート:208116" data-site="テンポスマート" data-status="未調査" data-new="false">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/208116" target="_blank" rel="noopener">ID 208116 八丁畷駅徒歩11分 飲食不可 賃料 429,000 円 (税込) 坪単価 8,8</a></span>
+  </div>
+  <div class="card-rent">42.9万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">160.0㎡ (48.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">11分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉 ID 208116 八丁畷駅徒歩11分　📍 神奈川県川崎市川崎区京町一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:208116', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:208116', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/208116" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
 <div class="card" data-key="テンポスマート:207093" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
@@ -929,6 +965,24 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.temposmart.jp/estates/205782" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
+<div class="card" data-key="店舗そのままオークション:73955" data-site="店舗そのままオークション" data-status="未調査" data-new="false">
+  <div class="card-top">
+    <span class="site-badge" style="background:#fff8e1;color:#f57f17">店舗そのままオークション</span>
+    <span class="card-name"><a href="https://sonomama.net/app/?action=public_property_detail&amp;pid=73955" target="_blank" rel="noopener">飲食店 居酒屋 神奈川県 横浜市中区 ( 阪東橋駅 ) 55.79坪 1階 37.4 万円 賃料の6</a></span>
+  </div>
+  <div class="card-rent">37.4万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">184.4㎡ (55.8坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉 55 ] &lt;造作無償！&gt;阪東橋駅徒歩2分</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('店舗そのままオークション:73955', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('店舗そのままオークション:73955', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://sonomama.net/app/?action=public_property_detail&amp;pid=73955" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
 </div>
 
 <div id="miokuri-section" class="miokuri-section">
@@ -941,7 +995,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年06月23日 17:45 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年06月24日 17:33 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
