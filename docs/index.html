@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年06月26日 17:29</title>
+<title>店舗物件候補 — 2026年06月27日 16:32</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -91,19 +91,19 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年06月26日 17:29</span>
+    <span>2026年06月27日 16:32</span>
     <span id="new-pill" class="new-pill" onclick="toggleNew()" title="新着のみ表示">
-      🆕 本日の新着 <span class="cnt">0</span>件
+      🆕 本日の新着 <span class="cnt">2</span>件
     </span>
   </div>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="num" id="total-count">43</div><div class="lbl">総件数</div></div>
-  <div class="stat red"><div class="num">0</div><div class="lbl">新着</div></div>
-  <div class="stat"><div class="num">4</div><div class="lbl">サイト数</div></div>
-  <div class="stat"><div class="num">45.3万円</div><div class="lbl">平均賃料</div></div>
-  <div class="stat"><div class="num">196㎡</div><div class="lbl">平均面積</div></div>
+  <div class="stat"><div class="num" id="total-count">44</div><div class="lbl">総件数</div></div>
+  <div class="stat red"><div class="num">2</div><div class="lbl">新着</div></div>
+  <div class="stat"><div class="num">5</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">45.5万円</div><div class="lbl">平均賃料</div></div>
+  <div class="stat"><div class="num">197㎡</div><div class="lbl">平均面積</div></div>
 </div>
 
 <div class="conditions">
@@ -113,12 +113,48 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <div class="toolbar">
   <div class="tab-group"><button class="tab active" data-status="all" onclick="filterStatus('all',this)">すべて<span class="tab-cnt"></span></button><button class="tab" data-status="未調査" onclick="filterStatus('未調査',this)">未調査<span class="tab-cnt"></span></button><button class="tab" data-status="調査中" onclick="filterStatus('調査中',this)">調査中<span class="tab-cnt"></span></button><button class="tab" data-status="検討中" onclick="filterStatus('検討中',this)">検討中<span class="tab-cnt"></span></button></div>
   <div class="sep"></div>
-  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option></select>
+  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option></select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">
+<div class="card" data-key="テナントショップ:e-165382" data-site="テナントショップ" data-status="未調査" data-new="true">
+  <div class="card-top">
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-165382/" target="_blank" rel="noopener">横浜市港北区 賃貸倉庫 トップページ | 不動産会社様へ 港北区新羽町 45坪 HOME &gt; 神奈川</a></span>
+  </div>
+  <div class="card-rent">49.5万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">149.7㎡ (45.3坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">9分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市港北区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-165382', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-165382', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-165382/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポダス:2172918" data-site="テンポダス" data-status="未調査" data-new="true">
+  <div class="card-top">
+    <span class="site-badge" style="background:#e8f4ea;color:#2e7d32">テンポダス</span>
+    <span class="card-name"><a href="https://tempodas.com/search/detail/2172918/" target="_blank" rel="noopener">不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp</a></span>
+  </div>
+  <div class="card-rent">58.3万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">258.5㎡ (78.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">15分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉 県 &gt; 横浜市港北区 &gt; 小机駅 徒歩1　📍 神奈川県小机町の店舗物件</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポダス:2172918', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポダス:2172918', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://tempodas.com/search/detail/2172918/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
 <div class="card" data-key="アットホーム:6990871219" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -749,24 +785,6 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.tenant-shop.com/detail/e-164619/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="テナントショップ:e-163202" data-site="テナントショップ" data-status="未調査" data-new="false">
-  <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
-    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-163202/" target="_blank" rel="noopener">横浜市南区 賃貸店舗・事務所 トップページ | 不動産会社様へ メゾン・ド トモヤス 1階 HOME</a></span>
-  </div>
-  <div class="card-rent">52.9万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">146.6㎡ (44.3坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">8分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">📍 横浜市南区井土ヶ谷下町16-5</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-163202', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テナントショップ:e-163202', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.tenant-shop.com/detail/e-163202/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
 <div class="card" data-key="テンポスマート:208355" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
@@ -905,7 +923,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年06月26日 17:29 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年06月27日 16:32 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
