@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "208979",
+    "name": "ID 208979 【相鉄・天王町駅徒歩6分】1F〜3F商業ビル一棟/飲食居抜き/松原商店街至近！国",
+    "address": "神奈川県横浜市保土ケ谷区宮田町一丁目",
+    "rent": 572000,
+    "area": 152.43,
+    "walk_minutes": 6,
+    "nearest_station": " 208979 【相鉄・天王町駅徒歩6分",
+    "floor": "1F",
+    "url": "https://www.temposmart.jp/estates/208979",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/208979/images/17827434623015CXGFcQipnfudQ9x6aYtHjOXVeC.JPG.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "208355",
     "name": "ID 208355 阪東橋駅 徒歩2分 1F〜2F 現況:居酒屋 飲食居抜き物件 【飲食可】 賃料 ",
     "address": "神奈川県横浜市中区弥生町四丁目",
@@ -491,6 +506,21 @@
     "floor": "",
     "url": "https://www.tenanto-office.biz/detail.php?id=63886",
     "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テナントショップ",
+    "property_id": "e-165385",
+    "name": "横浜市都筑区 賃貸工場 トップページ | 不動産会社様へ 都筑区池辺町 46坪 HOME > 神奈川",
+    "address": "横浜市都筑区",
+    "rent": 506000,
+    "area": 152.06,
+    "walk_minutes": 7,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.tenant-shop.com/detail/e-165385/",
+    "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
     "is_new": false
   },
