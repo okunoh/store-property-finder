@@ -1,5 +1,35 @@
 [
   {
+    "site": "HOMES",
+    "property_id": "1004430031978",
+    "name": "賃貸 店舗事務所 KY倉庫綱島東3丁目 所在地 神奈川県横浜市港北区綱島東3丁目5-58 交通 東急",
+    "address": "神奈川県横浜市港北区綱島東3丁目5-58",
+    "rent": 450000,
+    "area": 146.67,
+    "walk_minutes": 10,
+    "nearest_station": "8 交通 東急新横浜線 新綱島駅 徒歩10分",
+    "floor": "1階",
+    "url": "https://www.homes.co.jp/chintai/b-1004430031978/",
+    "image_url": "https://image2.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100443%2Frent%2F31978%2F2%2F1%2Frvej.jpg",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "HOMES",
+    "property_id": "1004430032853",
+    "name": "賃貸 店舗事務所 フローリッシュKSビル 1F 所在地 神奈川県横浜市都筑区茅ケ崎中央30-17 交",
+    "address": "神奈川県横浜市都筑区茅ケ崎中央30-17",
+    "rent": 506000,
+    "area": 125.55,
+    "walk_minutes": 6,
+    "nearest_station": "下鉄グリーンライン センター南駅 徒歩6分",
+    "floor": "1階",
+    "url": "https://www.homes.co.jp/chintai/b-1004430032853/",
+    "image_url": "https://image4.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F100443%2Frent%2F32853%2F2%2F1%2F09na.jpg",
+    "description": "",
+    "is_new": false
+  },
+  {
     "site": "テンポスマート",
     "property_id": "208979",
     "name": "ID 208979 【相鉄・天王町駅徒歩6分】1F〜3F商業ビル一棟/飲食居抜き/松原商店街至近！国",
@@ -40,7 +70,7 @@
     "nearest_station": "ID 208116 八丁畷駅徒歩11分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/208116",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/208116/images/178218924780202TnF5u4OrgE6e4Sa59dMuflzZ3.jpg.webp",
     "description": "",
     "is_new": false
   },
@@ -551,6 +581,21 @@
     "floor": "1階",
     "url": "https://www.tenant-shop.com/detail/e-164619/",
     "image_url": "/contents/images/header/logo.gif?t=1",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6978974955",
+    "name": "川崎市麻生区 百合丘１丁目(百合ヶ丘駅) の貸店舗",
+    "address": "川崎市麻生区百合丘１丁目",
+    "rent": 143000,
+    "area": 145.51,
+    "walk_minutes": 4,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6978974955/",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
