@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "209758",
+    "name": "ID 209758 西谷駅 徒歩8分 1F〜2F 現況:その他 その他居抜きなど物件 【飲食可】 賃",
+    "address": "神奈川県横浜市保土ケ谷区西谷一丁目",
+    "rent": 550000,
+    "area": 193.62,
+    "walk_minutes": 8,
+    "nearest_station": "ID 209758 西谷駅 徒歩8分",
+    "floor": "1F",
+    "url": "https://www.temposmart.jp/estates/209758",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209758/images/17831231863397jPzHhJ18mBOJsC59NOgBOLAPB4.png.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "209429",
     "name": "ID 209429 石川町駅 徒歩3分 1F スケルトン物件 【飲食不可】 賃料 572,000 円",
     "address": "神奈川県横浜市中区吉浜町",
@@ -516,8 +531,8 @@
     "address": "横浜市港北区",
     "rent": 495000,
     "area": 149.7,
-    "walk_minutes": 5,
-    "nearest_station": "0.05坪 【12037】綱島駅徒歩5分",
+    "walk_minutes": 9,
+    "nearest_station": "",
     "floor": "1階",
     "url": "https://www.tenant-shop.com/detail/e-165382/",
     "image_url": "/contents/images/header/logo.gif?t=1",
