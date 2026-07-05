@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "209833",
+    "name": "ID 209833 西谷駅 徒歩8分 1F〜2F 現況:寿司・割烹 飲食居抜き物件 【何業も可】 賃",
+    "address": "神奈川県横浜市保土ケ谷区西谷一丁目",
+    "rent": 550000,
+    "area": 380.69,
+    "walk_minutes": 8,
+    "nearest_station": "ID 209833 西谷駅 徒歩8分",
+    "floor": "1F",
+    "url": "https://www.temposmart.jp/estates/209833",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209833/images/17832355944512biRO0eDRt4a4zpr34emFIwjhmO.jpeg.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "209758",
     "name": "ID 209758 西谷駅 徒歩8分 1F〜2F 現況:その他 その他居抜きなど物件 【飲食可】 賃",
     "address": "神奈川県横浜市保土ケ谷区西谷一丁目",
@@ -10,7 +25,7 @@
     "nearest_station": "ID 209758 西谷駅 徒歩8分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/209758",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209758/images/17831231863397jPzHhJ18mBOJsC59NOgBOLAPB4.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -85,36 +100,6 @@
     "nearest_station": "ID 207093 鶴見小野駅 徒歩4分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/207093",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "206959",
-    "name": "ID 206959 ■山手駅 徒歩31分、バス 15分 バス停 本牧 停歩4分 現況:1F鮮⿂店、2",
-    "address": "神奈川県横浜市中区本牧三之谷",
-    "rent": 430000,
-    "area": 165.42,
-    "walk_minutes": 31,
-    "nearest_station": "ID 206959 ■山手駅 徒歩31分",
-    "floor": "1F",
-    "url": "https://www.temposmart.jp/estates/206959",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "206906",
-    "name": "ID 206906 都筑ふれあいの丘駅 徒歩2分 駅近好立地店舗 1階 賃料 528,000 円 (",
-    "address": "神奈川県横浜市都筑区葛が谷",
-    "rent": 528000,
-    "area": 173.39,
-    "walk_minutes": 2,
-    "nearest_station": "206906 都筑ふれあいの丘駅 徒歩2分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/206906",
     "image_url": "",
     "description": "",
     "is_new": false
