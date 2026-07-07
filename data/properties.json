@@ -10,7 +10,7 @@
     "nearest_station": "ID 210078 江田駅 徒歩14分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/210078",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/210078/images/17833435046675gLSpcW1qTWWsgB5rSMGxVUxgep.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -25,7 +25,7 @@
     "nearest_station": "坪単価 ご相談 最寄駅 石川町駅 徒歩 2分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/210056",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/210056/images/17833319334031iJZ6bPG77cxvEksmvk0mr89T7v.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -100,21 +100,6 @@
     "nearest_station": "ID 208116 八丁畷駅徒歩11分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/208116",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "207093",
-    "name": "ID 207093 鶴見小野駅 徒歩4分 1F〜3F 現況:その他 その他居抜きなど物件 【業種相談",
-    "address": "神奈川県横浜市鶴見区汐入町一丁目",
-    "rent": 600000,
-    "area": 223.54,
-    "walk_minutes": 4,
-    "nearest_station": "ID 207093 鶴見小野駅 徒歩4分",
-    "floor": "1F",
-    "url": "https://www.temposmart.jp/estates/207093",
     "image_url": "",
     "description": "",
     "is_new": false
