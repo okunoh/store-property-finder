@@ -10,7 +10,7 @@
     "nearest_station": "ID 210078 江田駅 徒歩14分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/210078",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/210078/images/17833435046675gLSpcW1qTWWsgB5rSMGxVUxgep.png.webp",
     "description": "",
     "is_new": false
   },
@@ -70,7 +70,7 @@
     "nearest_station": "ID 209429 石川町駅 徒歩3分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/209429",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209429/images/17829712730965nnFUfA7eQFoVHKLR8GgtiGGudR.png.webp",
     "description": "",
     "is_new": false
   },
@@ -555,6 +555,36 @@
     "is_new": false
   },
   {
+    "site": "テンポダス",
+    "property_id": "2206691",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県吉浜町の店舗物件",
+    "rent": 572000,
+    "area": 130.25,
+    "walk_minutes": 2,
+    "nearest_station": "県 > 横浜市中区 > 石川町駅 徒歩2分",
+    "floor": "1階",
+    "url": "https://tempodas.com/search/detail/2206691/",
+    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260708%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260708T165536Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=a7f65d1b0e9b25f342e68ebdc976fadbff564516e9f72d6eb48cc7518eec1a6baed11f5da486dc38e513b0b193e2f0566ef6e74ab5d1522fe4476ebe526099cd8cfaea88cf20627d31cc82991b290f338b51efba1109dbe549342b9d6db7ecc55f1e5e05660cb05df03176f4a67601df09093f9299ce6cc9d540eb0295ea2685fbb8f23a40a34a18f28465f6163339bb820eb18a15f02bd5d049638a257fca75fca696f5ac48915c6eb9cd4aff3432b812a01babf5036b1ad3428d23c2a9fb0451342a8117f7d742bb82fda9130ce29f9a6ab4cdbbb04cba90d9afeb250b713604e48dccd69dfb277e7800e92e68ed1ce3e2fc31b754b9732c0a9930383a2a1b",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポダス",
+    "property_id": "2206688",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県吉浜町の店舗物件",
+    "rent": 572000,
+    "area": 130.25,
+    "walk_minutes": 2,
+    "nearest_station": "県 > 横浜市中区 > 石川町駅 徒歩2分",
+    "floor": "1階",
+    "url": "https://tempodas.com/search/detail/2206688/",
+    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/img/fig_pdf_thumbnail.webp?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260708%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260708T165559Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=6d161f7d3c75c90455ca2cb757e2085e23af299ee481e79399ba66f934e5f0bc50581b9c37bb92d0c1a1ce68f33586cd8659542d1ef333dc9c345fc0e5443db7d500d19405e038ef0b11f32d7fab70638eb596cc6c6ba0343064399240a96c3c4176f2a783430b807cd2f9754976570f53164226700c24df023167ffdb9e5361caa491083d742006643d6fd76487abc7c11e8338ff35c25a6d7af52c313877beff4b7ec2e486ab29d7196a414c0724ae120b10efdd64747602572bb1a70012539c0fec3d45deb114de4473a71aafeeccd6f6db2d3595fe8594b14018858d78f0cef51a5179225cf6a26ed73716dccaf1050f2079e147f53a7acf798ac3c9f0dc",
+    "description": "",
+    "is_new": false
+  },
+  {
     "site": "アットホーム",
     "property_id": "6978974955",
     "name": "川崎市麻生区 百合丘１丁目(百合ヶ丘駅) の貸店舗",
@@ -595,7 +625,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/dX-cCe99o3iUb9dwG_6jyg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false
   },
