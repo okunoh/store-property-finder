@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "210783",
+    "name": "ID 210783 ■梶が谷駅 バス10分、バス停「上作南原」停歩1分 1F〜2F ロードサイド 現",
+    "address": "神奈川県川崎市宮前区神木本町四丁目",
+    "rent": 473000,
+    "area": 202.02,
+    "walk_minutes": 1,
+    "nearest_station": "",
+    "floor": "1F",
+    "url": "https://www.temposmart.jp/estates/210783",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "210078",
     "name": "ID 210078 江田駅 徒歩14分 1F スケルトン物件 【業種相談】 賃料 495,000 円",
     "address": "神奈川県横浜市青葉区荏田町",
@@ -580,7 +595,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
-    "image_url": "https://www.athome.co.jp/image_files/path/dX-cCe99o3iUb9dwG_6jyg==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
