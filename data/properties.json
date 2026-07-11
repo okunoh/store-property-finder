@@ -673,20 +673,5 @@
     "image_url": "",
     "description": "",
     "is_new": false
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6987801263",
-    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
-    "address": "川崎市中原区新丸子町",
-    "rent": 497000,
-    "area": 139.74,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6987801263/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
   }
 ]
