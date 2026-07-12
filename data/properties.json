@@ -511,6 +511,21 @@
   },
   {
     "site": "テナントショップ",
+    "property_id": "e-166934",
+    "name": "横浜市港北区 賃貸店舗・事務所 トップページ | 不動産会社様へ 新羽町742貸倉庫 HOME > ",
+    "address": "横浜市港北区",
+    "rent": 550000,
+    "area": 297.25,
+    "walk_minutes": 8,
+    "nearest_station": "",
+    "floor": "１階",
+    "url": "https://www.tenant-shop.com/detail/e-166934/",
+    "image_url": "/contents/images/header/logo.gif?t=1",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テナントショップ",
     "property_id": "e-165385",
     "name": "横浜市都筑区 賃貸工場 トップページ | 不動産会社様へ 都筑区池辺町 46坪 HOME > 神奈川",
     "address": "横浜市都筑区",
@@ -670,6 +685,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6984322378/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987801263",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987801263/",
     "image_url": "",
     "description": "",
     "is_new": false
