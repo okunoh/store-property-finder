@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "211166",
+    "name": "ID 211166 ◆矢向駅 徒歩4分 1階路面 駅前商店街 事務所居抜き【飲食可・重飲食相談】◆ ",
+    "address": "神奈川県横浜市鶴見区矢向六丁目",
+    "rent": 385000,
+    "area": 147.7,
+    "walk_minutes": 4,
+    "nearest_station": "ID 211166 ◆矢向駅 徒歩4分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/211166",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/211166/images/17839315692675AasaHh0EkTr99xNiHEBCgxc0FK.jpg.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "210783",
     "name": "ID 210783 ■梶が谷駅 バス10分、バス停「上作南原」停歩1分 1F〜2F ロードサイド 現",
     "address": "神奈川県川崎市宮前区神木本町四丁目",
@@ -100,21 +115,6 @@
     "nearest_station": "ID 208355 阪東橋駅 徒歩2分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/208355",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "208116",
-    "name": "ID 208116 八丁畷駅徒歩11分 飲食不可 賃料 429,000 円 (税込) 坪単価 8,8",
-    "address": "神奈川県川崎市川崎区京町一丁目",
-    "rent": 429000,
-    "area": 160.0,
-    "walk_minutes": 11,
-    "nearest_station": "ID 208116 八丁畷駅徒歩11分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/208116",
     "image_url": "",
     "description": "",
     "is_new": false
@@ -625,6 +625,21 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6969105311/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6988376506",
+    "name": "王禅寺パークサイドホームス 1階の貸店舗・事務所",
+    "address": "川崎市麻生区王禅寺西３丁目",
+    "rent": 396000,
+    "area": 138.14,
+    "walk_minutes": 20,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.athome.co.jp/rent_store/6988376506/",
     "image_url": "",
     "description": "",
     "is_new": false
