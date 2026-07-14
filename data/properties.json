@@ -1,6 +1,21 @@
 [
   {
     "site": "テンポスマート",
+    "property_id": "211193",
+    "name": "ID 211193 新百合ヶ丘駅 徒歩20分 1F スケルトン物件 【飲食不可】 賃料 396,00",
+    "address": "神奈川県川崎市麻生区王禅寺西三丁目",
+    "rent": 396000,
+    "area": 138.12,
+    "walk_minutes": 20,
+    "nearest_station": "ID 211193 新百合ヶ丘駅 徒歩20分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/211193",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "211166",
     "name": "ID 211166 ◆矢向駅 徒歩4分 1階路面 駅前商店街 事務所居抜き【飲食可・重飲食相談】◆ ",
     "address": "神奈川県横浜市鶴見区矢向六丁目",
@@ -10,7 +25,7 @@
     "nearest_station": "ID 211166 ◆矢向駅 徒歩4分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/211166",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/211166/images/17839315692675AasaHh0EkTr99xNiHEBCgxc0FK.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -25,7 +40,7 @@
     "nearest_station": "",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/210783",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/210783/images/17836563287559KsRqzC3eGMDtk0yk3irhXn4O4Z.png.webp",
     "description": "",
     "is_new": false
   },
@@ -100,21 +115,6 @@
     "nearest_station": "ID 209429 石川町駅 徒歩3分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/209429",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "208355",
-    "name": "ID 208355 阪東橋駅 徒歩2分 1F〜2F 現況:居酒屋 飲食居抜き物件 【飲食可】 賃料 ",
-    "address": "神奈川県横浜市中区弥生町四丁目",
-    "rent": 374000,
-    "area": 184.43,
-    "walk_minutes": 2,
-    "nearest_station": "ID 208355 阪東橋駅 徒歩2分",
-    "floor": "1F",
-    "url": "https://www.temposmart.jp/estates/208355",
     "image_url": "",
     "description": "",
     "is_new": false
@@ -640,6 +640,21 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6988376506/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6991477773",
+    "name": "新川崎駅前ビル 1階の貸店舗",
+    "address": "川崎市幸区鹿島田２丁目",
+    "rent": 437800,
+    "area": 125.79,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.athome.co.jp/rent_store/6991477773/",
     "image_url": "",
     "description": "",
     "is_new": false
