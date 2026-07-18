@@ -537,7 +537,7 @@ def generate_report(
     if cfg_search.get("walk_minutes_max"):
         conds.append(f"徒歩: {cfg_search['walk_minutes_max']}分以内")
     if cfg_search.get("floor_1f_only"):
-        conds.append("階数: 1F限定")
+        conds.append("階数: 1F・2F対象")
 
     # PREV_STATUSES / PREV_NOTES 埋め込み用JSON
     prev_statuses_js = json.dumps(status_map, ensure_ascii=False)

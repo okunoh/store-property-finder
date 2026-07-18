@@ -101,15 +101,15 @@ def _in_target_area(text: str) -> bool:
 
 
 def _is_first_floor(floor: str) -> bool:
-    """1F（路面階）かどうか判定。階数不明の場合は True（除外しない）。"""
+    """1F/2F 対象かどうか判定。階数不明の場合は True（除外しない）。"""
     if not floor:
         return True
     f = floor.upper()
     # 全角→半角
     f = f.translate(str.maketrans("０１２３４５６７８９Ｆ", "0123456789F"))
     f = f.strip()
-    # "1F", "1階", "1・2F", "1/2F" など1から始まる → OK（1・2F は1Fアクセスあり）
-    return bool(re.match(r"^1[F階・/]", f)) or f in ("1F", "1階")
+    # "1F", "2階", "1・2F", "2/8階" など1F/2Fから始まる → OK
+    return bool(re.match(r"^[12][F階・/]", f)) or f in ("1F", "1階", "2F", "2階")
 
 
 def _matches_filter(prop: "Property", cfg: dict, area_trusted: bool = False) -> bool:
