@@ -14,6 +14,7 @@ import sys
 import io
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import unquote, urlparse
 
 # Windowsコンソールのcp932エラーを回避
 if sys.stdout.encoding != "utf-8":
@@ -61,17 +62,80 @@ def _normalize_dedupe_address(address: str) -> str:
     return text
 
 
-def remove_duplicate_properties(properties: list, status_map: dict, notes_map: dict, logger) -> list:
-    """同じ住所・賃料の物件を1件にまとめる。調査情報があるものを優先して残す。"""
-    groups: dict[tuple[str, int], list] = {}
-    passthrough = []
+def _image_dedupe_token(image_url: str) -> str:
+    if not image_url:
+        return ""
+    url = unquote(image_url).lower()
+    if any(x in url for x in ["logo", "noimage", "no_image", "common", "blank", "dummy"]):
+        return ""
+    path = urlparse(url).path
+    name = Path(path).name
+    if not name or "." not in name:
+        return ""
+    return name
 
-    for prop in properties:
-        if prop.address and prop.rent:
-            key = (_normalize_dedupe_address(prop.address), prop.rent)
-            groups.setdefault(key, []).append(prop)
-        else:
-            passthrough.append(prop)
+
+def _area_close(a, b, tolerance: float = 3.0) -> bool:
+    if not a or not b:
+        return True
+    return abs(float(a) - float(b)) <= tolerance
+
+
+def remove_duplicate_properties(properties: list, status_map: dict, notes_map: dict, logger) -> list:
+    """重複物件を1件にまとめる。調査情報があるものを優先して残す。"""
+    parent = list(range(len(properties)))
+
+    def find(i: int) -> int:
+        while parent[i] != i:
+            parent[i] = parent[parent[i]]
+            i = parent[i]
+        return i
+
+    def union(i: int, j: int) -> None:
+        ri, rj = find(i), find(j)
+        if ri != rj:
+            parent[rj] = ri
+
+    exact_groups: dict[tuple[str, int], list[int]] = {}
+    image_groups: dict[tuple[str, int], list[int]] = {}
+    normalized_addresses: list[str] = []
+
+    for i, prop in enumerate(properties):
+        addr = _normalize_dedupe_address(prop.address)
+        normalized_addresses.append(addr)
+        if addr and prop.rent:
+            exact_groups.setdefault((addr, prop.rent), []).append(i)
+
+        img = _image_dedupe_token(prop.image_url)
+        if img and prop.rent:
+            image_groups.setdefault((img, prop.rent), []).append(i)
+
+    for indexes in exact_groups.values():
+        for i in indexes[1:]:
+            union(indexes[0], i)
+
+    for indexes in image_groups.values():
+        base = indexes[0]
+        for i in indexes[1:]:
+            if _area_close(properties[base].area, properties[i].area):
+                union(base, i)
+
+    # 住所が途中までしかないケース。短い住所が長い住所の先頭と一致し、賃料も同じなら重複候補。
+    for i in range(len(properties)):
+        pi = properties[i]
+        ai = normalized_addresses[i]
+        if not ai or not pi.rent:
+            continue
+        for j in range(i + 1, len(properties)):
+            pj = properties[j]
+            if pi.rent != pj.rent:
+                continue
+            aj = normalized_addresses[j]
+            if not aj:
+                continue
+            short, long = sorted([ai, aj], key=len)
+            if len(short) >= 7 and long.startswith(short) and _area_close(pi.area, pj.area):
+                union(i, j)
 
     status_score = {
         "検討中": 50,
@@ -92,7 +156,11 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
             len(prop.name or ""),
         )
 
-    unique = passthrough[:]
+    groups: dict[int, list] = {}
+    for i, prop in enumerate(properties):
+        groups.setdefault(find(i), []).append(prop)
+
+    unique = []
     removed = 0
     duplicate_groups = 0
     for props in groups.values():
@@ -106,7 +174,7 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
         removed += len(props_sorted) - 1
 
     if removed:
-        logger.info(f"住所+賃料重複除外: {removed} 件（{duplicate_groups} グループ）")
+        logger.info(f"重複除外: {removed} 件（{duplicate_groups} グループ / 住所+賃料・途中住所・画像URL）")
     return unique
 
 
