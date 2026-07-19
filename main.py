@@ -9,6 +9,7 @@
 import json
 import logging
 import os
+import re
 import sys
 import io
 from datetime import datetime
@@ -40,6 +41,73 @@ def save_properties(properties: list, data_path: Path) -> None:
     data_path.parent.mkdir(parents=True, exist_ok=True)
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump([p.to_dict() for p in properties], f, ensure_ascii=False, indent=2)
+
+
+def _normalize_dedupe_address(address: str) -> str:
+    text = address or ""
+    text = re.sub(r"\s+", "", text)
+    text = text.replace("神奈川県", "")
+    text = text.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    for old, new in [
+        ("－", "-"),
+        ("ー", "-"),
+        ("―", "-"),
+        ("丁目", "-"),
+        ("番地", "-"),
+        ("番", "-"),
+        ("号", ""),
+    ]:
+        text = text.replace(old, new)
+    return text
+
+
+def remove_duplicate_properties(properties: list, status_map: dict, notes_map: dict, logger) -> list:
+    """同じ住所・賃料の物件を1件にまとめる。調査情報があるものを優先して残す。"""
+    groups: dict[tuple[str, int], list] = {}
+    passthrough = []
+
+    for prop in properties:
+        if prop.address and prop.rent:
+            key = (_normalize_dedupe_address(prop.address), prop.rent)
+            groups.setdefault(key, []).append(prop)
+        else:
+            passthrough.append(prop)
+
+    status_score = {
+        "検討中": 50,
+        "調査中": 40,
+        "見送り": 30,
+        "未調査": 10,
+    }
+
+    def score(prop) -> tuple:
+        key = prop.unique_key
+        return (
+            status_score.get(status_map.get(key, ""), 0),
+            20 if notes_map.get(key) else 0,
+            8 if prop.area else 0,
+            4 if prop.floor else 0,
+            2 if prop.walk_minutes else 0,
+            len(prop.address or ""),
+            len(prop.name or ""),
+        )
+
+    unique = passthrough[:]
+    removed = 0
+    duplicate_groups = 0
+    for props in groups.values():
+        if len(props) == 1:
+            unique.append(props[0])
+            continue
+        duplicate_groups += 1
+        props_sorted = sorted(props, key=score, reverse=True)
+        keep = props_sorted[0]
+        unique.append(keep)
+        removed += len(props_sorted) - 1
+
+    if removed:
+        logger.info(f"住所+賃料重複除外: {removed} 件（{duplicate_groups} グループ）")
+    return unique
 
 
 def setup_logging() -> None:
@@ -113,6 +181,8 @@ def main():
         before = len(properties)
         properties = [p for p in properties if p.unique_key not in deleted_keys]
         logger.info(f"削除済み除外: {before - len(properties)} 件")
+
+    properties = remove_duplicate_properties(properties, status_map, notes_map, logger)
 
     # データ保存
     save_properties(properties, data_path)
