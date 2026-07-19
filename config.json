@@ -2,7 +2,7 @@
   "search": {
     "areas": ["川崎市", "横浜市"],
     "rent_max": 600000,
-    "area_min": 122,
+    "area_min": 116,
     "area_max": null,
     "walk_minutes_max": null,
     "floor_1f_only": true,
