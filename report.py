@@ -32,9 +32,50 @@ SITE_BADGE = {
     "店舗ネットワーク":    ("#e1f5fe", "#0277bd"),
 }
 
+PRIORITY_1_AREAS = [
+    ("川崎市", "宮前区"),
+    ("横浜市", "栄区"),
+    ("川崎市", "幸区"),
+    ("横浜市", "保土ケ谷区"),
+    ("横浜市", "港北区"),
+]
+
+PRIORITY_2_AREAS = [
+    ("横浜市", "青葉区"),
+    ("横浜市", "瀬谷区"),
+    ("横浜市", "港南区"),
+    ("横浜市", "南区"),
+    ("横浜市", "鶴見区"),
+    ("横浜市", "金沢区"),
+    ("横浜市", "戸塚区"),
+    ("横浜市", "旭区"),
+    ("横浜市", "神奈川区"),
+    ("川崎市", "麻生区"),
+    ("川崎市", "多摩区"),
+]
+
 
 def _esc(s) -> str:
     return html.escape(str(s) if s else "")
+
+
+def _normalize_area_text(text: str) -> str:
+    return (text or "").replace("神奈川県", "").replace(" ", "").replace("　", "")
+
+
+def _priority_label(prop) -> str:
+    text = _normalize_area_text(f"{prop.address} {prop.name} {prop.nearest_station}")
+    for city, ward in PRIORITY_1_AREAS:
+        if city in text and ward in text:
+            return "優先1"
+    for city, ward in PRIORITY_2_AREAS:
+        if city in text and ward in text:
+            return "優先2"
+    return "優先3"
+
+
+def _priority_sort_value(prop) -> int:
+    return {"優先1": 0, "優先2": 1, "優先3": 2}.get(_priority_label(prop), 2)
 
 
 def _fmt_rent(rent: Optional[int]) -> str:
@@ -114,6 +155,10 @@ header h1{font-size:1.2rem;font-weight:700}
 /* カード内要素 */
 .card-top{display:flex;align-items:center;gap:6px;padding-right:34px}
 .site-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.priority-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.priority-badge.p1{background:#ffebee;color:#b71c1c}
+.priority-badge.p2{background:#e8f0fe;color:#174ea6}
+.priority-badge.p3{background:#f1f3f4;color:#5f6368}
 .card-name{font-size:0.82rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .card-rent{font-size:1.05rem;font-weight:700;color:#c62828}
 .card-specs{display:flex;gap:10px;flex-wrap:wrap}
@@ -450,6 +495,14 @@ def _card_html(prop, prev_status: str = "", note: str = "") -> str:
     bg, fg = SITE_BADGE.get(prop.site, ("#f3e5f5", "#6a1b9a"))
     is_new_attr = "true" if prop.is_new else "false"
     key = _esc(prop.unique_key)
+    priority_label = _priority_label(prop)
+    priority_badge = ""
+    if priority_label == "優先1":
+        priority_badge = '<span class="priority-badge p1">優先1</span>'
+    elif priority_label == "優先2":
+        priority_badge = '<span class="priority-badge p2">優先2</span>'
+    else:
+        priority_badge = '<span class="priority-badge p3">優先3</span>'
 
     location_parts = []
     if prop.nearest_station:
@@ -467,6 +520,7 @@ def _card_html(prop, prev_status: str = "", note: str = "") -> str:
     return f"""<div class="card" data-key="{key}" data-site="{_esc(prop.site)}" data-status="{_esc(prev_status or '未調査')}" data-new="{is_new_attr}">
   <div class="card-top">
     <span class="site-badge" style="background:{bg};color:{fg}">{_esc(prop.site)}</span>
+    {priority_badge}
     <span class="card-name"><a href="{_esc(prop.url)}" target="_blank" rel="noopener">{_esc(prop.name or '物件詳細')}</a></span>
   </div>
   <div class="card-rent">{_esc(_fmt_rent(prop.rent))}</div>
@@ -553,8 +607,8 @@ def generate_report(
     for st in ["未調査", "調査中", "検討中"]:
         status_tabs += f'<button class="tab" data-status="{st}" onclick="filterStatus(\'{st}\',this)">{st}<span class="tab-cnt"></span></button>'
 
-    # カード HTML 生成（新着を先頭にソート）
-    sorted_props = sorted(properties, key=lambda p: (0 if p.is_new else 1, p.site))
+    # カード HTML 生成（優先度 → 新着 → サイト順）
+    sorted_props = sorted(properties, key=lambda p: (_priority_sort_value(p), 0 if p.is_new else 1, p.site))
     main_cards = ""
     miokuri_cards = ""
     for p in sorted_props:
