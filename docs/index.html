@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年07月19日 10:47</title>
+<title>店舗物件候補 — 2026年07月19日 10:49</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -58,10 +58,10 @@ header h1{font-size:1.2rem;font-weight:700}
 /* カード内要素 */
 .card-top{display:flex;align-items:center;gap:6px;padding-right:34px}
 .site-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
-.priority-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
-.priority-badge.p1{background:#ffebee;color:#b71c1c}
-.priority-badge.p2{background:#e8f0fe;color:#174ea6}
-.priority-badge.p3{background:#f1f3f4;color:#5f6368}
+.priority-badge{display:inline-block;font-size:0.72rem;font-weight:800;padding:2px 7px;border-radius:5px;white-space:nowrap;flex-shrink:0;border:1px solid transparent}
+.priority-badge.p1{background:#d93025;color:#fff;border-color:#b3261e}
+.priority-badge.p2{background:#174ea6;color:#fff;border-color:#0b3d91}
+.priority-badge.p3{background:#f1f3f4;color:#3c4043;border-color:#dadce0}
 .card-name{font-size:0.82rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .card-rent{font-size:1.05rem;font-weight:700;color:#c62828}
 .card-specs{display:flex;gap:10px;flex-wrap:wrap}
@@ -95,7 +95,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年07月19日 10:47</span>
+    <span>2026年07月19日 10:49</span>
     <span id="new-pill" class="new-pill" onclick="toggleNew()" title="新着のみ表示">
       🆕 本日の新着 <span class="cnt">0</span>件
     </span>
@@ -106,6 +106,9 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="stat"><div class="num" id="total-count">67</div><div class="lbl">総件数</div></div>
   <div class="stat red"><div class="num">0</div><div class="lbl">新着</div></div>
   <div class="stat"><div class="num">7</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">14</div><div class="lbl">優先1</div></div>
+  <div class="stat"><div class="num">26</div><div class="lbl">優先2</div></div>
+  <div class="stat"><div class="num">27</div><div class="lbl">優先3</div></div>
   <div class="stat"><div class="num">43.8万円</div><div class="lbl">平均賃料</div></div>
   <div class="stat"><div class="num">187㎡</div><div class="lbl">平均面積</div></div>
 </div>
@@ -125,8 +128,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <div id="main-grid" class="grid">
 <div class="card" data-key="HOMES:39040010000823" data-site="HOMES" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
     <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-39040010000823/" target="_blank" rel="noopener">賃貸 店舗事務所 サニーライフ日吉 所在地 神奈川県川崎市幸区矢上15-8 交通 JR横須賀線 新川</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -144,8 +147,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6990871219" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6990871219/" target="_blank" rel="noopener">川崎市幸区 小倉２丁目(矢向駅) の住居付き貸店舗（一括）</a></span>
   </div>
   <div class="card-rent">20万円</div>
@@ -163,8 +166,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64104" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64104" target="_blank" rel="noopener">東急田園都市線梶が谷 川崎市宮前区神木本町4-22-2</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -182,8 +185,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64018" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64018" target="_blank" rel="noopener">東急田園都市線宮前平 川崎市宮前区けやき平1-16</a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -201,8 +204,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63917" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63917" target="_blank" rel="noopener">JR南武線鹿島田 川崎市幸区小向西町1-18</a></span>
   </div>
   <div class="card-rent">50万円</div>
@@ -220,8 +223,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63787" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63787" target="_blank" rel="noopener">JR南武線川崎 川崎市幸区南幸町3-1</a></span>
   </div>
   <div class="card-rent">46.2万円</div>
@@ -239,8 +242,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64098" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64098" target="_blank" rel="noopener">JR横浜線小机 横浜市港北区小机町67</a></span>
   </div>
   <div class="card-rent">58.3万円</div>
@@ -258,8 +261,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63883" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63883" target="_blank" rel="noopener">相鉄線天王町 横浜市保土ケ谷区天王町1-2-11</a></span>
   </div>
   <div class="card-rent">60万円</div>
@@ -277,8 +280,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-166934" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-166934/" target="_blank" rel="noopener">横浜市港北区 賃貸店舗・事務所 トップページ | 不動産会社様へ 新羽町742貸倉庫 HOME &gt; </a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -296,8 +299,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-165382" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-165382/" target="_blank" rel="noopener">横浜市港北区 賃貸倉庫 トップページ | 不動産会社様へ 港北区新羽町 45坪 HOME &gt; 神奈川</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -315,8 +318,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-164768" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-164768/" target="_blank" rel="noopener">横浜市港北区 賃貸工場 トップページ | 不動産会社様へ 加納貸工場 HOME &gt; 神奈川県 &gt; 横</a></span>
   </div>
   <div class="card-rent">38.5万円</div>
@@ -334,8 +337,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:211712" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/211712" target="_blank" rel="noopener">ID 211712 新川崎駅 徒歩2分 1F 現況:居酒屋 飲食居抜き物件 【何業も可】 賃料 43</a></span>
   </div>
   <div class="card-rent">43.8万円</div>
@@ -353,8 +356,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:210783" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/210783" target="_blank" rel="noopener">ID 210783 ■梶が谷駅 バス10分、バス停「上作南原」停歩1分 1F〜2F ロードサイド 現</a></span>
   </div>
   <div class="card-rent">47.3万円</div>
@@ -372,8 +375,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:209833" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/209833" target="_blank" rel="noopener">ID 209833 西谷駅 徒歩8分 1F〜2F 現況:寿司・割烹 飲食居抜き物件 【何業も可】 賃</a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -391,8 +394,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6978974955" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6978974955/" target="_blank" rel="noopener">川崎市麻生区 百合丘１丁目(百合ヶ丘駅) の貸店舗</a></span>
   </div>
   <div class="card-rent">14.3万円</div>
@@ -410,8 +413,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6989409825" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6989409825/" target="_blank" rel="noopener">司生堂ビル 2階の貸店舗・事務所</a></span>
   </div>
   <div class="card-rent">41.8万円</div>
@@ -429,8 +432,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63894" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63894" target="_blank" rel="noopener">小田急線新百合ヶ丘 川崎市麻生区白山4-1-1</a></span>
   </div>
   <div class="card-rent">38.5万円</div>
@@ -448,8 +451,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63923" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63923" target="_blank" rel="noopener">小田急小田原線新百合ヶ丘 川崎市麻生区白山4-1-3</a></span>
   </div>
   <div class="card-rent">38.5万円</div>
@@ -467,8 +470,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63807" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63807" target="_blank" rel="noopener">小田急小田原線向ヶ丘遊園 川崎市多摩区枡形3-1-5</a></span>
   </div>
   <div class="card-rent">39.6万円</div>
@@ -486,8 +489,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:62761" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=62761" target="_blank" rel="noopener">小田急小田原線生田 川崎市多摩区三田1-26-28</a></span>
   </div>
   <div class="card-rent">33万円</div>
@@ -505,8 +508,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64109" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64109" target="_blank" rel="noopener">東急東横線反町 横浜市神奈川区反町2-14-4</a></span>
   </div>
   <div class="card-rent">59.4万円</div>
@@ -524,8 +527,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64107" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64107" target="_blank" rel="noopener">東急田園都市線あざみ野 横浜市青葉区美しが丘5-13-8</a></span>
   </div>
   <div class="card-rent">41.8万円</div>
@@ -543,8 +546,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64100" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64100" target="_blank" rel="noopener">横浜市営地下鉄（ブルーライン）阪東橋 横浜市南区高根町3-18</a></span>
   </div>
   <div class="card-rent">44万円</div>
@@ -562,8 +565,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64041" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64041" target="_blank" rel="noopener">横浜市営地下鉄（ブルーライン）伊勢佐木長者町 横浜市南区永楽町1-14-1</a></span>
   </div>
   <div class="card-rent">42万円</div>
@@ -581,8 +584,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63991" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63991" target="_blank" rel="noopener">JR根岸線関内 横浜市南区永楽町1-14-1</a></span>
   </div>
   <div class="card-rent">38.2万円</div>
@@ -600,8 +603,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63918" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63918" target="_blank" rel="noopener">東急東横線東白楽 横浜市神奈川区白楽1-3</a></span>
   </div>
   <div class="card-rent">57万円</div>
@@ -619,8 +622,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63874" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63874" target="_blank" rel="noopener">相鉄線瀬谷 横浜市瀬谷区瀬谷4-5-12</a></span>
   </div>
   <div class="card-rent">46.5万円</div>
@@ -638,8 +641,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-167280" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-167280/" target="_blank" rel="noopener">横浜市旭区 賃貸店舗戸建 トップページ | 不動産会社様へ 小川名貸店舗 HOME &gt; 神奈川県 &gt;</a></span>
   </div>
   <div class="card-rent">29万円</div>
@@ -657,8 +660,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-165332" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-165332/" target="_blank" rel="noopener">横浜市金沢区 賃貸事務所 トップページ | 不動産会社様へ SLビル 2F HOME &gt; 神奈川県 </a></span>
   </div>
   <div class="card-rent">33万円</div>
@@ -676,8 +679,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-164754" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-164754/" target="_blank" rel="noopener">横浜市戸塚区 賃貸店舗・事務所（6SLDK） トップページ | 不動産会社様へ 戸塚町戸建て HOM</a></span>
   </div>
   <div class="card-rent">44万円</div>
@@ -695,8 +698,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:211193" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/211193" target="_blank" rel="noopener">ID 211193 新百合ヶ丘駅 徒歩20分 1F スケルトン物件 【飲食不可】 賃料 396,00</a></span>
   </div>
   <div class="card-rent">39.6万円</div>
@@ -714,8 +717,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:211166" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/211166" target="_blank" rel="noopener">ID 211166 ◆矢向駅 徒歩4分 1階路面 駅前商店街 事務所居抜き【飲食可・重飲食相談】◆ </a></span>
   </div>
   <div class="card-rent">38.5万円</div>
@@ -733,8 +736,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:210078" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/210078" target="_blank" rel="noopener">ID 210078 江田駅 徒歩14分 1F スケルトン物件 【業種相談】 賃料 495,000 円</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -752,8 +755,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:209820" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/209820" target="_blank" rel="noopener">ID 209820 屏風浦駅 徒歩15分 2F 現況:クリニック その他居抜きなど物件 【クリニック</a></span>
   </div>
   <div class="card-rent">44万円</div>
@@ -771,8 +774,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:209258" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/209258" target="_blank" rel="noopener">ID 209258 片倉町駅徒歩15分 2F 現況：事務所仕様で事務所や倉庫利用にオススメ 賃料 4</a></span>
   </div>
   <div class="card-rent">47.6万円</div>
@@ -790,8 +793,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="居抜き市場:51483" data-site="居抜き市場" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fbe9e7;color:#bf360c">居抜き市場</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#fbe9e7;color:#bf360c">居抜き市場</span>
     <span class="card-name"><a href="https://inuki-ichiba.jp/rent/51483" target="_blank" rel="noopener">弘明寺駅 | 徒歩3分 | 横浜市南区六ツ川1丁目</a></span>
   </div>
   <div class="card-rent">28.6万円</div>
@@ -809,8 +812,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="店舗ネットワーク:00000000000220011051" data-site="店舗ネットワーク" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=01&amp;item_no=00000000000220011051&amp;prefectures_code=14" target="_blank" rel="noopener">ネスティングパーク黒川 １階 ポイント ここで 人生、いーとこ どり 働く、遊ぶ、暮らすのあいだ。ネ</a></span>
   </div>
   <div class="card-rent">要確認</div>
@@ -828,8 +831,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="店舗ネットワーク:00000000000000087324" data-site="店舗ネットワーク" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=99&amp;item_no=00000000000000087324&amp;prefectures_code=14" target="_blank" rel="noopener">ドリームハイツ 201 賃料 月額 27.5万円 税込 所在地 神奈川県横浜市戸塚区俣野町1404-</a></span>
   </div>
   <div class="card-rent">27.5万円</div>
@@ -847,8 +850,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="店舗ネットワーク:00000000000000090284" data-site="店舗ネットワーク" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=99&amp;item_no=00000000000000090284&amp;prefectures_code=14" target="_blank" rel="noopener">シルバープラザビル 2階 賃料 月額 49.5万円 税込 所在地 神奈川県横浜市瀬谷区瀬谷４丁目5 </a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -866,8 +869,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="店舗ネットワーク:00000000000230305004" data-site="店舗ネットワーク" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e1f5fe;color:#0277bd">店舗ネットワーク</span>
     <span class="card-name"><a href="https://www.temponw.com/store_detail?source_system_code=01&amp;item_no=00000000000230305004&amp;prefectures_code=14" target="_blank" rel="noopener">フェニックス大口 トランクルーム ＮＯ．７ ポイント JR横浜線『大口』駅（東口）徒歩2分！トランク</a></span>
   </div>
   <div class="card-rent">2.1万円</div>
@@ -885,8 +888,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="HOMES:1230860016413" data-site="HOMES" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
     <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-1230860016413/" target="_blank" rel="noopener">賃貸 店舗(建物一部) ジオエント横浜関内 所在地 神奈川県横浜市中区住吉町3丁目36 交通 横浜市</a></span>
   </div>
   <div class="card-rent">48.4万円</div>
@@ -904,8 +907,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6965414534" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6965414534/" target="_blank" rel="noopener">小田１丁目貸家</a></span>
   </div>
   <div class="card-rent">23万円</div>
@@ -923,8 +926,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6969105311" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6969105311/" target="_blank" rel="noopener">小田５丁目貸家</a></span>
   </div>
   <div class="card-rent">23万円</div>
@@ -942,8 +945,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="アットホーム:6958928966" data-site="アットホーム" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
     <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6958928966/" target="_blank" rel="noopener">第２アーバン東横 1階の貸店舗・事務所</a></span>
   </div>
   <div class="card-rent">45.8万円</div>
@@ -961,8 +964,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63938" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63938" target="_blank" rel="noopener">南武線武蔵中原 川崎市中原区下小田中2-1-16</a></span>
   </div>
   <div class="card-rent">52.8万円</div>
@@ -980,8 +983,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63796" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63796" target="_blank" rel="noopener">京浜急行本線八丁畷 川崎市川崎区京町1-18-28</a></span>
   </div>
   <div class="card-rent">46.2万円</div>
@@ -999,8 +1002,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63265" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63265" target="_blank" rel="noopener">JR東海道線川崎 川崎市川崎区堀之内町1-1</a></span>
   </div>
   <div class="card-rent">33万円</div>
@@ -1018,8 +1021,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63259" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63259" target="_blank" rel="noopener">JR南武線武蔵新城 川崎市高津区子母口435</a></span>
   </div>
   <div class="card-rent">42.9万円</div>
@@ -1037,8 +1040,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63229" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63229" target="_blank" rel="noopener">JR南武線武蔵溝ノ口 川崎市高津区末長2-14-27</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -1056,8 +1059,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:62973" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=62973" target="_blank" rel="noopener">京浜急行本線八丁畷 川崎市川崎区京町1-17-13</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -1075,8 +1078,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:62943" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=62943" target="_blank" rel="noopener">京浜急行大師線川崎大師 川崎市川崎区川中島1-5-1</a></span>
   </div>
   <div class="card-rent">28万円</div>
@@ -1094,8 +1097,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:62847" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=62847" target="_blank" rel="noopener">JR南武線武蔵新城 川崎市中原区新城3-8</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -1113,8 +1116,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:62846" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=62846" target="_blank" rel="noopener">JR東海道線川崎 川崎市川崎区日進町26-22</a></span>
   </div>
   <div class="card-rent">49.5万円</div>
@@ -1132,8 +1135,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64034" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64034" target="_blank" rel="noopener">JR根岸線山手 横浜市中区本牧三之谷16-6</a></span>
   </div>
   <div class="card-rent">43万円</div>
@@ -1151,8 +1154,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64032" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64032" target="_blank" rel="noopener">京浜急行本線日ノ出町 横浜市中区弥生町2-15-1</a></span>
   </div>
   <div class="card-rent">48万円</div>
@@ -1170,8 +1173,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:64000" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=64000" target="_blank" rel="noopener">横浜市営地下鉄（グリーンライン）北山田 横浜市都筑区北山田5-1-53</a></span>
   </div>
   <div class="card-rent">39万円</div>
@@ -1189,8 +1192,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63990" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63990" target="_blank" rel="noopener">JR横浜線十日市場 横浜市緑区十日市場町903</a></span>
   </div>
   <div class="card-rent">53.3万円</div>
@@ -1208,8 +1211,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63925" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63925" target="_blank" rel="noopener">横浜市営地下鉄（ブルーライン）仲町台 横浜市都筑区桜並木3-5</a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -1227,8 +1230,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナント.biz:63886" data-site="テナント.biz" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e0f2f1;color:#00695c">テナント.biz</span>
     <span class="card-name"><a href="https://www.tenanto-office.biz/detail.php?id=63886" target="_blank" rel="noopener">ブルーラインセンター南 横浜市都筑区桜並木3-5</a></span>
   </div>
   <div class="card-rent">50万円</div>
@@ -1246,8 +1249,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-165385" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-165385/" target="_blank" rel="noopener">横浜市都筑区 賃貸工場 トップページ | 不動産会社様へ 都筑区池辺町 46坪 HOME &gt; 神奈川</a></span>
   </div>
   <div class="card-rent">50.6万円</div>
@@ -1265,8 +1268,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-164619" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-164619/" target="_blank" rel="noopener">横浜市都筑区 賃貸工場 トップページ | 不動産会社様へ 都筑区池辺町37.5坪 HOME &gt; 神奈</a></span>
   </div>
   <div class="card-rent">41.2万円</div>
@@ -1284,8 +1287,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テナントショップ:e-164611" data-site="テナントショップ" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
     <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-164611/" target="_blank" rel="noopener">川崎市川崎区 賃ビル トップページ | 不動産会社様へ 川崎市川崎区 賃ビル HOME &gt; 神奈川県</a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -1303,8 +1306,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:209748" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/209748" target="_blank" rel="noopener">ID 209748 ☆ご質問や内見希望の方は【問い合わせ】からメッセージをお願い致します☆※お電話は</a></span>
   </div>
   <div class="card-rent">要確認</div>
@@ -1322,8 +1325,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:211680" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/211680" target="_blank" rel="noopener">ID 211680 十日市場駅 徒歩2分 2F スケルトン物件 【業種相談】 賃料 555,500 </a></span>
   </div>
   <div class="card-rent">55.5万円</div>
@@ -1341,8 +1344,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:210874" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/210874" target="_blank" rel="noopener">ID 210874 ■川崎駅 バス15分、バス停「桜本」停歩4分 2F ロードサイド 現況:その他 </a></span>
   </div>
   <div class="card-rent">55万円</div>
@@ -1360,8 +1363,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:210056" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/210056" target="_blank" rel="noopener">ID 210056 アクシス元町【賃料：572,000円】 賃料 ご相談 坪単価 ご相談 最寄駅 石</a></span>
   </div>
   <div class="card-rent">57.2万円</div>
@@ -1379,8 +1382,8 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 </div>
 <div class="card" data-key="テンポスマート:209066" data-site="テンポスマート" data-status="未調査" data-new="false">
   <div class="card-top">
-    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
     <span class="card-name"><a href="https://www.temposmart.jp/estates/209066" target="_blank" rel="noopener">ID 209066 【軽飲食可】【美容・医療・介護可】元町·中華街駅(3番出口)徒歩1分!飲食は軽飲</a></span>
   </div>
   <div class="card-rent">56.1万円</div>
@@ -1408,7 +1411,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年07月19日 10:47 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年07月19日 10:49 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
