@@ -155,10 +155,10 @@ header h1{font-size:1.2rem;font-weight:700}
 /* カード内要素 */
 .card-top{display:flex;align-items:center;gap:6px;padding-right:34px}
 .site-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
-.priority-badge{display:inline-block;font-size:0.65rem;font-weight:700;padding:1px 6px;border-radius:3px;white-space:nowrap;flex-shrink:0}
-.priority-badge.p1{background:#ffebee;color:#b71c1c}
-.priority-badge.p2{background:#e8f0fe;color:#174ea6}
-.priority-badge.p3{background:#f1f3f4;color:#5f6368}
+.priority-badge{display:inline-block;font-size:0.72rem;font-weight:800;padding:2px 7px;border-radius:5px;white-space:nowrap;flex-shrink:0;border:1px solid transparent}
+.priority-badge.p1{background:#d93025;color:#fff;border-color:#b3261e}
+.priority-badge.p2{background:#174ea6;color:#fff;border-color:#0b3d91}
+.priority-badge.p3{background:#f1f3f4;color:#3c4043;border-color:#dadce0}
 .card-name{font-size:0.82rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
 .card-rent{font-size:1.05rem;font-weight:700;color:#c62828}
 .card-specs{display:flex;gap:10px;flex-wrap:wrap}
@@ -519,8 +519,8 @@ def _card_html(prop, prev_status: str = "", note: str = "") -> str:
 
     return f"""<div class="card" data-key="{key}" data-site="{_esc(prop.site)}" data-status="{_esc(prev_status or '未調査')}" data-new="{is_new_attr}">
   <div class="card-top">
-    <span class="site-badge" style="background:{bg};color:{fg}">{_esc(prop.site)}</span>
     {priority_badge}
+    <span class="site-badge" style="background:{bg};color:{fg}">{_esc(prop.site)}</span>
     <span class="card-name"><a href="{_esc(prop.url)}" target="_blank" rel="noopener">{_esc(prop.name or '物件詳細')}</a></span>
   </div>
   <div class="card-rent">{_esc(_fmt_rent(prop.rent))}</div>
@@ -577,6 +577,11 @@ def generate_report(
     avg_rent  = int(sum(rent_vals) / len(rent_vals)) if rent_vals else 0
     area_vals = [p.area for p in properties if p.area]
     avg_area  = sum(area_vals) / len(area_vals) if area_vals else 0.0
+    priority_counts = {
+        "優先1": sum(1 for p in properties if _priority_label(p) == "優先1"),
+        "優先2": sum(1 for p in properties if _priority_label(p) == "優先2"),
+        "優先3": sum(1 for p in properties if _priority_label(p) == "優先3"),
+    }
 
     # 検索条件テキスト
     conds = []
@@ -647,6 +652,9 @@ def generate_report(
   <div class="stat"><div class="num" id="total-count">{len(properties)}</div><div class="lbl">総件数</div></div>
   <div class="stat red"><div class="num">{new_count}</div><div class="lbl">新着</div></div>
   <div class="stat"><div class="num">{len(sites)}</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">{priority_counts["優先1"]}</div><div class="lbl">優先1</div></div>
+  <div class="stat"><div class="num">{priority_counts["優先2"]}</div><div class="lbl">優先2</div></div>
+  <div class="stat"><div class="num">{priority_counts["優先3"]}</div><div class="lbl">優先3</div></div>
   <div class="stat"><div class="num">{_fmt_rent_display(avg_rent)}</div><div class="lbl">平均賃料</div></div>
   <div class="stat"><div class="num">{avg_area:.0f}㎡</div><div class="lbl">平均面積</div></div>
 </div>
