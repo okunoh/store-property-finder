@@ -49,6 +49,23 @@ def _normalize_dedupe_address(address: str) -> str:
     text = re.sub(r"\s+", "", text)
     text = text.replace("神奈川県", "")
     text = text.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    kanji_nums = {
+        "一": "1",
+        "二": "2",
+        "三": "3",
+        "四": "4",
+        "五": "5",
+        "六": "6",
+        "七": "7",
+        "八": "8",
+        "九": "9",
+        "十": "10",
+    }
+    text = re.sub(
+        r"([一二三四五六七八九十])丁目",
+        lambda m: kanji_nums.get(m.group(1), m.group(1)) + "丁目",
+        text,
+    )
     for old, new in [
         ("－", "-"),
         ("ー", "-"),
@@ -60,6 +77,17 @@ def _normalize_dedupe_address(address: str) -> str:
     ]:
         text = text.replace(old, new)
     return text
+
+
+def _station_token(prop) -> str:
+    text = " ".join([
+        prop.nearest_station or "",
+        prop.name or "",
+        prop.address or "",
+    ])
+    text = text.translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    m = re.search(r"([一-龥ぁ-んァ-ンA-Za-z0-9・ヶ]+駅)", text)
+    return m.group(1) if m else ""
 
 
 def _image_dedupe_token(image_url: str) -> str:
@@ -98,11 +126,15 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
 
     exact_groups: dict[tuple[str, int], list[int]] = {}
     image_groups: dict[tuple[str, int], list[int]] = {}
+    station_groups: dict[tuple[str, int, int, int], list[int]] = {}
     normalized_addresses: list[str] = []
+    station_tokens: list[str] = []
 
     for i, prop in enumerate(properties):
         addr = _normalize_dedupe_address(prop.address)
         normalized_addresses.append(addr)
+        station = _station_token(prop)
+        station_tokens.append(station)
         if addr and prop.rent:
             exact_groups.setdefault((addr, prop.rent), []).append(i)
 
@@ -110,11 +142,21 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
         if img and prop.rent:
             image_groups.setdefault((img, prop.rent), []).append(i)
 
+        if station and prop.rent and prop.area and prop.walk_minutes:
+            area_bucket = round(float(prop.area))
+            station_groups.setdefault((station, prop.rent, area_bucket, prop.walk_minutes), []).append(i)
+
     for indexes in exact_groups.values():
         for i in indexes[1:]:
             union(indexes[0], i)
 
     for indexes in image_groups.values():
+        base = indexes[0]
+        for i in indexes[1:]:
+            if _area_close(properties[base].area, properties[i].area):
+                union(base, i)
+
+    for indexes in station_groups.values():
         base = indexes[0]
         for i in indexes[1:]:
             if _area_close(properties[base].area, properties[i].area):
@@ -136,6 +178,10 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
             short, long = sorted([ai, aj], key=len)
             if len(short) >= 7 and long.startswith(short) and _area_close(pi.area, pj.area):
                 union(i, j)
+                continue
+            if station_tokens[i] and station_tokens[i] == station_tokens[j]:
+                if _area_close(pi.area, pj.area) and pi.walk_minutes == pj.walk_minutes:
+                    union(i, j)
 
     status_score = {
         "検討中": 50,
