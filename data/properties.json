@@ -30,6 +30,21 @@
     "is_new": false
   },
   {
+    "site": "テンポスマート",
+    "property_id": "211992",
+    "name": "ID 211992 鴨居駅 徒歩8分 1F スケルトン物件 【業種相談】 賃料 550,000 円 ",
+    "address": "神奈川県横浜市緑区白山一丁目",
+    "rent": 550000,
+    "area": 116.63,
+    "walk_minutes": 8,
+    "nearest_station": "ID 211992 鴨居駅 徒歩8分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/211992",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/211992/images/17845064132760t8GLFBMUinSmZtU5m8ElW0iwxr.jpg.webp",
+    "description": "",
+    "is_new": false
+  },
+  {
     "site": "テナントショップ",
     "property_id": "e-167280",
     "name": "横浜市旭区 賃貸店舗戸建 トップページ | 不動産会社様へ 小川名貸店舗 HOME > 神奈川県 >",
@@ -205,7 +220,7 @@
     "nearest_station": "ID 209833 西谷駅 徒歩8分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/209833",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209833/images/17832355944512biRO0eDRt4a4zpr34emFIwjhmO.jpeg.webp",
     "description": "",
     "is_new": false
   },
@@ -220,7 +235,7 @@
     "nearest_station": "ID 209820 屏風浦駅 徒歩15分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/209820",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/209820/images/1783217600403296HsgPPnxi7kb20gVYi4Msx2cW.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -295,21 +310,6 @@
     "nearest_station": "ID 209258 片倉町駅徒歩15分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/209258",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "209066",
-    "name": "ID 209066 【軽飲食可】【美容・医療・介護可】元町·中華街駅(3番出口)徒歩1分!飲食は軽飲",
-    "address": "神奈川県横浜市中区山下町",
-    "rent": 561000,
-    "area": 127.64,
-    "walk_minutes": 1,
-    "nearest_station": " 円/坪 最寄駅 元町・中華街駅 徒歩 1分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/209066",
     "image_url": "",
     "description": "",
     "is_new": false
@@ -970,7 +970,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6978974955/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/pbBcPGjsu5C6SdaTPZdReA==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false
   },
@@ -1090,21 +1090,6 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6980308020/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6989409825",
-    "name": "司生堂ビル 2階の貸店舗・事務所",
-    "address": "川崎市麻生区百合丘１丁目",
-    "rent": 418000,
-    "area": 147.03,
-    "walk_minutes": 3,
-    "nearest_station": "",
-    "floor": "2階",
-    "url": "https://www.athome.co.jp/rent_store/6989409825/",
     "image_url": "",
     "description": "",
     "is_new": false
