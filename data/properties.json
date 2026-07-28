@@ -1,6 +1,21 @@
 [
   {
     "site": "HOMES",
+    "property_id": "39040010000823",
+    "name": "賃貸 店舗事務所 サニーライフ日吉 所在地 神奈川県川崎市幸区矢上15-8 交通 JR横須賀線 新川",
+    "address": "神奈川県川崎市幸区矢上15-8",
+    "rent": 495000,
+    "area": 157.48,
+    "walk_minutes": 19,
+    "nearest_station": "8 交通 JR横須賀線 新川崎駅 徒歩19分",
+    "floor": "1階",
+    "url": "https://www.homes.co.jp/chintai/b-39040010000823/",
+    "image_url": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3904001%2Frent%2F823%2F2%2F1%2Famwb.jpg",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "HOMES",
     "property_id": "1150050043285",
     "name": "賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急",
     "address": "神奈川県横浜市金沢区泥亀2丁目",
@@ -160,7 +175,7 @@
     "nearest_station": "ID 211684 武蔵中原駅 徒歩2分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/211684",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/211684/images/17841888266831dbP88Xw7IeptkjGV7xYA662PdN.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false
   },
@@ -445,21 +460,6 @@
     "nearest_station": "JR南武線武蔵溝ノ口",
     "floor": "",
     "url": "https://www.tenanto-office.biz/detail.php?id=63229",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テナント.biz",
-    "property_id": "62975",
-    "name": "東急東横線元住吉 川崎市幸区矢上15",
-    "address": "川崎市幸区矢上15",
-    "rent": 495000,
-    "area": 157.49,
-    "walk_minutes": 517,
-    "nearest_station": "東急東横線元住吉",
-    "floor": "1階",
-    "url": "https://www.tenanto-office.biz/detail.php?id=62975",
     "image_url": "",
     "description": "",
     "is_new": false
@@ -766,21 +766,6 @@
   },
   {
     "site": "テナントショップ",
-    "property_id": "e-167839",
-    "name": "横浜市港北区 賃貸店舗一部 トップページ | 不動産会社様へ エクセルシティ小机 HOME > 神奈",
-    "address": "横浜市港北区",
-    "rent": 583000,
-    "area": 258.53,
-    "walk_minutes": 15,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.tenant-shop.com/detail/e-167839/",
-    "image_url": "/contents/images/header/logo.gif?t=1",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テナントショップ",
     "property_id": "e-167842",
     "name": "横浜市戸塚区 賃貸事務所 トップページ | 不動産会社様へ いずみプラザ東戸塚 HOME > 神奈川",
     "address": "横浜市戸塚区",
@@ -790,6 +775,21 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.tenant-shop.com/detail/e-167842/",
+    "image_url": "/contents/images/header/logo.gif?t=1",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "テナントショップ",
+    "property_id": "e-167839",
+    "name": "横浜市港北区 賃貸店舗一部 トップページ | 不動産会社様へ エクセルシティ小机 HOME > 神奈",
+    "address": "横浜市港北区",
+    "rent": 583000,
+    "area": 258.53,
+    "walk_minutes": 15,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.tenant-shop.com/detail/e-167839/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
     "is_new": false
@@ -970,6 +970,21 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6990850693/",
+    "image_url": "",
+    "description": "",
+    "is_new": false
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6991635985",
+    "name": "八木ビル 2階～4階部分",
+    "address": "川崎市幸区南幸町１丁目",
+    "rent": 385000,
+    "area": 204.0,
+    "walk_minutes": 10,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6991635985/",
     "image_url": "",
     "description": "",
     "is_new": false
