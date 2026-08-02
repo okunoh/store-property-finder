@@ -100,7 +100,7 @@
     "nearest_station": "ID 212332 立場駅 徒歩9分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/212332",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/212332/images/17847066223495nXUPEUZ7nYFoa1miivO4RkjmUQ.png.webp",
     "description": "",
     "is_new": false
   },
@@ -1060,21 +1060,6 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6991165429/",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6958928966",
-    "name": "第２アーバン東横 1階の貸店舗・事務所",
-    "address": "川崎市川崎区浜町２丁目",
-    "rent": 457819,
-    "area": 137.37,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6958928966/",
     "image_url": "",
     "description": "",
     "is_new": false
