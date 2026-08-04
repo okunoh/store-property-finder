@@ -370,9 +370,10 @@ function filterSite(sel) {
 // ── 新着のみ ─────────────────────────────────────────────────
 function toggleNew() {
   newOnlyMode = !newOnlyMode;
-  const pill = document.getElementById('new-pill');
-  pill.classList.toggle('active', newOnlyMode);
-  pill.setAttribute('aria-pressed', newOnlyMode ? 'true' : 'false');
+  document.querySelectorAll('.new-filter-toggle').forEach(el => {
+    el.classList.toggle('active', newOnlyMode);
+    el.setAttribute('aria-pressed', newOnlyMode ? 'true' : 'false');
+  });
   applyFilters();
 }
 
@@ -650,7 +651,7 @@ def generate_report(
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
     <span>{now}</span>
-    <span id="new-pill" class="new-pill" onclick="toggleNew()" title="新着のみ表示">
+    <span id="new-pill" class="new-pill new-filter-toggle" onclick="toggleNew()" title="新着のみ表示">
       🆕 本日の新着 <span class="cnt">{new_count}</span>件
     </span>
   </div>
@@ -674,6 +675,7 @@ def generate_report(
 <div class="toolbar">
   <div class="tab-group">{status_tabs}</div>
   <div class="sep"></div>
+  <button id="btn-new-only" class="tab new-filter-toggle" onclick="toggleNew()" aria-pressed="false">新着のみ</button>
   <select class="site-sel" onchange="filterSite(this)">{site_opts}</select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
