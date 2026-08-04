@@ -38,6 +38,18 @@ def load_previous_keys(data_path: Path) -> set:
     return {f"{p['site']}:{p['property_id']}" for p in data}
 
 
+def load_previous_first_seen(data_path: Path) -> dict:
+    if not data_path.exists():
+        return {}
+    with open(data_path, encoding="utf-8") as f:
+        data = json.load(f)
+    return {
+        f"{p['site']}:{p['property_id']}": p.get("first_seen", "")
+        for p in data
+        if p.get("site") and p.get("property_id")
+    }
+
+
 def save_properties(properties: list, data_path: Path) -> None:
     data_path.parent.mkdir(parents=True, exist_ok=True)
     with open(data_path, "w", encoding="utf-8") as f:
@@ -216,6 +228,9 @@ def remove_duplicate_properties(properties: list, status_map: dict, notes_map: d
         duplicate_groups += 1
         props_sorted = sorted(props, key=score, reverse=True)
         keep = props_sorted[0]
+        first_seen_values = sorted(p.first_seen for p in props_sorted if getattr(p, "first_seen", ""))
+        if first_seen_values:
+            keep.first_seen = first_seen_values[0]
         unique.append(keep)
         removed += len(props_sorted) - 1
 
@@ -265,6 +280,7 @@ def main():
 
     # 前回データ読み込み（新着判定用）
     prev_keys = load_previous_keys(data_path)
+    prev_first_seen = load_previous_first_seen(data_path)
     logger.info(f"前回データ: {len(prev_keys)} 件")
 
     # ステータス読み込み
@@ -288,6 +304,10 @@ def main():
 
     if not properties:
         logger.warning("物件が1件も取得できませんでした。サイト構造が変わった可能性があります。")
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    for p in properties:
+        p.first_seen = prev_first_seen.get(p.unique_key) or (today if p.unique_key not in prev_keys else "")
 
     # 削除済み物件を除外
     deleted_keys = {k for k, v in status_map.items() if v == "削除"}

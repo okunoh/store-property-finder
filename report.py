@@ -324,13 +324,18 @@ function updateCounts() {
 
 // ── フィルタ適用 ──────────────────────────────────────────────
 function applyFilters() {
-  document.querySelectorAll('#main-grid .card').forEach(card => {
+  document.querySelectorAll('#main-grid .card, #miokuri-grid .card').forEach(card => {
     let show = true;
     if (curStatusFilter !== 'all' && card.dataset.status !== curStatusFilter) show = false;
     if (curSiteFilter   !== 'all' && card.dataset.site   !== curSiteFilter)   show = false;
     if (newOnlyMode && card.dataset.new !== 'true') show = false;
     card.style.display = show ? '' : 'none';
   });
+
+  if (newOnlyMode) {
+    const miokuriVisible = [...document.querySelectorAll('#miokuri-grid .card')].some(c => c.style.display !== 'none');
+    if (miokuriVisible) document.getElementById('miokuri-section').classList.add('open');
+  }
 
   // no-results表示制御
   const mainGrid = document.getElementById('main-grid');
@@ -367,6 +372,7 @@ function toggleNew() {
   newOnlyMode = !newOnlyMode;
   const pill = document.getElementById('new-pill');
   pill.classList.toggle('active', newOnlyMode);
+  pill.setAttribute('aria-pressed', newOnlyMode ? 'true' : 'false');
   applyFilters();
 }
 
@@ -495,6 +501,7 @@ def _card_html(prop, prev_status: str = "", note: str = "") -> str:
     bg, fg = SITE_BADGE.get(prop.site, ("#f3e5f5", "#6a1b9a"))
     is_new_attr = "true" if prop.is_new else "false"
     key = _esc(prop.unique_key)
+    first_seen = _esc(getattr(prop, "first_seen", "") or "")
     priority_label = _priority_label(prop)
     priority_badge = ""
     if priority_label == "優先1":
@@ -517,7 +524,7 @@ def _card_html(prop, prev_status: str = "", note: str = "") -> str:
         sel = " selected" if st == prev_status else ""
         opts += f'<option{sel}>{_esc(st)}</option>'
 
-    return f"""<div class="card" data-key="{key}" data-site="{_esc(prop.site)}" data-status="{_esc(prev_status or '未調査')}" data-new="{is_new_attr}">
+    return f"""<div class="card" data-key="{key}" data-site="{_esc(prop.site)}" data-status="{_esc(prev_status or '未調査')}" data-new="{is_new_attr}" data-first-seen="{first_seen}">
   <div class="card-top">
     {priority_badge}
     <span class="site-badge" style="background:{bg};color:{fg}">{_esc(prop.site)}</span>
@@ -564,9 +571,10 @@ def generate_report(
     notes_map = notes_map or {}
     cfg_search = config.get("search", {})
 
-    # 新着フラグ付与
+    # 新着フラグ付与。first_seen がある場合は「今日初めて見つけた物件」を新着扱いにする。
+    today = datetime.now().strftime("%Y-%m-%d")
     for p in properties:
-        p.is_new = p.unique_key not in prev_keys
+        p.is_new = (getattr(p, "first_seen", "") == today) if getattr(p, "first_seen", "") else (p.unique_key not in prev_keys)
 
     new_count = sum(1 for p in properties if p.is_new)
     sites     = sorted(set(p.site for p in properties))

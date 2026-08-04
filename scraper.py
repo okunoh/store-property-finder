@@ -49,6 +49,7 @@ class Property:
     image_url: str = ""
     description: str = ""
     is_new: bool = False
+    first_seen: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
