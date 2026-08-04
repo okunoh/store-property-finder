@@ -12,7 +12,8 @@
     "url": "https://www.homes.co.jp/chintai/b-39040010000823/",
     "image_url": "https://image1.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3904001%2Frent%2F823%2F2%2F1%2Famwb.jpg",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "HOMES",
@@ -27,7 +28,8 @@
     "url": "https://www.homes.co.jp/chintai/b-1150050043285/",
     "image_url": "https://image.homes.jp/smallimg/image.php?file=https%3A%2F%2Fcdn-lambda-img.cloud.ielove.jp%2Fimage%2Frent%2F9a859919%2F32035_2009255_1_132000_132000.jpg%3Ft%3D20260724111553",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テンポスマート",
@@ -42,7 +44,8 @@
     "url": "https://www.temposmart.jp/estates/213981",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -57,7 +60,8 @@
     "url": "https://www.temposmart.jp/estates/213940",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テンポスマート",
@@ -72,7 +76,8 @@
     "url": "https://www.temposmart.jp/estates/213504",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -87,7 +92,8 @@
     "url": "https://www.temposmart.jp/estates/213380",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -102,7 +108,8 @@
     "url": "https://www.temposmart.jp/estates/212839",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -117,7 +124,8 @@
     "url": "https://www.temposmart.jp/estates/212678",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -132,7 +140,8 @@
     "url": "https://www.temposmart.jp/estates/212332",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -145,9 +154,10 @@
     "nearest_station": "2244 【HS0722】高津駅徒歩15分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/212244",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/212244/images/17846786405837keNrgq3lLd6PbxxeyQyOz0561D.jpg.webp",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -160,9 +170,10 @@
     "nearest_station": "ID 212098 ■武蔵中原駅 徒歩30分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/212098",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/212098/images/17846059343301UFu7z7SRhpruFhJcEQDZ47WNJM.png.webp",
+    "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -177,7 +188,8 @@
     "url": "https://www.temposmart.jp/estates/212086",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テンポスマート",
@@ -192,7 +204,8 @@
     "url": "https://www.temposmart.jp/estates/211992",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テンポスマート",
@@ -207,52 +220,8 @@
     "url": "https://www.temposmart.jp/estates/211893",
     "image_url": "",
     "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "211712",
-    "name": "ID 211712 新川崎駅 徒歩2分 1F 現況:居酒屋 飲食居抜き物件 【何業も可】 賃料 43",
-    "address": "神奈川県川崎市幸区鹿島田二丁目",
-    "rent": 437800,
-    "area": 125.79,
-    "walk_minutes": 2,
-    "nearest_station": "ID 211712 新川崎駅 徒歩2分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/211712",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "211684",
-    "name": "ID 211684 武蔵中原駅 徒歩2分 2F 現況:バー 飲食居抜き物件 賃料 495,000 円",
-    "address": "神奈川県川崎市中原区上小田中六丁目",
-    "rent": 495000,
-    "area": 116.03,
-    "walk_minutes": 2,
-    "nearest_station": "ID 211684 武蔵中原駅 徒歩2分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/211684",
-    "image_url": "",
-    "description": "",
-    "is_new": false
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "211680",
-    "name": "ID 211680 十日市場駅 徒歩2分 2F スケルトン物件 【業種相談】 賃料 555,500 ",
-    "address": "神奈川県横浜市緑区十日市場町",
-    "rent": 555500,
-    "area": 166.64,
-    "walk_minutes": 2,
-    "nearest_station": "ID 211680 十日市場駅 徒歩2分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/211680",
-    "image_url": "",
-    "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -267,7 +236,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64104",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テナント.biz",
@@ -282,7 +252,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63894",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テナント.biz",
@@ -297,7 +268,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63938",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -312,7 +284,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63923",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -327,7 +300,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63917",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -342,7 +316,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63807",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -357,7 +332,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63796",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -372,7 +348,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63787",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テナント.biz",
@@ -387,7 +364,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=62761",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -402,7 +380,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63265",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -417,7 +396,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63259",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "テナント.biz",
@@ -432,7 +412,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63229",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -447,7 +428,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=62973",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -462,7 +444,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=62943",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -477,7 +460,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=62847",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -492,7 +476,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=62846",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -507,7 +492,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64109",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -522,7 +508,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64107",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -537,7 +524,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64100",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -552,7 +540,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64098",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -567,7 +556,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64041",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -582,7 +572,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=64032",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -597,7 +588,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63991",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -612,7 +604,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63990",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -627,7 +620,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63925",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -642,7 +636,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63918",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -657,7 +652,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63874",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -672,7 +668,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63893",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -687,7 +684,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63886",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -702,7 +700,8 @@
     "url": "https://www.tenanto-office.biz/detail.php?id=63883",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -717,7 +716,8 @@
     "url": "https://www.tenant-shop.com/detail/e-168229/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -732,7 +732,8 @@
     "url": "https://www.tenant-shop.com/detail/e-168184/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -747,7 +748,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167974/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -762,7 +764,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167891/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -777,7 +780,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167890/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -792,7 +796,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167875/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -807,7 +812,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167842/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -822,7 +828,8 @@
     "url": "https://www.tenant-shop.com/detail/e-167839/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "テナントショップ",
@@ -837,7 +844,24 @@
     "url": "https://www.tenant-shop.com/detail/e-167832/",
     "image_url": "/contents/images/header/logo.gif?t=1",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
+  },
+  {
+    "site": "テンポダス",
+    "property_id": "2256957",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県本牧三之谷の店舗物件",
+    "rent": 430000,
+    "area": 546.78,
+    "walk_minutes": 31,
+    "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
+    "floor": "2階",
+    "url": "https://tempodas.com/search/detail/2256957/",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "居抜き市場",
@@ -852,7 +876,8 @@
     "url": "https://inuki-ichiba.jp/rent/51898",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -867,7 +892,8 @@
     "url": "https://www.athome.co.jp/rent_store/6978974955/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -880,9 +906,10 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990871219/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/AKVCiy6w0HP2B4roMaxIQA==?width=266&height=246&margin=true",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -897,7 +924,8 @@
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -912,7 +940,8 @@
     "url": "https://www.athome.co.jp/rent_store/6969105311/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -927,7 +956,8 @@
     "url": "https://www.athome.co.jp/rent_store/6988624750/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -942,7 +972,8 @@
     "url": "https://www.athome.co.jp/rent_store/6990885367/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -957,7 +988,8 @@
     "url": "https://www.athome.co.jp/rent_store/6990850693/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -972,7 +1004,8 @@
     "url": "https://www.athome.co.jp/rent_store/6991635985/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -987,7 +1020,8 @@
     "url": "https://www.athome.co.jp/rent_store/6990402727/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -1002,7 +1036,8 @@
     "url": "https://www.athome.co.jp/rent_store/6988376506/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -1017,7 +1052,24 @@
     "url": "https://www.athome.co.jp/rent_store/6980308020/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": "2026-08-04"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6991477773",
+    "name": "新川崎駅前ビル 1階の貸店舗",
+    "address": "川崎市幸区鹿島田２丁目",
+    "rent": 437800,
+    "area": 125.79,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.athome.co.jp/rent_store/6991477773/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-04"
   },
   {
     "site": "アットホーム",
@@ -1032,7 +1084,8 @@
     "url": "https://www.athome.co.jp/rent_store/6991165429/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
   },
   {
     "site": "アットホーム",
@@ -1047,6 +1100,23 @@
     "url": "https://www.athome.co.jp/rent_store/6958928966/",
     "image_url": "",
     "description": "",
-    "is_new": false
+    "is_new": false,
+    "first_seen": ""
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6990006210",
+    "name": "宮前区神木本町４丁目貸店舗（事務所）",
+    "address": "川崎市宮前区神木本町４丁目",
+    "rent": 473000,
+    "area": 202.04,
+    "walk_minutes": null,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6990006210/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-04"
   }
 ]
