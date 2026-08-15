@@ -33,6 +33,22 @@
   },
   {
     "site": "テンポスマート",
+    "property_id": "215236",
+    "name": "ID 215236 桜木町駅 徒歩10分 2F 現況：事務所 賃料 532,675 円 (税込) 坪",
+    "address": "神奈川県横浜市西区花咲町五丁目",
+    "rent": 532675,
+    "area": 123.14,
+    "walk_minutes": 10,
+    "nearest_station": "ID 215236 桜木町駅 徒歩10分",
+    "floor": "2階",
+    "url": "https://www.temposmart.jp/estates/215236",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215236/images/17867857908438B44SL6i6v90biffb876rCzO8mM.jpg.webp",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-15"
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "213312",
     "name": "ID 213312 京急鶴見駅 徒歩17分 新築１棟貸し(分割も相談可) お気軽にお問合せください ",
     "address": "神奈川県横浜市鶴見区向井町三丁目",
@@ -846,6 +862,22 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-13"
+  },
+  {
+    "site": "テンポダス",
+    "property_id": "2324490",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県井土ケ谷下町の店舗物件",
+    "rent": 210000,
+    "area": 153.39,
+    "walk_minutes": 6,
+    "nearest_station": " > 横浜市南区 > 井土ヶ谷駅 徒歩6分",
+    "floor": "2階",
+    "url": "https://tempodas.com/search/detail/2324490/",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-15"
   },
   {
     "site": "アットホーム",
