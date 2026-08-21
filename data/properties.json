@@ -202,7 +202,7 @@
     "nearest_station": "ID 215392 ■白楽駅 徒歩1分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215392",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215392/images/178695059420030l3TAsIz3UtJeuOMFBMd2mRmFK.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-17"
@@ -282,7 +282,7 @@
     "nearest_station": " 213981 ■たまプラーザ駅 徒歩3分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/213981",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/213981/images/1785745931293112ZONuol3eBGjQ9EHLDSNBQaAo.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -918,8 +918,8 @@
     "address": "川崎市中原区",
     "rent": 429000,
     "area": 152.6,
-    "walk_minutes": 2,
-    "nearest_station": ".65坪 【12202】元住吉駅徒歩2分",
+    "walk_minutes": 8,
+    "nearest_station": "",
     "floor": "1階",
     "url": "https://www.tenant-shop.com/detail/e-167891/",
     "image_url": "/contents/images/header/logo.gif?t=1",
@@ -1082,7 +1082,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6990850693/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/tMVbplxPo1Wb271RPdfITg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": ""
