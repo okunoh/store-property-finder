@@ -58,7 +58,7 @@
     "nearest_station": "ID 215857 能見台駅徒歩3分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215857",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215857/images/17871959518201ijsq59Rv8wYM7S971VIb0RQhfl.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -74,7 +74,7 @@
     "nearest_station": "ID 215851 武蔵新城駅徒歩19分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215851",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215851/images/17871942510921NzUJn0xMD3Z0xlDqfeAkrbLG6y.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -138,7 +138,7 @@
     "nearest_station": "91 【UY0818】武蔵新城駅徒歩1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215491",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215491/images/17870125245877SSbBytGCwULenGBbIlJEBGUDjs.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-18"
@@ -154,7 +154,7 @@
     "nearest_station": "ID 215478 保土ケ谷駅 徒歩4分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215478",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215478/images/17870097429158bz53Qrxk8bHns1xo2rf5rnHMrr.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-18"
@@ -286,22 +286,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-05"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "213981",
-    "name": "ID 213981 ■たまプラーザ駅 徒歩3分 2F 現況:住居仕様物件 【不特定多数の出入りがある",
-    "address": "神奈川県横浜市青葉区美しが丘二丁目",
-    "rent": 528000,
-    "area": 127.21,
-    "walk_minutes": 3,
-    "nearest_station": " 213981 ■たまプラーザ駅 徒歩3分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/213981",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": ""
   },
   {
     "site": "テナント.biz",
@@ -928,22 +912,6 @@
     "first_seen": ""
   },
   {
-    "site": "テナントショップ",
-    "property_id": "e-167891",
-    "name": "川崎市中原区 賃貸事務所 トップページ | 不動産会社様へ ラルハイツ HOME > 神奈川県 > ",
-    "address": "川崎市中原区",
-    "rent": 429000,
-    "area": 152.6,
-    "walk_minutes": 2,
-    "nearest_station": ".65坪 【12202】元住吉駅徒歩2分",
-    "floor": "1階",
-    "url": "https://www.tenant-shop.com/detail/e-167891/",
-    "image_url": "/contents/images/header/logo.gif?t=1",
-    "description": "",
-    "is_new": false,
-    "first_seen": ""
-  },
-  {
     "site": "テンポダス",
     "property_id": "2324568",
     "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
@@ -986,7 +954,7 @@
     "nearest_station": "川県 > 横浜市南区 > 蒔田駅 徒歩2分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2256924/",
-    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/real_estate_images/273940/b8cddd81929b4a6fbc1ec1771121982e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260825%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260825T155741Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=d2d79c0f302ea134e01a56a6d1a8554266067322c1269e4579b6edf8d37494319a1972f14cde34de58a9f5463ce4665651cdcbc55c18c0b03c8528924e9e6e14e787f9b3f6213356480960495167cb1cb4ddd0e5c5fca41aec275df2e4682e755d641b982c8240da387f96296ac2471603af9796f1f757021d7b75f122dab34b278ab4cfa0bbb1e9029b41d4f75d40304a6cc2abfdd3e3c7cb18ba0907a090ce6460ca67252d9c39f9786f38748c8f5c67465f530fc4992a4cbd1b46079ef57b86a88dbe3aee12d7b1b200e80800e049250ae320c98fcac93eff5e3ded789f8f31a765aa6ca4e1e0ddd71a6c41deeb859c57b9ef97902f23aaadfeb99ab4e30c",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-24"
@@ -1098,7 +1066,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6991635985/",
-    "image_url": "https://www.athome.co.jp/image_files/path/PW3MvDKq3o3ILVYc1rZmCg==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1150,22 +1118,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-04"
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6991750466",
-    "name": "新川崎駅前ビル 1階の貸店舗",
-    "address": "川崎市幸区鹿島田２丁目",
-    "rent": 437800,
-    "area": 125.79,
-    "walk_minutes": 2,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6991750466/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-07"
   },
   {
     "site": "アットホーム",
