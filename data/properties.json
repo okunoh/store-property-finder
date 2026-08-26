@@ -138,7 +138,7 @@
     "nearest_station": "91 【UY0818】武蔵新城駅徒歩1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215491",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215491/images/17870125245877SSbBytGCwULenGBbIlJEBGUDjs.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-18"
@@ -154,7 +154,7 @@
     "nearest_station": "ID 215478 保土ケ谷駅 徒歩4分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215478",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215478/images/17870097429158bz53Qrxk8bHns1xo2rf5rnHMrr.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-18"
@@ -880,36 +880,20 @@
     "first_seen": "2026-08-05"
   },
   {
-    "site": "テナントショップ",
-    "property_id": "e-168184",
-    "name": "横浜市戸塚区 賃貸倉庫 トップページ | 不動産会社様へ 横浜市戸塚区 賃貸倉庫 HOME > 神奈",
-    "address": "横浜市戸塚区",
-    "rent": 440000,
-    "area": 207.93,
-    "walk_minutes": 12,
-    "nearest_station": "",
+    "site": "テンポダス",
+    "property_id": "2358653",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県本牧三之谷の店舗物件",
+    "rent": 430000,
+    "area": 546.78,
+    "walk_minutes": 31,
+    "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
     "floor": "2階",
-    "url": "https://www.tenant-shop.com/detail/e-168184/",
-    "image_url": "/contents/images/header/logo.gif?t=1",
+    "url": "https://tempodas.com/search/detail/2358653/",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
-    "first_seen": ""
-  },
-  {
-    "site": "テナントショップ",
-    "property_id": "e-167974",
-    "name": "川崎市高津区 賃貸店舗一部 トップページ | 不動産会社様へ 軽部倉庫 HOME > 神奈川県 > ",
-    "address": "川崎市高津区",
-    "rent": 396000,
-    "area": 165.28,
-    "walk_minutes": 15,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.tenant-shop.com/detail/e-167974/",
-    "image_url": "/contents/images/header/logo.gif?t=1",
-    "description": "",
-    "is_new": false,
-    "first_seen": ""
+    "first_seen": "2026-08-24"
   },
   {
     "site": "テンポダス",
@@ -922,23 +906,7 @@
     "nearest_station": "> 川崎市麻生区 > 宮前平駅駅 徒歩23分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2324568/",
-    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-24"
-  },
-  {
-    "site": "テンポダス",
-    "property_id": "2321653",
-    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県本牧三之谷の店舗物件",
-    "rent": 430000,
-    "area": 546.78,
-    "walk_minutes": 31,
-    "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
-    "floor": "2階",
-    "url": "https://tempodas.com/search/detail/2321653/",
-    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/real_estate_images/938846/8139eb2ef99f4a2198013efcade1b736.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260826%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260826T163310Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=459b1308ef564127e2e115c7ede47d42fd1af1d2a9edfaed9a2d667392f344962f9875a180b7c5e18e690b8b5e0e19500078b2fd9df450baca09acc186249d498592ee2face8c1a9b64c7696a066258b9f320626b133f5d858d01af42b441906094a86350e38cdf4a128ce32bd030402a503b8929b2f326e967fcc46dfa5beab2628381996566df40fa929eeb02b9e9518e832787c81ed3787e8b9791a5159541b3961726abec3c7a2732a59e0ea923d2fa3be1d3611534c5cdd4060468a9c8ccbeed2483c8f6effc1f92f2f16e69845b5c05f5d307c326d913ba027473dfbb3fbc7d1e145498fce12c751301a78ea5a179c21d112835fea0ee53a6582ecedc4",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-24"
@@ -954,7 +922,7 @@
     "nearest_station": "川県 > 横浜市南区 > 蒔田駅 徒歩2分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2256924/",
-    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/real_estate_images/273940/b8cddd81929b4a6fbc1ec1771121982e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260825%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260825T155741Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=d2d79c0f302ea134e01a56a6d1a8554266067322c1269e4579b6edf8d37494319a1972f14cde34de58a9f5463ce4665651cdcbc55c18c0b03c8528924e9e6e14e787f9b3f6213356480960495167cb1cb4ddd0e5c5fca41aec275df2e4682e755d641b982c8240da387f96296ac2471603af9796f1f757021d7b75f122dab34b278ab4cfa0bbb1e9029b41d4f75d40304a6cc2abfdd3e3c7cb18ba0907a090ce6460ca67252d9c39f9786f38748c8f5c67465f530fc4992a4cbd1b46079ef57b86a88dbe3aee12d7b1b200e80800e049250ae320c98fcac93eff5e3ded789f8f31a765aa6ca4e1e0ddd71a6c41deeb859c57b9ef97902f23aaadfeb99ab4e30c",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-24"
@@ -1166,5 +1134,21 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-14"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6987801263",
+    "name": "川崎市中原区 新丸子町(新丸子駅) の貸店舗・事務所",
+    "address": "川崎市中原区新丸子町",
+    "rent": 497000,
+    "area": 139.74,
+    "walk_minutes": 2,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6987801263/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-26"
   }
 ]
