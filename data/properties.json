@@ -17,22 +17,6 @@
   },
   {
     "site": "HOMES",
-    "property_id": "37052250056374",
-    "name": "賃貸 店舗(建物一部) 富樫ビル 所在地 神奈川県川崎市川崎区追分町2-1 交通 JR南武線 小田栄",
-    "address": "神奈川県川崎市川崎区追分町2-1",
-    "rent": 300000,
-    "area": 224.0,
-    "walk_minutes": 15,
-    "nearest_station": "-1 交通 JR南武線 小田栄駅 徒歩15分",
-    "floor": "2階",
-    "url": "https://www.homes.co.jp/chintai/b-37052250056374/",
-    "image_url": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3705225%2Frent%2F56374%2F2%2F2%2Fmi9t.jpg",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-24"
-  },
-  {
-    "site": "HOMES",
     "property_id": "1150050043285",
     "name": "賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急",
     "address": "神奈川県横浜市金沢区泥亀2丁目",
@@ -250,7 +234,7 @@
     "nearest_station": "ID 213312 京急鶴見駅 徒歩17分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/213312",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/213312/images/17853837766326sQL5kZnxLUjaYHeVrmRy5xWN0F.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-12"
@@ -906,7 +890,7 @@
     "nearest_station": "> 川崎市麻生区 > 宮前平駅駅 徒歩23分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2324568/",
-    "image_url": "https://storage.googleapis.com/rcl-tempodas.appspot.com/real_estate_images/938846/8139eb2ef99f4a2198013efcade1b736.png?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=django%40rcl-tempodas.iam.gserviceaccount.com%2F20260826%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20260826T163310Z&X-Goog-Expires=259200&X-Goog-SignedHeaders=host&X-Goog-Signature=459b1308ef564127e2e115c7ede47d42fd1af1d2a9edfaed9a2d667392f344962f9875a180b7c5e18e690b8b5e0e19500078b2fd9df450baca09acc186249d498592ee2face8c1a9b64c7696a066258b9f320626b133f5d858d01af42b441906094a86350e38cdf4a128ce32bd030402a503b8929b2f326e967fcc46dfa5beab2628381996566df40fa929eeb02b9e9518e832787c81ed3787e8b9791a5159541b3961726abec3c7a2732a59e0ea923d2fa3be1d3611534c5cdd4060468a9c8ccbeed2483c8f6effc1f92f2f16e69845b5c05f5d307c326d913ba027473dfbb3fbc7d1e145498fce12c751301a78ea5a179c21d112835fea0ee53a6582ecedc4",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-24"
