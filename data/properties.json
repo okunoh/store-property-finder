@@ -17,22 +17,6 @@
   },
   {
     "site": "HOMES",
-    "property_id": "37052250056374",
-    "name": "賃貸 店舗(建物一部) 富樫ビル 所在地 神奈川県川崎市川崎区追分町2-1 交通 JR南武線 小田栄",
-    "address": "神奈川県川崎市川崎区追分町2-1",
-    "rent": 300000,
-    "area": 224.0,
-    "walk_minutes": 15,
-    "nearest_station": "-1 交通 JR南武線 小田栄駅 徒歩15分",
-    "floor": "2階",
-    "url": "https://www.homes.co.jp/chintai/b-37052250056374/",
-    "image_url": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3705225%2Frent%2F56374%2F2%2F2%2Fmi9t.jpg",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-29"
-  },
-  {
-    "site": "HOMES",
     "property_id": "1150050043285",
     "name": "賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急",
     "address": "神奈川県横浜市金沢区泥亀2丁目",
@@ -106,7 +90,7 @@
     "nearest_station": "ID 215851 武蔵新城駅徒歩19分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215851",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215851/images/17871942510921NzUJn0xMD3Z0xlDqfeAkrbLG6y.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -1098,7 +1082,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6980308020/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/kPd8VTJ4yCyADsvho4NbPA==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-04"
@@ -1182,5 +1166,21 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-26"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6988955420",
+    "name": "松本ビル 2F",
+    "address": "川崎市川崎区大島３丁目",
+    "rent": 550000,
+    "area": 277.52,
+    "walk_minutes": null,
+    "nearest_station": "",
+    "floor": "2F",
+    "url": "https://www.athome.co.jp/rent_store/6988955420/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-30"
   }
 ]
