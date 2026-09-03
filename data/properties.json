@@ -17,6 +17,22 @@
   },
   {
     "site": "HOMES",
+    "property_id": "37052250056374",
+    "name": "賃貸 店舗(建物一部) 富樫ビル 所在地 神奈川県川崎市川崎区追分町2-1 交通 JR南武線 小田栄",
+    "address": "神奈川県川崎市川崎区追分町2-1",
+    "rent": 300000,
+    "area": 224.0,
+    "walk_minutes": 15,
+    "nearest_station": "-1 交通 JR南武線 小田栄駅 徒歩15分",
+    "floor": "2階",
+    "url": "https://www.homes.co.jp/chintai/b-37052250056374/",
+    "image_url": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3705225%2Frent%2F56374%2F2%2F2%2Fmi9t.jpg",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-03"
+  },
+  {
+    "site": "HOMES",
     "property_id": "1150050043285",
     "name": "賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急",
     "address": "神奈川県横浜市金沢区泥亀2丁目",
@@ -106,7 +122,7 @@
     "nearest_station": "ID 215851 武蔵新城駅徒歩19分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215851",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215851/images/17871942510921NzUJn0xMD3Z0xlDqfeAkrbLG6y.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -186,7 +202,7 @@
     "nearest_station": "ID 215478 保土ケ谷駅 徒歩4分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215478",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215478/images/17870097429158bz53Qrxk8bHns1xo2rf5rnHMrr.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-18"
@@ -202,7 +218,7 @@
     "nearest_station": "ID 215413 杉田駅徒歩21分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/215413",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215413/images/17869536459501mZ0ofNamQEk0nk7mi5aef6V5vK.jpg.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-17"
@@ -218,7 +234,7 @@
     "nearest_station": "ID 215403 阪東橋駅 徒歩7分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215403",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215403/images/17869525562363PkFYxTy6ADBWxuttrmOnFgsa5Q.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-17"
@@ -286,22 +302,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-12"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "214813",
-    "name": "ID 214813 センター南駅 徒歩6分 1F スケルトン物件 【飲食可・重飲食不可】【事務所・店",
-    "address": "神奈川県横浜市都筑区茅ケ崎中央",
-    "rent": 440000,
-    "area": 125.52,
-    "walk_minutes": 6,
-    "nearest_station": "ID 214813 センター南駅 徒歩6分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/214813",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-01"
   },
   {
     "site": "テナント.biz",
@@ -574,6 +574,22 @@
     "description": "",
     "is_new": false,
     "first_seen": ""
+  },
+  {
+    "site": "テナント.biz",
+    "property_id": "62795",
+    "name": "JR南武線久地 川崎市多摩区宿河原6-37",
+    "address": "川崎市多摩区宿河原6-37",
+    "rent": 418000,
+    "area": 152.5,
+    "walk_minutes": 5,
+    "nearest_station": "JR南武線久地",
+    "floor": "",
+    "url": "https://www.tenanto-office.biz/detail.php?id=62795",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-03"
   },
   {
     "site": "テナント.biz",
