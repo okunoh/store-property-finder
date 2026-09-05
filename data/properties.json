@@ -17,6 +17,22 @@
   },
   {
     "site": "HOMES",
+    "property_id": "37052250056374",
+    "name": "賃貸 店舗(建物一部) 富樫ビル 所在地 神奈川県川崎市川崎区追分町2-1 交通 JR南武線 小田栄",
+    "address": "神奈川県川崎市川崎区追分町2-1",
+    "rent": 300000,
+    "area": 224.0,
+    "walk_minutes": 15,
+    "nearest_station": "-1 交通 JR南武線 小田栄駅 徒歩15分",
+    "floor": "2階",
+    "url": "https://www.homes.co.jp/chintai/b-37052250056374/",
+    "image_url": "https://image3.homes.jp/smallimg/image.php?file=http%3A%2F%2Fimg.homes.jp%2F3705225%2Frent%2F56374%2F2%2F2%2Fmi9t.jpg",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-05"
+  },
+  {
+    "site": "HOMES",
     "property_id": "1150050043285",
     "name": "賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急",
     "address": "神奈川県横浜市金沢区泥亀2丁目",
@@ -42,7 +58,7 @@
     "nearest_station": "坪単価 ご相談 最寄駅 馬車道駅 徒歩 3分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218175",
-    "image_url": "https://www.temposmart.jp/assets/tenant/images/img_estate_item_noimage_medium.jpg",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-04"
@@ -58,7 +74,7 @@
     "nearest_station": "ID 218176 宮崎台駅 徒歩10分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218176",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218176/images/17885070767622T3RiPWEVTj9bOJAV1afHloIQZw.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-04"
@@ -186,7 +202,7 @@
     "nearest_station": "ID 215698 ■踊場駅 徒歩6分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215698",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215698/images/17871082566971XE2pgqtzbZMU7r30f9c7ZMNSBr.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -202,7 +218,7 @@
     "nearest_station": "ID 215692 北山田駅徒歩11分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/215692",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/215692/images/17871071180746CmJRjrjTOBE7hvi3lDgNegy1Bn.jpg.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-20"
@@ -334,22 +350,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-15"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "213312",
-    "name": "ID 213312 京急鶴見駅 徒歩17分 新築１棟貸し(分割も相談可) お気軽にお問合せください ",
-    "address": "神奈川県横浜市鶴見区向井町三丁目",
-    "rent": 539000,
-    "area": 188.63,
-    "walk_minutes": 17,
-    "nearest_station": "ID 213312 京急鶴見駅 徒歩17分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/213312",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-12"
   },
   {
     "site": "テナント.biz",
@@ -1066,14 +1066,14 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6969105311/",
-    "image_url": "https://www.athome.co.jp/image_files/path/CRdKBvWwzxAaWx26K0aRgw==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
   },
   {
     "site": "アットホーム",
-    "property_id": "6992087297",
+    "property_id": "6992099112",
     "name": "アネクスドルム 1階の貸店舗・事務所",
     "address": "川崎市高津区向ケ丘",
     "rent": 338000,
@@ -1081,7 +1081,7 @@
     "walk_minutes": 10,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992087297/",
+    "url": "https://www.athome.co.jp/rent_store/6992099112/",
     "image_url": "",
     "description": "",
     "is_new": false,
