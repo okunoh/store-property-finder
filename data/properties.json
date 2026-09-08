@@ -208,22 +208,6 @@
     "first_seen": "2026-08-20"
   },
   {
-    "site": "テンポスマート",
-    "property_id": "215615",
-    "name": "ID 215615 ■磯子駅 徒歩2分 2F 現況:小児科居抜き物件 【各種業態応相談】 賃料 55",
-    "address": "神奈川県横浜市磯子区森一丁目",
-    "rent": 550000,
-    "area": 130.25,
-    "walk_minutes": 2,
-    "nearest_station": "ID 215615 ■磯子駅 徒歩2分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/215615",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-18"
-  },
-  {
     "site": "テナント.biz",
     "property_id": "64104",
     "name": "東急田園都市線梶が谷 川崎市宮前区神木本町4-22-2",
@@ -849,6 +833,22 @@
   },
   {
     "site": "テンポダス",
+    "property_id": "2419409",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県本牧三之谷の店舗物件",
+    "rent": 430000,
+    "area": 546.78,
+    "walk_minutes": 31,
+    "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
+    "floor": "2階",
+    "url": "https://tempodas.com/search/detail/2419409/",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-08-24"
+  },
+  {
+    "site": "テンポダス",
     "property_id": "2324568",
     "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
     "address": "神奈川県虹ケ丘三丁目の店舗物件",
@@ -858,22 +858,6 @@
     "nearest_station": "> 川崎市麻生区 > 宮前平駅駅 徒歩23分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2324568/",
-    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-24"
-  },
-  {
-    "site": "テンポダス",
-    "property_id": "2358653",
-    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県本牧三之谷の店舗物件",
-    "rent": 430000,
-    "area": 546.78,
-    "walk_minutes": 31,
-    "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
-    "floor": "2階",
-    "url": "https://tempodas.com/search/detail/2358653/",
     "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
@@ -945,7 +929,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992099112",
+    "property_id": "6992148793",
     "name": "アネクスドルム 1階の貸店舗・事務所",
     "address": "川崎市高津区向ケ丘",
     "rent": 338000,
@@ -953,7 +937,7 @@
     "walk_minutes": 10,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992099112/",
+    "url": "https://www.athome.co.jp/rent_store/6992148793/",
     "image_url": "",
     "description": "",
     "is_new": false,
@@ -1118,21 +1102,5 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-26"
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6988955420",
-    "name": "松本ビル 2F",
-    "address": "川崎市川崎区大島３丁目",
-    "rent": 550000,
-    "area": 277.52,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "2F",
-    "url": "https://www.athome.co.jp/rent_store/6988955420/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-30"
   }
 ]
