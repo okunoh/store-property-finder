@@ -833,19 +833,19 @@
   },
   {
     "site": "テンポダス",
-    "property_id": "2324568",
+    "property_id": "2373962",
     "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
-    "address": "神奈川県虹ケ丘三丁目の店舗物件",
+    "address": "神奈川県犬蔵一丁目の店舗物件",
     "rent": 143000,
     "area": 150.74,
     "walk_minutes": 23,
-    "nearest_station": "> 川崎市麻生区 > 宮前平駅駅 徒歩23分",
+    "nearest_station": " > 川崎市宮前区 > 宮前平駅 徒歩23分",
     "floor": "1階",
-    "url": "https://tempodas.com/search/detail/2324568/",
+    "url": "https://tempodas.com/search/detail/2373962/",
     "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
-    "first_seen": "2026-08-24"
+    "first_seen": "2026-09-10"
   },
   {
     "site": "居抜き市場",
@@ -986,7 +986,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990402727/",
-    "image_url": "https://www.athome.co.jp/image_files/path/0_NC1qR9H4jHpEuphuuC3Q==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
