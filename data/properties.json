@@ -49,6 +49,22 @@
   },
   {
     "site": "テンポスマート",
+    "property_id": "219283",
+    "name": "ID 219283 センター南駅 徒歩1分 2F 現況:その他 その他居抜きなど物件 【業種相談】 ",
+    "address": "神奈川県横浜市都筑区茅ケ崎中央",
+    "rent": 498000,
+    "area": 147.7,
+    "walk_minutes": 1,
+    "nearest_station": "ID 219283 センター南駅 徒歩1分",
+    "floor": "2階",
+    "url": "https://www.temposmart.jp/estates/219283",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-12"
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "219223",
     "name": "ID 219223 ■港南台駅 バス 18分、バス停 庄⼾ 停歩6分 2F ロードサイド 現況:その",
     "address": "神奈川県横浜市栄区長倉町",
@@ -90,7 +106,7 @@
     "nearest_station": "坪単価 ご相談 最寄駅 北山田駅 徒歩 12分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218853",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218853/images/17889336609079JHO0sOC7px04pDs3tJOfancrnU.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-09"
@@ -1086,5 +1102,21 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-26"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6988955420",
+    "name": "松本ビル 2F",
+    "address": "川崎市川崎区大島３丁目",
+    "rent": 550000,
+    "area": 277.52,
+    "walk_minutes": null,
+    "nearest_station": "",
+    "floor": "2F",
+    "url": "https://www.athome.co.jp/rent_store/6988955420/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-12"
   }
 ]
