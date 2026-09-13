@@ -49,6 +49,22 @@
   },
   {
     "site": "テンポスマート",
+    "property_id": "219326",
+    "name": "ID 219326 ◎ご質問や内見希望の方は【問い合わせ】からメッセージをお願い致します◎※お電話は",
+    "address": "神奈川県横浜市緑区台村町",
+    "rent": 462000,
+    "area": 138.58,
+    "walk_minutes": 3,
+    "nearest_station": ",019 円/坪 最寄駅 中山駅 徒歩 3分",
+    "floor": "2階",
+    "url": "https://www.temposmart.jp/estates/219326",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-13"
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "219283",
     "name": "ID 219283 センター南駅 徒歩1分 2F 現況:その他 その他居抜きなど物件 【業種相談】 ",
     "address": "神奈川県横浜市都筑区茅ケ崎中央",
@@ -106,7 +122,7 @@
     "nearest_station": "坪単価 ご相談 最寄駅 北山田駅 徒歩 12分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218853",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218853/images/17889336609079JHO0sOC7px04pDs3tJOfancrnU.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-09"
@@ -186,7 +202,7 @@
     "nearest_station": "ID 218099 鶴見駅徒歩24分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218099",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218099/images/17884955768281qvbm8EZWJy5gH2aFMKnKtYaeRi.jpg.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-04"
@@ -849,7 +865,7 @@
   },
   {
     "site": "テンポダス",
-    "property_id": "2419409",
+    "property_id": "2437812",
     "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
     "address": "神奈川県本牧三之谷の店舗物件",
     "rent": 430000,
@@ -857,7 +873,7 @@
     "walk_minutes": 31,
     "nearest_station": "川県 > 横浜市中区 > 山手駅 徒歩31分",
     "floor": "2階",
-    "url": "https://tempodas.com/search/detail/2419409/",
+    "url": "https://tempodas.com/search/detail/2437812/",
     "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
     "description": "",
     "is_new": false,
@@ -1066,7 +1082,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990800994/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/kRdFQxstNuud97oKlh3EVg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-29"
