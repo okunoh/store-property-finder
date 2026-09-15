@@ -50,7 +50,7 @@
   {
     "site": "テンポスマート",
     "property_id": "219367",
-    "name": "ID 219367 伊勢佐木長者町駅 徒歩3分 1F 現況:その他 その他居抜きなど物件 【業種相談",
+    "name": "ID 219367 伊勢佐木長者町駅 徒歩3分 1F 現況:その他 その他居抜きなど物件 【飲食不可",
     "address": "神奈川県横浜市中区伊勢佐木町三丁目",
     "rent": 500000,
     "area": 224.07,
@@ -174,6 +174,22 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-07"
+  },
+  {
+    "site": "テンポスマート",
+    "property_id": "218175",
+    "name": "ID 218175 詳細はお問い合わせください。 賃料 ご相談 坪単価 ご相談 最寄駅 馬車道駅 徒",
+    "address": "神奈川県横浜市中区太田町六丁目",
+    "rent": null,
+    "area": 214.88,
+    "walk_minutes": 3,
+    "nearest_station": "坪単価 ご相談 最寄駅 馬車道駅 徒歩 3分",
+    "floor": "1階",
+    "url": "https://www.temposmart.jp/estates/218175",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-15"
   },
   {
     "site": "テンポスマート",
