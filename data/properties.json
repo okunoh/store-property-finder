@@ -170,7 +170,7 @@
     "nearest_station": "ID 218500 ■阪東橋駅 徒歩2分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/218500",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218500/images/17887686205512M3C99fXqUbU2wcXuj18R7HdMGN.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-07"
@@ -234,7 +234,7 @@
     "nearest_station": "ID 218099 鶴見駅徒歩24分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218099",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218099/images/17884955768281qvbm8EZWJy5gH2aFMKnKtYaeRi.jpg.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-04"
@@ -254,38 +254,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-01"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "217318",
-    "name": "ID 217318 センター北駅 徒歩2分！新築 2階店舗物件 ★他区画同時募集・セット貸し可能★【",
-    "address": "神奈川県横浜市都筑区中川中央一丁目",
-    "rent": null,
-    "area": 267.01,
-    "walk_minutes": 2,
-    "nearest_station": "ID 217318 センター北駅 徒歩2分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/217318",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-31"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "217314",
-    "name": "ID 217314 センター北駅 徒歩2分！新築 1階店舗物件 ★他区画同時募集・セット貸し可能★【",
-    "address": "神奈川県横浜市都筑区中川中央一丁目",
-    "rent": null,
-    "area": 183.37,
-    "walk_minutes": 2,
-    "nearest_station": "ID 217314 センター北駅 徒歩2分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/217314",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-31"
   },
   {
     "site": "テナント.biz",
@@ -910,22 +878,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-10"
-  },
-  {
-    "site": "居抜き市場",
-    "property_id": "37459",
-    "name": "能見台駅 | 徒歩3分 | 横浜市金沢区堀口",
-    "address": "横浜市金沢区堀口",
-    "rent": 250000,
-    "area": 138.35,
-    "walk_minutes": 3,
-    "nearest_station": "能見台駅",
-    "floor": "2F",
-    "url": "https://inuki-ichiba.jp/rent/37459",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-09"
   },
   {
     "site": "アットホーム",
