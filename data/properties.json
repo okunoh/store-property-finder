@@ -170,7 +170,7 @@
     "nearest_station": "ID 218500 ■阪東橋駅 徒歩2分",
     "floor": "1F",
     "url": "https://www.temposmart.jp/estates/218500",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218500/images/17887686205512M3C99fXqUbU2wcXuj18R7HdMGN.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-07"
@@ -234,26 +234,10 @@
     "nearest_station": "ID 218099 鶴見駅徒歩24分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/218099",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/218099/images/17884955768281qvbm8EZWJy5gH2aFMKnKtYaeRi.jpg.webp",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-04"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "217492",
-    "name": "ID 217492 新百合ヶ丘駅 徒歩5分 1F 現況:寿司・割烹 飲食居抜き物件 【飲食可】 賃料",
-    "address": "神奈川県川崎市麻生区万福寺一丁目",
-    "rent": null,
-    "area": 198.35,
-    "walk_minutes": 5,
-    "nearest_station": "ID 217492 新百合ヶ丘駅 徒歩5分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/217492",
     "image_url": "",
     "description": "",
     "is_new": false,
-    "first_seen": "2026-09-01"
+    "first_seen": "2026-09-04"
   },
   {
     "site": "テナント.biz",
@@ -816,22 +800,6 @@
     "first_seen": "2026-08-09"
   },
   {
-    "site": "テナントショップ",
-    "property_id": "e-168249",
-    "name": "横浜市港北区 賃貸倉庫 トップページ | 不動産会社様へ 新吉田TH倉庫 HOME > 神奈川県 >",
-    "address": "横浜市港北区",
-    "rent": 280500,
-    "area": 128.34,
-    "walk_minutes": 21,
-    "nearest_station": "",
-    "floor": "2階",
-    "url": "https://www.tenant-shop.com/detail/e-168249/",
-    "image_url": "/contents/images/header/logo.gif?t=1",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-07"
-  },
-  {
     "site": "テンポダス",
     "property_id": "2373955",
     "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
@@ -1002,7 +970,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990402727/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/0_NC1qR9H4jHpEuphuuC3Q==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": ""
