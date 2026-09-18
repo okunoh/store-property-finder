@@ -74,7 +74,7 @@
     "nearest_station": ",019 円/坪 最寄駅 中山駅 徒歩 3分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/219326",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/219326/images/17892566182667hBjjgh42do69v3JylmhsJDiY7O.jpg.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-13"
@@ -890,7 +890,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6965414534/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/dX-cCe99o3iUb9dwG_6jyg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -970,7 +970,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990402727/",
-    "image_url": "https://www.athome.co.jp/image_files/path/0_NC1qR9H4jHpEuphuuC3Q==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1054,21 +1054,5 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-26"
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6988955420",
-    "name": "松本ビル 2F",
-    "address": "川崎市川崎区大島３丁目",
-    "rent": 550000,
-    "area": 277.52,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "2F",
-    "url": "https://www.athome.co.jp/rent_store/6988955420/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-12"
   }
 ]
