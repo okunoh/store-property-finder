@@ -874,7 +874,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6990871219/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/AKVCiy6w0HP2B4roMaxIQA==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1054,5 +1054,21 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-26"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6988955420",
+    "name": "松本ビル 2F",
+    "address": "川崎市川崎区大島３丁目",
+    "rent": 550000,
+    "area": 277.52,
+    "walk_minutes": null,
+    "nearest_station": "",
+    "floor": "2F",
+    "url": "https://www.athome.co.jp/rent_store/6988955420/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-21"
   }
 ]
