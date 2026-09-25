@@ -138,7 +138,7 @@
     "nearest_station": "ID 219283 センター南駅 徒歩1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/219283",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/219283/images/17891863924662gTISq75vfnmZDrZiWpT8yFsRiy.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-12"
@@ -206,22 +206,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-09"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "218500",
-    "name": "ID 218500 ■阪東橋駅 徒歩2分 1F〜2F 現況:飲食(その他) 飲食居抜き物件 【飲食可",
-    "address": "神奈川県横浜市中区弥生町四丁目",
-    "rent": 374000,
-    "area": 184.43,
-    "walk_minutes": 2,
-    "nearest_station": "ID 218500 ■阪東橋駅 徒歩2分",
-    "floor": "1F",
-    "url": "https://www.temposmart.jp/estates/218500",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-07"
   },
   {
     "site": "テナント.biz",
@@ -753,6 +737,22 @@
   },
   {
     "site": "テナントショップ",
+    "property_id": "e-170553",
+    "name": "川崎市宮前区 賃貸店舗・事務所 トップページ | 不動産会社様へ 川崎市宮前区初山2丁目戸建 HOM",
+    "address": "川崎市宮前区",
+    "rent": 220000,
+    "area": 132.47,
+    "walk_minutes": 9,
+    "nearest_station": "",
+    "floor": "2階",
+    "url": "https://www.tenant-shop.com/detail/e-170553/",
+    "image_url": "/contents/images/header/logo.gif?t=1",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-09-25"
+  },
+  {
+    "site": "テナントショップ",
     "property_id": "e-170509",
     "name": "川崎市宮前区 賃貸店舗一部（1R） トップページ | 不動産会社様へ ロイヤルエミーハイム 101号",
     "address": "川崎市宮前区",
@@ -945,7 +945,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992335907",
+    "property_id": "6992324145",
     "name": "ロイヤルエミ－ハイム 1階の貸店舗",
     "address": "川崎市宮前区野川台１丁目",
     "rent": 330000,
@@ -953,7 +953,7 @@
     "walk_minutes": 26,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992335907/",
+    "url": "https://www.athome.co.jp/rent_store/6992324145/",
     "image_url": "",
     "description": "",
     "is_new": false,
