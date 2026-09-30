@@ -74,7 +74,7 @@
     "nearest_station": " 坪単価 ご相談 最寄駅 関内駅 徒歩 1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/220381",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/220381/images/17897176833152sRO12et7m9svVya63rpeXLTQmR.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-24"
@@ -142,22 +142,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-13"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "219283",
-    "name": "ID 219283 センター南駅 徒歩1分 2F 現況:その他 その他居抜きなど物件 【業種相談】 ",
-    "address": "神奈川県横浜市都筑区茅ケ崎中央",
-    "rent": 498000,
-    "area": 147.7,
-    "walk_minutes": 1,
-    "nearest_station": "ID 219283 センター南駅 徒歩1分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/219283",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-12"
   },
   {
     "site": "テナント.biz",
@@ -842,7 +826,7 @@
     "nearest_station": "",
     "floor": "",
     "url": "https://www.athome.co.jp/rent_store/6992015974/",
-    "image_url": "https://www.athome.co.jp/image_files/path/pDZeLnG0AKRGUMyjOrp49g==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-24"
@@ -858,7 +842,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6988624750/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/azIMX4XkpxAX7d5SkU7Tfg==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-26"
@@ -897,7 +881,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992335907",
+    "property_id": "6992324145",
     "name": "ロイヤルエミ－ハイム 1階の貸店舗",
     "address": "川崎市宮前区野川台１丁目",
     "rent": 330000,
@@ -905,7 +889,7 @@
     "walk_minutes": 26,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992335907/",
+    "url": "https://www.athome.co.jp/rent_store/6992324145/",
     "image_url": "",
     "description": "",
     "is_new": false,
