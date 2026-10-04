@@ -122,7 +122,7 @@
     "nearest_station": " 坪単価 ご相談 最寄駅 関内駅 徒歩 1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/220381",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/220381/images/17897176833152sRO12et7m9svVya63rpeXLTQmR.jpg.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-24"
@@ -865,22 +865,6 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992015974",
-    "name": "川崎市宮前区 初山２丁目(宮前平駅) の貸店舗・事務所（一括）",
-    "address": "川崎市宮前区初山２丁目",
-    "rent": 220000,
-    "area": 132.47,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6992015974/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-24"
-  },
-  {
-    "site": "アットホーム",
     "property_id": "6988624750",
     "name": "宮川マンション 1階の貸店舗",
     "address": "川崎市川崎区浜町１丁目",
@@ -929,7 +913,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992324145",
+    "property_id": "6992335907",
     "name": "ロイヤルエミ－ハイム 1階の貸店舗",
     "address": "川崎市宮前区野川台１丁目",
     "rent": 330000,
@@ -937,7 +921,7 @@
     "walk_minutes": 26,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992324145/",
+    "url": "https://www.athome.co.jp/rent_store/6992335907/",
     "image_url": "",
     "description": "",
     "is_new": false,
@@ -1002,7 +986,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6988376506/",
-    "image_url": "https://www.athome.co.jp/image_files/path/A5AVPA4xX4hii9_wPIpSew==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1038,6 +1022,22 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-29"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6958928966",
+    "name": "第２アーバン東横 1階の貸店舗・事務所",
+    "address": "川崎市川崎区浜町２丁目",
+    "rent": 457819,
+    "area": 137.37,
+    "walk_minutes": null,
+    "nearest_station": "",
+    "floor": "1階",
+    "url": "https://www.athome.co.jp/rent_store/6958928966/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-10-04"
   },
   {
     "site": "アットホーム",
