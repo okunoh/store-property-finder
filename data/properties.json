@@ -49,6 +49,22 @@
   },
   {
     "site": "テンポスマート",
+    "property_id": "222529",
+    "name": "ID 222529 港南台駅徒歩10分 賃料25.3万円 54.7坪【軽飲食相談可】 賃料 253,",
+    "address": "神奈川県横浜市港南区港南台三丁目",
+    "rent": 253000,
+    "area": 180.99,
+    "walk_minutes": 10,
+    "nearest_station": "ID 222529 港南台駅徒歩10分",
+    "floor": "2階",
+    "url": "https://www.temposmart.jp/estates/222529",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-10-06"
+  },
+  {
+    "site": "テンポスマート",
     "property_id": "222454",
     "name": "ID 222454 ◎鶴見駅 徒歩3分 2F 現況:焼肉 飲食居抜き物件 【業種相談】◎ 賃料 32",
     "address": "神奈川県横浜市鶴見区豊岡町",
@@ -58,7 +74,7 @@
     "nearest_station": "ID 222454 ◎鶴見駅 徒歩3分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/222454",
-    "image_url": "https://www.temposmart.jp/assets/tenant/images/img_estate_item_noimage_medium.jpg",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-05"
@@ -90,7 +106,7 @@
     "nearest_station": "376 円/坪 最寄駅 新杉田駅 徒歩 3分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/221918",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/221918/images/1790863849198751OP51tAh4rKFCbd5UFU4Zp1FM.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-01"
@@ -106,7 +122,7 @@
     "nearest_station": "21888 【重飲食可】新横浜駅 徒歩1分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/221888",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/221888/images/179084455410186IzUcgyonb3GnqTzzBQBdMsDgg.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-01"
@@ -190,22 +206,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-22"
-  },
-  {
-    "site": "店舗そのままオークション",
-    "property_id": "75287",
-    "name": "スケルトン 飲食不可 神奈川県 横浜市中区 ( 馬車道駅 ) 42.33坪 1階 応相談 賃料の10",
-    "address": "",
-    "rent": 0,
-    "area": 139.93,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://sonomama.net/app/?action=public_property_detail&pid=75287",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-10-05"
   },
   {
     "site": "テナント.biz",
@@ -880,6 +880,22 @@
     "first_seen": "2026-09-29"
   },
   {
+    "site": "テンポダス",
+    "property_id": "2511496",
+    "name": "不動産会社の方 居抜き撤退を検討中の方 ログイン 無料登録 はじめての方へ はじめての方へ Temp",
+    "address": "神奈川県扇町一丁目の店舗物件",
+    "rent": 410000,
+    "area": 526.61,
+    "walk_minutes": 2,
+    "nearest_station": "川県 > 横浜市中区 > 関内駅 徒歩2分",
+    "floor": "1階",
+    "url": "https://tempodas.com/search/detail/2511496/",
+    "image_url": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%200v6h2V2h4V0zm16%200h-4v2h4v4h2V0zm0%2016h-4v2h6v-6h-2zM2%2012H0v6h6v-2H2z%22/%3E%3C/svg%3E",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-10-06"
+  },
+  {
     "site": "アットホーム",
     "property_id": "6978974955",
     "name": "川崎市麻生区 百合丘１丁目(百合ヶ丘駅) の貸店舗",
@@ -945,23 +961,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6969105311",
-    "name": "小田５丁目貸家",
-    "address": "川崎市川崎区小田５丁目",
-    "rent": 230000,
-    "area": 135.5,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6969105311/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": ""
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6992335907",
+    "property_id": "6992397102",
     "name": "ロイヤルエミ－ハイム 1階の貸店舗",
     "address": "川崎市宮前区野川台１丁目",
     "rent": 330000,
@@ -969,7 +969,7 @@
     "walk_minutes": 26,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992335907/",
+    "url": "https://www.athome.co.jp/rent_store/6992397102/",
     "image_url": "",
     "description": "",
     "is_new": false,
@@ -1034,7 +1034,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6988376506/",
-    "image_url": "",
+    "image_url": "https://www.athome.co.jp/image_files/path/A5AVPA4xX4hii9_wPIpSew==?width=266&height=246&margin=true",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1070,22 +1070,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-29"
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6958928966",
-    "name": "第２アーバン東横 1階の貸店舗・事務所",
-    "address": "川崎市川崎区浜町２丁目",
-    "rent": 457819,
-    "area": 137.37,
-    "walk_minutes": null,
-    "nearest_station": "",
-    "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6958928966/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-10-04"
   },
   {
     "site": "アットホーム",
