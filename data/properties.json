@@ -90,26 +90,10 @@
     "nearest_station": "3 【UY1005】武蔵溝ノ口駅徒歩5分",
     "floor": "1階",
     "url": "https://www.temposmart.jp/estates/222243",
-    "image_url": "",
+    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/222243/images/17911611754870gK3nSoMAVeAJHiLI4X9SZsrrcs.png.webp",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-05"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "221918",
-    "name": "ID 221918 【TN1001】新杉田 徒歩３分 大通り沿い路面店！ 寿司屋居抜き！！！！！ 賃",
-    "address": "神奈川県横浜市磯子区杉田一丁目",
-    "rent": 550000,
-    "area": 126.45,
-    "walk_minutes": 3,
-    "nearest_station": "376 円/坪 最寄駅 新杉田駅 徒歩 3分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/221918",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-10-01"
   },
   {
     "site": "テンポスマート",
@@ -142,22 +126,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-01"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "221316",
-    "name": "ID 221316 馬車道駅徒歩3分！1F:約65坪! イタリアン居抜き！ 賃料 ご相談 坪単価 ご",
-    "address": "神奈川県横浜市中区太田町六丁目",
-    "rent": null,
-    "area": 214.88,
-    "walk_minutes": 3,
-    "nearest_station": "ID 221316 馬車道駅徒歩3分",
-    "floor": "1階",
-    "url": "https://www.temposmart.jp/estates/221316",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-29"
   },
   {
     "site": "テンポスマート",
@@ -1034,7 +1002,7 @@
     "nearest_station": "",
     "floor": "1階",
     "url": "https://www.athome.co.jp/rent_store/6988376506/",
-    "image_url": "https://www.athome.co.jp/image_files/path/A5AVPA4xX4hii9_wPIpSew==?width=266&height=246&margin=true",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": ""
@@ -1054,22 +1022,6 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-19"
-  },
-  {
-    "site": "アットホーム",
-    "property_id": "6990800994",
-    "name": "川崎市麻生区 栗木台１丁目(黒川駅) の住居付き貸店舗（一括）",
-    "address": "川崎市麻生区栗木台１丁目",
-    "rent": 451000,
-    "area": 150.64,
-    "walk_minutes": 13,
-    "nearest_station": "",
-    "floor": "",
-    "url": "https://www.athome.co.jp/rent_store/6990800994/",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-08-29"
   },
   {
     "site": "アットホーム",
