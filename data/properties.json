@@ -58,7 +58,7 @@
     "nearest_station": "D 223233 ■向ヶ丘遊園駅 徒歩8分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/223233",
-    "image_url": "https://thumbnail.temposmart.jp/thumbnail/public/estates/223233/images/179152327538963dQ0svkhVob3SfxO849D5dyBVW.png.webp",
+    "image_url": "",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-20"
@@ -154,22 +154,6 @@
     "nearest_station": " 坪単価 ご相談 最寄駅 関内駅 徒歩 1分",
     "floor": "2階",
     "url": "https://www.temposmart.jp/estates/220381",
-    "image_url": "",
-    "description": "",
-    "is_new": false,
-    "first_seen": "2026-09-24"
-  },
-  {
-    "site": "テンポスマート",
-    "property_id": "220647",
-    "name": "ID 220647 あざみ野駅 徒歩6分 2F スケルトン物件 【業種相談】 賃料 420,000 ",
-    "address": "神奈川県横浜市青葉区あざみ野二丁目",
-    "rent": 420000,
-    "area": 124.6,
-    "walk_minutes": 6,
-    "nearest_station": "ID 220647 あざみ野駅 徒歩6分",
-    "floor": "2階",
-    "url": "https://www.temposmart.jp/estates/220647",
     "image_url": "",
     "description": "",
     "is_new": false,
@@ -810,7 +794,7 @@
     "nearest_station": "s 神奈川県 横浜市中区 山手駅 徒歩5分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2486412/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F059e837f-8fb1-439b-a8fe-ac59b2a29cbd%2F2486412.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T193240Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3Dc00b3504d70dc7dbddbc9eed411f4b7f1e093b3fb19a17d56ba7cbfcbbc35bca7ad150ed7499ad76948b834e83bd55bac08ad287bfbbd4755e44a92ded612a49a075430dc03aa24fa34d368b584869251a70cc52234dea1482b3a3bec2bdeb9ed6f7eba2a5eee29129af618d05f17347337f1912e39c8e5007dcd6f6cc2aadc194516ab69c018c0859f985c2a06f55dbf8638acbdd99f9616d13e920b3e93dc3933ef8be6c17e7a4eeab25f85ddb6077a5f08019c859c7715501a4b7eea98b740e777fb74fabfc39c38a2945620206f712cdbd38f0a6ef1146c262e533ffeb804e42f9289254cbaeb9c8bb52baf64eb23f81b289b02c95c7b0120b97b7a83359&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F059e837f-8fb1-439b-a8fe-ac59b2a29cbd%2F2486412.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T185917Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D0b5bb0d7171e74003b9b4d22a7c7fa790504d69d71f98efd35226d050a64145b982c12e34b310ed0a1c1bf3e4f0c5cb2236c50b9cbb31d8fd1918d92459618887be5197af17c6e8694190586c2686474ac493749b082e606b4606684d5a9d5cc3a9e1705766fb1dae718fbb33a3d20038f0fffc2edb16caf89b7177c7ed08132d2cfb213e259d89f31ede98cadd5a2cfd52da8dda70a7247e3523271ffa640f1a1783f80ecb3173489476251089a58e0188ac3ce2c3dda167a4a205359e6a9fae6cdd11757a225d5336be03f81f80111caac58417b0b34baed670df0dd86f18ca524fa0f4785b38d72340ca1510c3481e2830b5afed8c2ec41a6f1f144339280&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-24"
@@ -826,7 +810,7 @@
     "nearest_station": "川県 横浜市中区 元町中華街駅駅 徒歩5分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2511139/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Ff6ea03b4-d7f2-4a3b-995e-5b662d4839f8%2F2511139.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201310Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D0386c0b69bab2453b4f162c88559ffd95a4a25e72fcd6abdfbb9b372c76a1704267fcbfc84f278e76b948b9f3b771101702d7632402d4a5a7fd4b65557457a029b4516f820f94b17f30e413eb2df01cf8ade630ffe63efe9191917dedb4574651c0c8a5c3feead16613c2849ff84c1b5bfe3439fa45724618e50f861d19f71130c70d94744692c19d3e2cb8c858d93ea6135e23c54b13832c38c177b9ac0d1461a446a11e1f15ac7d1865b80392f9e364ab205ff24feb190016f4585149884fd031865d8dd6c0b566c98291f29e2d03c89372ca91a472f29cc0e40146e200277f582ab26b80af02bd6e3d666163a5b40c07524cb0dc4b469f310d2a7ccd19446&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Ff6ea03b4-d7f2-4a3b-995e-5b662d4839f8%2F2511139.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T184100Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3Dbd4e7d4644f93a0fc5322e6b336e1a42a3ec59e66b2c225727b6bfed4a6474fa3997a663ee129abdad58987bbce22a1c5902c342d6ba4809f4b471dbfd771710b664f733fbe424e4338153fcce1b4647eb1430b3cfdf4d603dc6774820bc072ea555a19318df11832edd584b01b597a991feb80b3df7132af1d672ec8fb5cecec5c877ae815344fbaf215ba5e4dc549fd1ab027ec9f2ac7e5339a978c39fb85f4d2f2d6a2789b2c09db277a0e08ae84ae420813c207089ab13d8519d918ce81ef8179046a919d87b4635d9c685dfb56c705fe543d654e5dfe82fee452f9531b9412cafabe3dbd2126749375fb12dbd79484510944d5cf9bee45355795b81b1eb&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -842,10 +826,26 @@
     "nearest_station": "川県 川崎市中原区 武蔵小杉駅駅 徒歩4分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2373955/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F08572fb7-42d2-471e-bdf9-543a0dd92ffc%2F2373955.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T200402Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D8cb87813af7249bc0d08caa9c72e7c9dbeff590ac9d7452e6f7390d21617cfcad88e7c8e692fae4c334b4009eba3f4baa019bedd2dabc1a32e88866577ea80c46d506ba3bb2bcaaf0092a74386c002eb54a25371673580eda333df82084ee75151b31d7570cb0921df3ba3ccd6df5066c57cd53128b32c5a8754ecacba122e5335401fa0c48e491a1547bac17e9752cb3b66b8b3f71cc9c5b3f2e08dc2e189aeec0e1e2f273227a2c97dae34fb839c24995ab6d8593e0273369784b077bc99a45bf0beb58696a76cfc558cb835d130757f13b4092c7a46b110f4e19ca3a84d146fab60c5bd202e1406d9f4d41479d33639360dd050d211489dd93919b0d54586&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F08572fb7-42d2-471e-bdf9-543a0dd92ffc%2F2373955.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T183356Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D62481f18ef015ac30d79f994bb2b293b9706fea3ea844566df7178c354cefdbd2e024dee2e71ce36e1692bfa62daef8b12f2ed1332e2720ccb7cea53d710f3462ee2ddb8873b3f96752c7dc1caa64c5921319c0341a9964d930a20dc2892645136eeadd64d91cec0b2e7bb368e987e2cdde5111d9eae1c1f0b3afa0e7f8b292eeda8cd3e9c637c3841c6aa5ae7cd98252b309d53faf8894dab6b8861955af0386ebb477afb4319ce9aa0791e29d90078c467fe437a9a8334f3daab95d7980f43fb5cea416d5fdee0d7ffa6b3a6d88c701741823cafbe6b1baf36394acb649183be76d23a0d5e828f4a6bff1c7af291a80dccdc401c648ab609e631815c30ee28&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-08-29"
+  },
+  {
+    "site": "テンポダス",
+    "property_id": "2523890",
+    "name": "不動産会社の方 （新しいタブで開く） 居抜き売却を検討中の方 （新しいタブで開く） 内装会社の方 （",
+    "address": "神奈川県横浜市鶴見区の店舗物件",
+    "rent": 11000,
+    "area": 125.16,
+    "walk_minutes": 16,
+    "nearest_station": " 神奈川県 横浜市鶴見区 矢向駅 徒歩16分",
+    "floor": "2階",
+    "url": "https://tempodas.com/search/detail/2523890/",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F02701b7f-3cd3-44f0-b70e-faba5f1fb223%2F2523890.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T182719Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D6b31b967d7feafe25740e85f75675e122f7b86bffbce54872bb23a33fda25936d0ed755ee9f8cb4f0847e30da7a620bf1a625e7568af60ce750f7c9ac105f8ac3507883f5edb2c43c6d2b74a7d7f0b11cc017119e43c04b6bd6e09482fc5448c1275f7c0cbf6c4f66556624a8b00352ad9308d3bb35f29451083ce22dd7afbcfe8894147a4993a64290aa8e0090c463d9d002fbdce667ffb9a4d4c2a79560390e20f7dd915bb9255063f2def7eac2325924effbdde9fc4095065a8cb4c727f61fcbf31ed58a27eb60194100672d34ec633a175ff4f399a7c0846699145c62a66ce1996d6f8765d7e381b685694c7b3e731ffc009076e605c999340d54e719bab&w=2048&q=75",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-10-10"
   },
   {
     "site": "テンポダス",
@@ -858,7 +858,7 @@
     "nearest_station": "神奈川県 川崎市宮前区 宮前平駅 徒歩23分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2373962/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F090a63b9-8436-4fa5-81f2-25c365def5d7%2F2373962.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201320Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D1d7ccb5953ea783450a7e021e4e9452ccda4a4b8ccbf24ba274c5d0f3550995998be8b65c77e0f85b577efb8c2423c2a44106dea0f22458dba664987ef7efe555b9b6c51662d0005ba56b122fbd2c756dc45033e6a5b9ea46de1ab1c67b654961fb694bc903b7171ee6d6d37473b031a3c115697e400b4b766afa712393b1cd994c5f47385a654ac56ec648c589a75970c8f1525968ce3a2aa14283ef83b3e119640160dcff4b15a4c673e40b90772d6f8d0eaa087fbe8be6f890c7361ab69b4e07504d16664435a17f90986754ba9fafb5b8db0fedd0f5433732e2cb9260d2a32b5b178dd4a25d0c937a58373733c6ab00f60e1c4083443a0a4b9d2e5b3e185&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F090a63b9-8436-4fa5-81f2-25c365def5d7%2F2373962.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T185037Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D0be481c4f48508b109768dcb80d3fa1deb200b14de45e64955751941fec9d53303b0d55aba104bae8cceca1c727df3c50a5ad7f345d7cddcefc4fc6582fa86c7f463f54732e3e349c8dda95faf4797b430df73b39608146148fcd8276edca1c38e37767047066c6a218bf7d78d1ea9200a554ddec474592159e27a8f3a1eaf6232f1f76d6b0f33d2b0e2045af037206165716a800ca3d5b830d48b490a3e26d75503309cc0d7e388ffd6e8b936f038c8b60d8250ce0ea0d4b5bb08f83d43083c2e203157a0326964339afabe557ab6c37b50ba12b1b62fc635c19104427b8c263477e2c416f2dbc41f46015e3a7f4320a3c5ddae804d0419b46ff531acafb21b&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-29"
@@ -874,7 +874,7 @@
     "nearest_station": " 神奈川県 横浜市港北区 綱島駅 徒歩1分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2511292/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F9c77a941-a47c-4b93-a533-e723392d4289%2F2511292.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201831Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D548d74ba43c73c8e4b8f1a3e663fe1a8f60ad003904a85831e3786246b2e26b083edd94fe68d651791ddeb32c706f2d193b841671bdfc2a276876d19ce5c7818f23f6eaeeeb17cc77fe3eae705b9732228280a36bf548360facc5c98efc960ed18462b8dfeb5cb5da1587fd7a5da6b958526c0460697281c705ff8ffb4c605f4a7b46356adc0af82c4e0b5375a7482751791659373d3951953c2f0df842c4573cbb8e99731185561ef150b0247fba8afa382019ccd7e42b9b28ac6ad3bacf6fe5d29c017b449deaac28c64684e4c744f46235b9723ab39e0b286a5aa45bc9aee892723a8fefc88abaf865da7fcef404d6f04669900e4ddd1801eaff36a98fe4e&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F9c77a941-a47c-4b93-a533-e723392d4289%2F2511292.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T185030Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3Dacd1a66d44e8aa1eee132d6c034940e6c5f6304c516de055f2f3df2c2e2b9ff46dd16ee45db33796a218df372946e2ce0cfe9d5f5ca9a729b31d74c43e1c6846f017a19b595b682724098c5a00ccd18d801d628d911ea51cdb1690f12d77315c597b6de243a6d21fa389ab896b00f9fb6c172628f40db3554afc84cdca7ea4320bbf3b248a65fdec8539911242fbfa4f0fffa8c42ac241c1c268880d50cf63572c053ec6ac73d37a631f268d51b3d8c694583f3894f9ccecd9cf0c1d24a8b483ebcac367e554a395ec4b1348535c87f618e10961ecad998ab84e9c6b4edbd4d0682daf4c8908aa26e5435e199ecd8013c04ddbda5fe78b9b77925ba06c5d7fab&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -890,7 +890,7 @@
     "nearest_station": "県 横浜市保土ケ谷区 天王町駅駅 徒歩5分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2511112/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F07287809-bbed-49b9-b472-357c1ac07840%2F2511112.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T194038Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D7ae9617eafa8246da2d24b45a0144aacf67b7f155319d73d24ac7d8f01e11025fc2d1e84d28dd80f7828e6aef8544c1373be673ddb88d1ea8c2bdd97aac2532ffa1ab89598c4a32aa2ac4c2b4aa4b99bc6bf0c2d0fdb5cd14ff479f6281fabc53db646c0d11dbeb3bd0c2be891dd1ed82f89d8f622299ad08a260fd4983142fe9d08b703590e31ff9074019abaa8a1ca1cca14bbd7fa6df9b91f948c71c30e7d744127f428acca2a388e5494731d1ea1d6d4b365ada1910144a0202db89f93f5366b7fcfca21e7b98de41f6ffd98cbce13559e44a108b462575865755a6c2631c802cb09135a6905ec4348d5896e62680af8e584ed9722b83eb1cb0dec56c9d3&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F07287809-bbed-49b9-b472-357c1ac07840%2F2511112.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192430Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D3cd8db1e4f394ad23ac08121f108f6cb71bca730da7fe9e98166b829e3a8691d2abbd93fc72f178f04be3c16d3f774fc0fb7376cef7fec07d85fe922cf86c79df9bea2733e77881fac2560e5ed32ed67eed6817f23ae85dd088774858633f02c3a5575e8b9d1a665270f43c1b6aa64b4d30b563ef912eb4aefb02abf3e98e4ea0dd1c6831de56f7acedbdc30111875148493c4306f3002423a884cf77b68f651ea6ef7c53e1450d926b8f3e9e6c30c06e76b220fa7f9bf5b4279e1c607fafe2997b9902aa85f9a395eb187a6e6799673ea003293e06cccb613b67851f83db8e7dc16861a42b589739b117e95878032a6515bd46dc90330592a1015bbf9f7ddeb&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -906,7 +906,7 @@
     "nearest_station": "川県 横浜市港北区 綱島駅西口駅 徒歩1分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2486021/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F5a604b4f-76c0-404d-ae38-78cb8c80f591%2F2486021.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201831Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D46d3282ec0930f77a8e10d626475f27c6b1dadf3f3e69f5171163019ad344255128d1976581ff3558d87a58295dbb6f1a99d96871427950414dd89168c50ff8acb66fd8c02ba2735c8f670d5bcfcef059ee95d7e35e71bededfe79e857850f76e98f062cff237f5efb6320e53265c43d79a1f64bb4056766c225f464d0770626e268c299890b979ac7aa953d9060dacec78aa7d54c3145481d5ee4cc7b293cff4d2ecfb5b42f3af67ca6889209abfc037b8f96c57d0ab50e4ebf44c926d3bed9c036a7b0f654f1d7808a72940f35d585fd8c779b488a27e95a4328ecaca2a55cf5e2a2ed0755d49fc0980bb72174a0913a7520fd423f87354ef135d23cccc527&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F5a604b4f-76c0-404d-ae38-78cb8c80f591%2F2486021.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192359Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D1b92bae786b042de7ff9e11fd3c62aa2cd6abb421ccfe2d4a6bcd20967a73f7612ef569bf602092e8c22d2cf51ad49aacf342fe9759a954bb916688ea2f5254f03ec581a963175362261dd4cc205b1afff95da2f9718e7d03170975ccb44e36d99fbe351630bc2389ff2e37d08f5aa5b68250d47e381d64c1754b30c177d0fa10c2869128aa12e2608e51e842d506e330ddf2639d184e3cde4614f105603e364c7df80e7383214d5d3c6711730d60ebaa00d9b96ad31a8da9671487c1906f04d4281f482b915a8113e9965eeacc4e52fe6248924c592efe40f53926a71a91616aa7555351dfd0a21946b5d3e05e9266973fa1ac118a0c86f1359409f8fc0bc4d&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -922,7 +922,7 @@
     "nearest_station": "川県 横浜市保土ケ谷区 天王町駅 徒歩9分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2511516/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F9f0b2162-ca93-4e27-bd70-c4f38800c9f4%2F2511516.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T194038Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D11d42a4fba6ff063c3b68e80c63859a8170b7929813885fdab8558cfa835f54c9e8e653bc935b0399421422b076f92a24143a8ffcf1bcfd6b4b06f944abf530c216aaa6bc1e70922dd69976b7afef6de6c8f0d4e5a0fd365e03a6d2af5b6e38d562ceb757446ea09ed223654295330669625f7346ea8121e3a6fc66fe25e44c2d361b1d71155f1a5cc9a07d2be6fdeb7f3b1e55d763cb2d9e6b1c872b271556638effa859fd57dc6bdfe3b692fd5cd4f6b356b20f96606147d6230b7164232f7b83d1b7c508f188ce2ba8cffbed8d0fba8145ff102e9a3a3472ef8bd865411a7bf5bdf268f4481823795ea47336ce6c07ab5d43124f74eb6acd06e6f4b01db39&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F9f0b2162-ca93-4e27-bd70-c4f38800c9f4%2F2511516.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192430Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D1b8322b27313d9182c731a8eea332728cef725d4da778c1cfc70ef1d91df6390e5071f6ef9f705475d296ac97ddf0100ea5958f9e0f8304ef62335253d2df326bdbbb2d84a240963795b46cb9acc4197e11909cbd4c03a156a42c7fcd934fa27a9a384796200019f8651d843f6390213299c41effb56379c83ee5c5a58ebcd720c2d43041f01f8cc099b4d86d0c46c82f517e26295a6601058d2e0e5707b4da33fcb7a1cae3cdfa0f101fe451816e9587650187c0b31874c4a86f48d68155df27be61e0ebe2bbdb40bd77dbb0d689b8f6e2188b27df533f9edb1f9e3ad21ecc851c792af4c0c31c453ed2a1824b36276a3072453e5cc6954a6211637facf6ca4&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -938,7 +938,7 @@
     "nearest_station": " 神奈川県 横浜市港北区 小机駅 徒歩1分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2511512/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F13a226fa-8a29-4176-ab7c-ffd987f308bb%2F2511512.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201831Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D011908738a7dc18be54b41c245fe6183b3f4c891fe11c5d1cbca108ae5850d76b28cb9f13da3b1ff47e30d094e02139b0114f23673b09d2d12f3ca77f7521670658f1f13a730a29df8e11b7dd200d92ed38b94f4cc4b2c3edb70ed33eeb10e87910e864eb30500fc77dedf7b669f72c42596a143afad0252f7793ed428c6913a7d6365bf63206ec470e16bff1cb6fa88bf52b9ec38b6fc27695fa70f88e5ed3b9c3fd64fcd71c22c5ba9994aaf2be908d75d50d853407bfba51093cefb2317d2b952b476725910d70f6efdd685648d509cdfefd1323a39185147f54b9b753acb415c6a7ebdf44d271165c4f7ec32ab9e18fc94aa4feb5613d745451e09848df0&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F13a226fa-8a29-4176-ab7c-ffd987f308bb%2F2511512.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T184300Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D095e38e88a4d908d16c17fa23e83af3e7ad58f7a1f9935c01f0a2ffe526109ec2257a7614af382363a1ed0c7da6217c488f7f19f7a111f18023522cb4774c94dc5cabbad49d38c6a974156a5bd7f6fbc2f35d1bea4a59a76015ad65852ecebfff49e09a55e634bd3da8731161a2e326fbe6234cac12eda577933dfcd5311017da789da57a90ff8a5104a0b14b90d14a54004b1d75352a13b768b82615c007c638fe592e25250861ef25183fcae9b325eb48ea0c4bc1108a66758d0bc959ae941993545de8a53f996dd084f871073d28663b48443159f2c6c453195b69fdd57a7a1c49a33f689d073f97c338bb3ee20707a76ab596a9f46aa83ab1e3ec8b5b996&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -954,7 +954,7 @@
     "nearest_station": "s 神奈川県 川崎市幸区 尻手駅 徒歩1分",
     "floor": "1階",
     "url": "https://tempodas.com/search/detail/2511216/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F65283f06-97e2-4a74-afd4-90dc566a5534%2F2511216.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T201200Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D31be99f763427aa5bcc36c17b7c8b596a8c353222767f63495d7395f7cc00693589232cc6faab535b192603c946b8e6867605dd44574b0a59feb8f0e3c705fa1376bdf8631a031ff1fbb8f953fcd5e92909a50b30d30a98a5983f0c2a7e48078e20b1e8f1453ff8d8007ddd6ccfd7d34fc6c7065a122afcbb06ccb0ba1a8c7605bdb598b5b8dbcba6f0ad4eb0477b4df0d5a911373a2ed3f5e2cf27cf25407a565568749a72af7d402f4c3e734ecfb30699430d3832ee995b1bb8646262753ca3b7be5ff4a5cf75409b9995449a4d9898d81948adc0876ac74f9e349521d3dfcbe5c958c129d58b47cf345291b01c592eb445a41a032def3c0efaa1d8c0ba322&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F65283f06-97e2-4a74-afd4-90dc566a5534%2F2511216.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192532Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D7a51b5ece37ca225ac2d3fdbb696c0503bdf93482c2699819e96e8aefefdb29c1a71ec6e571cfe53952f1085f981cf8415de522a445100ed17095139e6c6528b5a5e61e799366543c2974a7492906cf8567e31e6866176310e9b225d420ff19fad99564164240b4da6f7673d204969d8f2d04d6aa48cb1a91b1d87b541aa20bfae3db1f6b8bc31e284742d998a49c6699892574945132248d945b458f0e4da4a2bd97e22558cbdfb9b8faaec643fb596acc69b3f84e23a7d3aab09a921113a2fb90e01a30d5d4ded8936dc7a039c5e22b12281c48f5e3241f5de7233f22ed1ab0cc81d30a0695ab72a73620d7dd4ff324a1d80df4743b56cc7eafabe7bb76e91&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -970,7 +970,7 @@
     "nearest_station": "神奈川県 横浜市戸塚区 本郷台駅 徒歩22分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2483378/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Fb778754b-ede9-4d0d-b60b-a7c58a64c8b0%2F2483378.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T202139Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D0238e8c295ddd9ece9e21c55b504f51022e2842db7b391293a59118d3514a9139d5463991dd38bb26af225d7ab5e3ee1d4f14d7f7f4ad795cd7ba7a8c867d2a2d13c885cbcadf903f9e0119cb32c4a3ca23325d487bbcdba8f56a6dbec8ff4369a336e959ea31730ef6f7f24c2cd333b3711b5c618183054529c316b32f45f550195fbe0b9614c145c918ca976c06200fe0f8d98dcee4f67978ad4259a78f75e332036f57b3e0e46e27984886f6bd6367c6e704f7ca59acf0cb8e25b3e07a9f31e9023aada14bbd9302fb468f0cb1ea8e2ee0e58675beb340cedd50f355a2b9940c23457b36d84b90bf6fa8f99470dd2a3f18ced573caefadb54ca8403bf8052&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Fb778754b-ede9-4d0d-b60b-a7c58a64c8b0%2F2483378.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192709Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3Da85ecd5298015ed6a3d77144270c9421d9357f42353620c278d6d3ed3836bc4b6634a3dc2c2a9ccb73732330b61b155e798955d2359d6812f80009126526f25d1657a9dfdb57f418f68abd214eb363c8854636d746143f421fdfc99a5e53c9efcd66ddf6d393f25943396306965d6857ef69ca45a6b831e9d82ae663f6aec4638f0f4c278b583a98ef4b71a4a2d67140928402ceb94959c189957d324fa0b333819d84a42710c941bf6c699d6640ad87c147c2e2d9b3543e4e571305d81b50de499482ad8cb69a2851dc5869ba104289c9037836411ea46f4060dd1825fb97cb50890cf7587abe23d517c5cbb2c5282485ccb893423dd47d3927405a24295c50&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -986,7 +986,7 @@
     "nearest_station": "川県 横浜市中区 元町・中華街駅 徒歩4分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2483370/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F5eadf0cc-610b-4450-a881-d34d7a7a6aa5%2F2483370.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T200008Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D65f35054dd81a7d3c81e752bf530ef3d3fc109bd80dea2b0f55490f0ae26f35b03c5722b82152de5e28586a16ce2b33d7f7e6a34df24a176d2fd0addb5c3c137e0bc06bd18aca2189dc2f4f366bccb3fdf3eda34f45184b39d35015b6312e3a99b55ca1b0a7567f0427f6103ce3696537de00e79f66aa49b4bbf942234cad049bd31297d78bc0b0aea375656123358c77b8d8a2293d0c532eb8893e4c7654b1bcf4952aec413070d63bfc826c3e8ce164ee674dc7313f8ea8f5d181b31342196bfe6922e601b00bd91e09c92dbb1f51936fc405578bf95ae81ec71d45e34bb35e67620eab31cda5bbc12603aba10529f7ee61ca98a26601a31a8a026a656b89f&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2F5eadf0cc-610b-4450-a881-d34d7a7a6aa5%2F2483370.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T191105Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D8a61f9d187bb5d2da48360c035aee16e0cbe9e42357d1c4dbfb256cc36c02e62a1a43750508b86d0b96b02a7921c328123df1bb8a7d9bf4443ebed9b5cc635a609b1eaee349eb6b22ef6f8a06c180b375abec66dc0bc675287e7d287607a8bba5396b513a89bb67985d9ef840ce922d1e3927bd33a9b0e75e9bb2f8f7b9647b229ef103759400d70458fd37036080ad9f8d73e591721850023d1e20c0e4fc265ed7dd15ef620c37d139fde552980a0cb12447cc3c0ab0cbc2cad5595723d7b4ab6f9c09fee8f97bb3dbcd8732d8d033e88ad4b6a0c1eb6ebafd1410e6b3af296f6e4a7d0de41c329212b38ee10d44b667b3fbd54050e79977135e863e2ede83d&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -1002,7 +1002,7 @@
     "nearest_station": "神奈川県 横浜市緑区 十日市場駅 徒歩1分",
     "floor": "2階",
     "url": "https://tempodas.com/search/detail/2419406/",
-    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Fb1caaf99-56fe-493c-a751-27ade43fdb9b%2F2419406.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261009%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261009T202139Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D5f2d62db3a63fb1c2b0ab26463f88a4af08d922164261bba3ae973ff40289e023b724c441a227f4ef722b363781be56eef99bc530f07d64e4ca3ee5a55f28da69b653a8be9d1aa29dd1eab3df3989a4a1b67e62ee2fdcea0ec12efa82b86c86c966626a6146fdcd354b2833a715bc3a86373de8b0e0f07859c5936444b3a7f1cfedd263b5c6e9536b66b528d6253ddd41e5008488e159173299aca89353988bac8e63c4fe873e25d181c1e219d71eea69ba5373300a9298dad50a7dea627fbd28d97e81f3b19d5d70fc0becabc55f2606eeac4a4b517c4a21461e1d6e659b732905a2bc0643630eac355354386fcd9b6d95ca43b8fdf877cf5a87d53c9135574&w=2048&q=75",
+    "image_url": "/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Frcl-tempodas.appspot.com%2Ftenant%2Fattachment%2Fb1caaf99-56fe-493c-a751-27ade43fdb9b%2F2419406.png%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Ddjango%2540rcl-tempodas.iam.gserviceaccount.com%252F20261010%252Fauto%252Fstorage%252Fgoog4_request%26X-Goog-Date%3D20261010T192709Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D414bc7341606dcde83d4a5ee8a6d98b14b0f057e85a46e83d940c709ab78e851ebb548b7514855ed07cf6d1f549de6e68070ef8b74307f502a0a4fab239e4a28fc4c8fcdd75974f99fe65be37f9adb560305575d7988f9fc62973309780ed344482b9cd222cc9ab66785f4c26b468b816f070848574c4dc8ce5fca4dfd30294b770a28d6509a57f63713873783ea77dca5f72d0cb326e58971ca7eb1558832c173123f0420bc37e05334be3d94a6a7a78585dba79aa39c81fdf6d5e74c7b30baec8228fb0880e9aefee1b3dbd1f4b0a52ea3c2a79dc64047fb33d5e52b9b891ec60c5a1cc53bf409bcf1d230bbab327e28af149bd57559da2b97593d73e45ade&w=2048&q=75",
     "description": "",
     "is_new": false,
     "first_seen": "2026-10-08"
@@ -1073,7 +1073,7 @@
   },
   {
     "site": "アットホーム",
-    "property_id": "6992397102",
+    "property_id": "6992335907",
     "name": "ロイヤルエミ－ハイム 1階の貸店舗",
     "address": "川崎市宮前区野川台１丁目",
     "rent": 330000,
@@ -1081,11 +1081,11 @@
     "walk_minutes": 26,
     "nearest_station": "",
     "floor": "1階",
-    "url": "https://www.athome.co.jp/rent_store/6992397102/",
+    "url": "https://www.athome.co.jp/rent_store/6992335907/",
     "image_url": "",
     "description": "",
     "is_new": false,
-    "first_seen": "2026-09-23"
+    "first_seen": "2026-10-10"
   },
   {
     "site": "アットホーム",
@@ -1166,6 +1166,22 @@
     "description": "",
     "is_new": false,
     "first_seen": "2026-09-19"
+  },
+  {
+    "site": "アットホーム",
+    "property_id": "6990800994",
+    "name": "川崎市麻生区 栗木台１丁目(黒川駅) の住居付き貸店舗（一括）",
+    "address": "川崎市麻生区栗木台１丁目",
+    "rent": 451000,
+    "area": 150.64,
+    "walk_minutes": 13,
+    "nearest_station": "",
+    "floor": "",
+    "url": "https://www.athome.co.jp/rent_store/6990800994/",
+    "image_url": "",
+    "description": "",
+    "is_new": false,
+    "first_seen": "2026-10-10"
   },
   {
     "site": "アットホーム",
