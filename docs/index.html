@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年10月23日 19:11</title>
+<title>店舗物件候補 — 2026年10月24日 18:10</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -95,22 +95,22 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年10月23日 19:11</span>
+    <span>2026年10月24日 18:10</span>
     <span id="new-pill" class="new-pill new-filter-toggle" onclick="toggleNew()" title="新着のみ表示">
-      🆕 本日の新着 <span class="cnt">12</span>件
+      🆕 本日の新着 <span class="cnt">2</span>件
     </span>
   </div>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="num" id="total-count">66</div><div class="lbl">総件数</div></div>
-  <div class="stat red"><div class="num">12</div><div class="lbl">新着</div></div>
-  <div class="stat"><div class="num">5</div><div class="lbl">サイト数</div></div>
-  <div class="stat"><div class="num">18</div><div class="lbl">優先1</div></div>
+  <div class="stat"><div class="num" id="total-count">67</div><div class="lbl">総件数</div></div>
+  <div class="stat red"><div class="num">2</div><div class="lbl">新着</div></div>
+  <div class="stat"><div class="num">6</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">17</div><div class="lbl">優先1</div></div>
   <div class="stat"><div class="num">23</div><div class="lbl">優先2</div></div>
-  <div class="stat"><div class="num">25</div><div class="lbl">優先3</div></div>
-  <div class="stat"><div class="num">31.1万円</div><div class="lbl">平均賃料</div></div>
-  <div class="stat"><div class="num">206㎡</div><div class="lbl">平均面積</div></div>
+  <div class="stat"><div class="num">27</div><div class="lbl">優先3</div></div>
+  <div class="stat"><div class="num">31.7万円</div><div class="lbl">平均賃料</div></div>
+  <div class="stat"><div class="num">205㎡</div><div class="lbl">平均面積</div></div>
 </div>
 
 <div class="conditions">
@@ -121,50 +121,12 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="tab-group"><button class="tab active" data-status="all" onclick="filterStatus('all',this)">すべて<span class="tab-cnt"></span></button><button class="tab" data-status="未調査" onclick="filterStatus('未調査',this)">未調査<span class="tab-cnt"></span></button><button class="tab" data-status="調査中" onclick="filterStatus('調査中',this)">調査中<span class="tab-cnt"></span></button><button class="tab" data-status="検討中" onclick="filterStatus('検討中',this)">検討中<span class="tab-cnt"></span></button></div>
   <div class="sep"></div>
   <button id="btn-new-only" class="tab new-filter-toggle" onclick="toggleNew()" aria-pressed="false">新着のみ</button>
-  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="HOMES">HOMES</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option></select>
+  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="HOMES">HOMES</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option><option value="店舗そのままオークション">店舗そのままオークション</option></select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">
-<div class="card" data-key="アットホーム:6990871219" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p1">優先1</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6990871219/" target="_blank" rel="noopener">川崎市幸区 小倉２丁目(矢向駅) の住居付き貸店舗（一括）</a></span>
-  </div>
-  <div class="card-rent">20万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">132.2㎡ (40.0坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">23分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
-  </div>
-  <div class="card-location">📍 川崎市幸区小倉２丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6990871219', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6990871219', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6990871219/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="アットホーム:6991635985" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p1">優先1</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6991635985/" target="_blank" rel="noopener">八木ビル 2階～4階部分</a></span>
-  </div>
-  <div class="card-rent">38.5万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">204.0㎡ (61.7坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">10分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
-  </div>
-  <div class="card-location">📍 川崎市幸区南幸町１丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6991635985', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6991635985', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6991635985/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
 <div class="card" data-key="HOMES:39040010000823" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-21">
   <div class="card-top">
     <span class="priority-badge p1">優先1</span>
@@ -182,6 +144,25 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('HOMES:39040010000823', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.homes.co.jp/chintai/b-39040010000823/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6991635985" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6991635985/" target="_blank" rel="noopener">八木ビル 2階～4階部分</a></span>
+  </div>
+  <div class="card-rent">38.5万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">204.0㎡ (61.7坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">10分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
+  </div>
+  <div class="card-location">📍 川崎市幸区南幸町１丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6991635985', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('アットホーム:6991635985', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6991635985/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テナント.biz:64231" data-site="テナント.biz" data-status="未調査" data-new="false" data-first-seen="2026-10-10">
@@ -469,7 +450,26 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://tempodas.com/search/detail/2511216/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6978974955" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="HOMES:1150050043285" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
+  <div class="card-top">
+    <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
+    <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-1150050043285/" target="_blank" rel="noopener">賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急</a></span>
+  </div>
+  <div class="card-rent">27.5万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">122.6㎡ (37.1坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">🚉 店舗事務所 京急本線 金沢文庫駅 徒歩7　📍 神奈川県横浜市金沢区泥亀2丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('HOMES:1150050043285', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('HOMES:1150050043285', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.homes.co.jp/chintai/b-1150050043285/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6978974955" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
   <div class="card-top">
     <span class="priority-badge p2">優先2</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -488,7 +488,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6978974955/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6990885367" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="アットホーム:6990885367" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
   <div class="card-top">
     <span class="priority-badge p2">優先2</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -507,7 +507,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6990885367/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6988376506" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="アットホーム:6988376506" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
   <div class="card-top">
     <span class="priority-badge p2">優先2</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -526,7 +526,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6988376506/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6980308020" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="アットホーム:6980308020" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
   <div class="card-top">
     <span class="priority-badge p2">優先2</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -545,7 +545,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6980308020/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6992447034" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="アットホーム:6992447034" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
   <div class="card-top">
     <span class="priority-badge p2">優先2</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
@@ -562,25 +562,6 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('アットホーム:6992447034', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6992447034/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="HOMES:1150050043285" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
-  <div class="card-top">
-    <span class="priority-badge p2">優先2</span>
-    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
-    <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-1150050043285/" target="_blank" rel="noopener">賃貸 店舗事務所 京急本線 金沢文庫駅 徒歩7分 所在地 神奈川県横浜市金沢区泥亀2丁目 交通 京急</a></span>
-  </div>
-  <div class="card-rent">27.5万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">122.6㎡ (37.1坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
-  </div>
-  <div class="card-location">🚉 店舗事務所 京急本線 金沢文庫駅 徒歩7　📍 神奈川県横浜市金沢区泥亀2丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('HOMES:1150050043285', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('HOMES:1150050043285', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.homes.co.jp/chintai/b-1150050043285/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テナント.biz:63894" data-site="テナント.biz" data-status="未調査" data-new="false" data-first-seen="2026-09-20">
@@ -906,99 +887,42 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://tempodas.com/search/detail/2483378/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6988624750" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p3">優先3</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6988624750/" target="_blank" rel="noopener">宮川マンション 1階の貸店舗</a></span>
-  </div>
-  <div class="card-rent">22.2万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">119.7㎡ (36.2坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">14分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">📍 川崎市川崎区浜町１丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6988624750', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6988624750', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6988624750/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="アットホーム:6965414534" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p3">優先3</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6965414534/" target="_blank" rel="noopener">小田１丁目貸家</a></span>
-  </div>
-  <div class="card-rent">23万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">133.9㎡ (40.5坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
-  </div>
-  <div class="card-location">📍 川崎市川崎区小田１丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6965414534', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6965414534', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6965414534/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="アットホーム:6990402727" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p3">優先3</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6990402727/" target="_blank" rel="noopener">川崎市川崎区 小川町(川崎駅) の貸店舗・事務所</a></span>
-  </div>
-  <div class="card-rent">39.3万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">118.2㎡ (35.8坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
-  </div>
-  <div class="card-location">📍 川崎市川崎区小川町</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6990402727', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6990402727', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6990402727/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="アットホーム:6958928966" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
-  <div class="card-top">
-    <span class="priority-badge p3">優先3</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6958928966/" target="_blank" rel="noopener">第２アーバン東横 1階の貸店舗・事務所</a></span>
-  </div>
-  <div class="card-rent">45.8万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">137.4㎡ (41.6坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">📍 川崎市川崎区浜町２丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6958928966', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6958928966', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6958928966/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="テンポスマート:225057" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-23">
+<div class="card" data-key="テンポスマート:225242" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-24">
   <div class="card-top">
     <span class="priority-badge p3">優先3</span>
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/225057" target="_blank" rel="noopener">ID 225057 センター北駅 徒歩2分 2F 現況:その他 その他居抜きなど物件 【業種相談】 </a></span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225242" target="_blank" rel="noopener">ID 225242 【UY1024】横浜駅徒歩7分！業種についてご相談可能です！飲食店居抜き！1階路</a></span>
   </div>
-  <div class="card-rent">55万円</div>
+  <div class="card-rent">要確認</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">126.2㎡ (38.2坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">123.9㎡ (37.5坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">🚉 ID 225057 センター北駅 徒歩2　📍 神奈川県横浜市都筑区中川中央一丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225057', this.value)"></textarea>
+  <div class="card-location">🚉 5242 【UY1024】横浜駅徒歩7分　📍 神奈川県横浜市西区岡野一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225242', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:225057', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/225057" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('テンポスマート:225242', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225242" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="店舗そのままオークション:75507" data-site="店舗そのままオークション" data-status="未調査" data-new="true" data-first-seen="2026-10-24">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff8e1;color:#f57f17">店舗そのままオークション</span>
+    <span class="card-name"><a href="https://sonomama.net/app/?action=public_property_detail&amp;pid=75507" target="_blank" rel="noopener">飲食店 和食・とんかつ・うなぎ 神奈川県 川崎市川崎区 ( 川崎駅 ) 35.64坪 1階 60 万</a></span>
+  </div>
+  <div class="card-rent">60万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">117.8㎡ (35.6坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉  ] 川崎市役所通り沿い！川崎駅徒歩7分　📍 川崎市川崎区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('店舗そのままオークション:75507', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('店舗そのままオークション:75507', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://sonomama.net/app/?action=public_property_detail&amp;pid=75507" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="HOMES:1457590008558" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
@@ -1018,6 +942,82 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('HOMES:1457590008558', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.homes.co.jp/chintai/b-1457590008558/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6988624750" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6988624750/" target="_blank" rel="noopener">宮川マンション 1階の貸店舗</a></span>
+  </div>
+  <div class="card-rent">22.2万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">119.7㎡ (36.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">14分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市川崎区浜町１丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6988624750', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('アットホーム:6988624750', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6988624750/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6965414534" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6965414534/" target="_blank" rel="noopener">小田１丁目貸家</a></span>
+  </div>
+  <div class="card-rent">23万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">133.9㎡ (40.5坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
+  </div>
+  <div class="card-location">📍 川崎市川崎区小田１丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6965414534', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('アットホーム:6965414534', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6965414534/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6990402727" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6990402727/" target="_blank" rel="noopener">川崎市川崎区 小川町(川崎駅) の貸店舗・事務所</a></span>
+  </div>
+  <div class="card-rent">39.3万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">118.2㎡ (35.8坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">—</span></span>
+  </div>
+  <div class="card-location">📍 川崎市川崎区小川町</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6990402727', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('アットホーム:6990402727', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6990402727/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="アットホーム:6958928966" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6958928966/" target="_blank" rel="noopener">第２アーバン東横 1階の貸店舗・事務所</a></span>
+  </div>
+  <div class="card-rent">45.8万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">137.4㎡ (41.6坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市川崎区浜町２丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6958928966', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('アットホーム:6958928966', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6958928966/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テナント.biz:64229" data-site="テナント.biz" data-status="未調査" data-new="false" data-first-seen="2026-10-13">
@@ -1132,6 +1132,25 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('テナント.biz:63229', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.tenanto-office.biz/detail.php?id=63229" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:225057" data-site="テンポスマート" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225057" target="_blank" rel="noopener">ID 225057 センター北駅 徒歩2分 2F 現況:その他 その他居抜きなど物件 【業種相談】 </a></span>
+  </div>
+  <div class="card-rent">55万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">126.2㎡ (38.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">2分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">🚉 ID 225057 センター北駅 徒歩2　📍 神奈川県横浜市都筑区中川中央一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225057', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:225057', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225057" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テンポスマート:224989" data-site="テンポスマート" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
@@ -1393,7 +1412,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年10月23日 19:11 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年10月24日 18:10 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
