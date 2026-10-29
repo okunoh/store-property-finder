@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>店舗物件候補 — 2026年10月28日 20:23</title>
+<title>店舗物件候補 — 2026年10月29日 20:32</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif;background:#f0f2f5;color:#333;font-size:14px}
@@ -95,22 +95,22 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
 <header>
   <h1>🏪 店舗物件候補リスト</h1>
   <div class="header-meta">
-    <span>2026年10月28日 20:23</span>
+    <span>2026年10月29日 20:32</span>
     <span id="new-pill" class="new-pill new-filter-toggle" onclick="toggleNew()" title="新着のみ表示">
-      🆕 本日の新着 <span class="cnt">2</span>件
+      🆕 本日の新着 <span class="cnt">14</span>件
     </span>
   </div>
 </header>
 
 <div class="summary">
-  <div class="stat"><div class="num" id="total-count">69</div><div class="lbl">総件数</div></div>
-  <div class="stat red"><div class="num">2</div><div class="lbl">新着</div></div>
-  <div class="stat"><div class="num">5</div><div class="lbl">サイト数</div></div>
-  <div class="stat"><div class="num">19</div><div class="lbl">優先1</div></div>
-  <div class="stat"><div class="num">23</div><div class="lbl">優先2</div></div>
-  <div class="stat"><div class="num">27</div><div class="lbl">優先3</div></div>
+  <div class="stat"><div class="num" id="total-count">81</div><div class="lbl">総件数</div></div>
+  <div class="stat red"><div class="num">14</div><div class="lbl">新着</div></div>
+  <div class="stat"><div class="num">6</div><div class="lbl">サイト数</div></div>
+  <div class="stat"><div class="num">24</div><div class="lbl">優先1</div></div>
+  <div class="stat"><div class="num">24</div><div class="lbl">優先2</div></div>
+  <div class="stat"><div class="num">33</div><div class="lbl">優先3</div></div>
   <div class="stat"><div class="num">33.4万円</div><div class="lbl">平均賃料</div></div>
-  <div class="stat"><div class="num">203㎡</div><div class="lbl">平均面積</div></div>
+  <div class="stat"><div class="num">196㎡</div><div class="lbl">平均面積</div></div>
 </div>
 
 <div class="conditions">
@@ -121,29 +121,124 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="tab-group"><button class="tab active" data-status="all" onclick="filterStatus('all',this)">すべて<span class="tab-cnt"></span></button><button class="tab" data-status="未調査" onclick="filterStatus('未調査',this)">未調査<span class="tab-cnt"></span></button><button class="tab" data-status="調査中" onclick="filterStatus('調査中',this)">調査中<span class="tab-cnt"></span></button><button class="tab" data-status="検討中" onclick="filterStatus('検討中',this)">検討中<span class="tab-cnt"></span></button></div>
   <div class="sep"></div>
   <button id="btn-new-only" class="tab new-filter-toggle" onclick="toggleNew()" aria-pressed="false">新着のみ</button>
-  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="HOMES">HOMES</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option></select>
+  <select class="site-sel" onchange="filterSite(this)"><option value="all">すべてのサイト</option><option value="HOMES">HOMES</option><option value="アットホーム">アットホーム</option><option value="テナント.biz">テナント.biz</option><option value="テナントショップ">テナントショップ</option><option value="テンポスマート">テンポスマート</option><option value="テンポダス">テンポダス</option></select>
   <button class="btn-export" onclick="exportStatus()">💾 ダウンロード</button>
   <button id="btn-sync" class="btn-sync" onclick="githubSync()">🔄 GitHub同期</button>
 </div>
 
 <div id="main-grid" class="grid">
-<div class="card" data-key="テンポスマート:225795" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-28">
+<div class="card" data-key="テナントショップ:e-171454" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-171454/" target="_blank" rel="noopener">横浜市港北区 賃貸店舗・事務所 トップページ | 不動産会社様へ クロノス新綱島 1階 HOME &gt;</a></span>
+  </div>
+  <div class="card-rent">33万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">137.0㎡ (41.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">16分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市港北区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-171454', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-171454', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-171454/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-171318" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-171318/" target="_blank" rel="noopener">横浜市栄区 賃貸事務所 トップページ | 不動産会社様へ 成和ビル 2階3階一括 HOME &gt; 神奈</a></span>
+  </div>
+  <div class="card-rent">22.6万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">160.0㎡ (48.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市栄区飯島町78-2</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-171318', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-171318', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-171318/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-170898" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-170898/" target="_blank" rel="noopener">川崎市宮前区 賃貸店舗一部 トップページ | 不動産会社様へ ロイヤルエミ－ハイム HOME &gt; 神</a></span>
+  </div>
+  <div class="card-rent">33万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">173.3㎡ (52.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">26分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市宮前区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-170898', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-170898', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-170898/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-170857" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-170857/" target="_blank" rel="noopener">川崎市幸区 賃貸店舗・事務所 トップページ | 不動産会社様へ スカイアークフロント HOME &gt; </a></span>
+  </div>
+  <div class="card-rent">33万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">121.4㎡ (36.7坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">18分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市幸区東古市場85-1</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-170857', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-170857', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-170857/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-170553" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-170553/" target="_blank" rel="noopener">川崎市宮前区 賃貸店舗・事務所 トップページ | 不動産会社様へ 川崎市宮前区初山2丁目戸建 HOM</a></span>
+  </div>
+  <div class="card-rent">22万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">132.5㎡ (40.1坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">9分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市宮前区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-170553', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-170553', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-170553/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:225866" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
   <div class="card-top">
     <span class="priority-badge p1">優先1</span>
     <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
-    <span class="card-name"><a href="https://www.temposmart.jp/estates/225795" target="_blank" rel="noopener">ID 225795 【飲食：ガス使用不可】日吉駅 徒歩3分！！普通部通り・分割可能物件！！お問い合わ</a></span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225866" target="_blank" rel="noopener">ID 225866 【UY1029】新羽駅徒歩1分！1階路面店！業種についてはご相談ください！天井2</a></span>
   </div>
-  <div class="card-rent">50.4万円</div>
+  <div class="card-rent">要確認</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">117.7㎡ (35.6坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">3分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">139.7㎡ (42.3坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">1分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">🚉 5 【飲食：ガス使用不可】日吉駅 徒歩3　📍 神奈川県横浜市港北区日吉本町一丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225795', this.value)"></textarea>
+  <div class="card-location">🚉 5866 【UY1029】新羽駅徒歩1分　📍 神奈川県横浜市港北区新羽町</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225866', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('テンポスマート:225795', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.temposmart.jp/estates/225795" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('テンポスマート:225866', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225866" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="HOMES:39040010000823" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-21">
@@ -163,25 +258,6 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('HOMES:39040010000823', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.homes.co.jp/chintai/b-39040010000823/" target="_blank" rel="noopener">詳細 →</a>
-  </div>
-</div>
-<div class="card" data-key="HOMES:1004430031978" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-27">
-  <div class="card-top">
-    <span class="priority-badge p1">優先1</span>
-    <span class="site-badge" style="background:#e3f2fd;color:#1565c0">HOMES</span>
-    <span class="card-name"><a href="https://www.homes.co.jp/chintai/b-1004430031978/" target="_blank" rel="noopener">賃貸 店舗事務所 KY倉庫綱島東3丁目 所在地 神奈川県横浜市港北区綱島東3丁目5-58 交通 東急</a></span>
-  </div>
-  <div class="card-rent">45万円</div>
-  <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">146.7㎡ (44.4坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">10分</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
-  </div>
-  <div class="card-location">🚉 8 交通 東急新横浜線 新綱島駅 徒歩1　📍 神奈川県横浜市港北区綱島東3丁目5-58</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('HOMES:1004430031978', this.value)"></textarea>
-  <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('HOMES:1004430031978', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.homes.co.jp/chintai/b-1004430031978/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="アットホーム:6991635985" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-23">
@@ -315,6 +391,25 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('テナント.biz:64098', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://www.tenanto-office.biz/detail.php?id=64098" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:225795" data-site="テンポスマート" data-status="未調査" data-new="false" data-first-seen="2026-10-28">
+  <div class="card-top">
+    <span class="priority-badge p1">優先1</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225795" target="_blank" rel="noopener">ID 225795 【飲食：ガス使用不可】日吉駅 徒歩3分！！普通部通り・分割可能物件！！お問い合わ</a></span>
+  </div>
+  <div class="card-rent">50.4万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">117.7㎡ (35.6坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">3分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">🚉 5 【飲食：ガス使用不可】日吉駅 徒歩3　📍 神奈川県横浜市港北区日吉本町一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225795', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:225795', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225795" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テンポスマート:224189" data-site="テンポスマート" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
@@ -486,6 +581,25 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   <div class="card-footer">
     <select class="status-sel" onchange="setStatus('テンポダス:2403934', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
     <a class="card-link" href="https://tempodas.com/search/detail/2403934/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-171428" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p2">優先2</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-171428/" target="_blank" rel="noopener">横浜市神奈川区 賃貸倉庫 トップページ | 不動産会社様へ 八反橋貸倉庫 HOME &gt; 神奈川県 &gt;</a></span>
+  </div>
+  <div class="card-rent">35.2万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">265.0㎡ (80.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">4分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市神奈川区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-171428', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-171428', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-171428/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="HOMES:1150050043285" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
@@ -925,23 +1039,137 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://tempodas.com/search/detail/2483378/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6988955420" data-site="アットホーム" data-status="未調査" data-new="true" data-first-seen="2026-10-28">
+<div class="card" data-key="テナントショップ:e-172785" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
   <div class="card-top">
     <span class="priority-badge p3">優先3</span>
-    <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6988955420/" target="_blank" rel="noopener">松本ビル 2F</a></span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-172785/" target="_blank" rel="noopener">横浜市磯子区 賃貸店舗一部 トップページ | 不動産会社様へ コンチネンタルビル 1・2階 HOME</a></span>
+  </div>
+  <div class="card-rent">33万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">159.8㎡ (48.4坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">18分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1・2階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市磯子区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-172785', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-172785', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-172785/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-172574" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-172574/" target="_blank" rel="noopener">横浜市西区 賃住店舗戸建 トップページ | 不動産会社様へ 横浜市西区 賃住店舗戸建 HOME &gt; </a></span>
+  </div>
+  <div class="card-rent">47万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">187.0㎡ (56.6坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">6分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市西区藤棚町</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-172574', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-172574', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-172574/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-171646" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-171646/" target="_blank" rel="noopener">川崎市川崎区 賃貸店舗一部 トップページ | 不動産会社様へ 川崎市川崎区 賃貸店舗一部 HOME </a></span>
+  </div>
+  <div class="card-rent">22.1万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">119.6㎡ (36.2坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">30分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 川崎市川崎区</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-171646', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-171646', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-171646/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-170848" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-170848/" target="_blank" rel="noopener">横浜市中区 賃貸店舗・事務所 トップページ | 不動産会社様へ 根岸旭台ビル HOME &gt; 神奈川県</a></span>
+  </div>
+  <div class="card-rent">44万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">122.7㎡ (37.1坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">13分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市中区根岸旭台２３－３</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-170848', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-170848', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-170848/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テナントショップ:e-170847" data-site="テナントショップ" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#ede7f6;color:#4527a0">テナントショップ</span>
+    <span class="card-name"><a href="https://www.tenant-shop.com/detail/e-170847/" target="_blank" rel="noopener">横浜市中区 賃貸店舗・事務所 トップページ | 不動産会社様へ 伊勢佐木町センタービル HOME &gt;</a></span>
+  </div>
+  <div class="card-rent">50万円</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">224.1㎡ (67.8坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">3分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">📍 横浜市中区伊勢佐木町３</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テナントショップ:e-170847', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テナントショップ:e-170847', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.tenant-shop.com/detail/e-170847/" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:225936" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225936" target="_blank" rel="noopener">ID 225936 鴨居駅徒歩8分 賃料55万円 35.2坪 【飲食不可】 賃料 550,000 円</a></span>
   </div>
   <div class="card-rent">55万円</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">277.5㎡ (83.9坪)</span></span>
-    <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">2F</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">116.6㎡ (35.3坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">8分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
   </div>
-  <div class="card-location">📍 川崎市川崎区大島３丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6988955420', this.value)"></textarea>
+  <div class="card-location">🚉 ID 225936 鴨居駅徒歩8分　📍 神奈川県横浜市緑区白山一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225936', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6988955420', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6988955420/" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('テンポスマート:225936', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225936" target="_blank" rel="noopener">詳細 →</a>
+  </div>
+</div>
+<div class="card" data-key="テンポスマート:225242" data-site="テンポスマート" data-status="未調査" data-new="true" data-first-seen="2026-10-29">
+  <div class="card-top">
+    <span class="priority-badge p3">優先3</span>
+    <span class="site-badge" style="background:#e8f5e9;color:#2e7d32">テンポスマート</span>
+    <span class="card-name"><a href="https://www.temposmart.jp/estates/225242" target="_blank" rel="noopener">ID 225242 【UY1024】横浜駅徒歩7分！業種についてご相談可能です！飲食店居抜き！1階路</a></span>
+  </div>
+  <div class="card-rent">要確認</div>
+  <div class="card-specs">
+    <span class="spec"><span class="sk">面積</span> <span class="sv">123.9㎡ (37.5坪)</span></span>
+    <span class="spec"><span class="sk">徒歩</span> <span class="sv">7分</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">1階</span></span>
+  </div>
+  <div class="card-location">🚉 5242 【UY1024】横浜駅徒歩7分　📍 神奈川県横浜市西区岡野一丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('テンポスマート:225242', this.value)"></textarea>
+  <div class="card-footer">
+    <select class="status-sel" onchange="setStatus('テンポスマート:225242', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.temposmart.jp/estates/225242" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="HOMES:1457590008558" data-site="HOMES" data-status="未調査" data-new="false" data-first-seen="2026-10-22">
@@ -1058,23 +1286,23 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
     <a class="card-link" href="https://www.athome.co.jp/rent_store/6987801263/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
-<div class="card" data-key="アットホーム:6992275286" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-26">
+<div class="card" data-key="アットホーム:6988955420" data-site="アットホーム" data-status="未調査" data-new="false" data-first-seen="2026-10-28">
   <div class="card-top">
     <span class="priority-badge p3">優先3</span>
     <span class="site-badge" style="background:#fff3e0;color:#e65100">アットホーム</span>
-    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6992275286/" target="_blank" rel="noopener">川崎市中原区 宮内１丁目(武蔵小杉駅) の貸店舗 2階/4階建</a></span>
+    <span class="card-name"><a href="https://www.athome.co.jp/rent_store/6988955420/" target="_blank" rel="noopener">松本ビル 2F</a></span>
   </div>
-  <div class="card-rent">54.6万円</div>
+  <div class="card-rent">55万円</div>
   <div class="card-specs">
-    <span class="spec"><span class="sk">面積</span> <span class="sv">164.1㎡ (49.6坪)</span></span>
+    <span class="spec"><span class="sk">面積</span> <span class="sv">277.5㎡ (83.9坪)</span></span>
     <span class="spec"><span class="sk">徒歩</span> <span class="sv">—</span></span>
-    <span class="spec"><span class="sk">階</span> <span class="sv">2階</span></span>
+    <span class="spec"><span class="sk">階</span> <span class="sv">2F</span></span>
   </div>
-  <div class="card-location">📍 川崎市中原区宮内１丁目</div>
-  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6992275286', this.value)"></textarea>
+  <div class="card-location">📍 川崎市川崎区大島３丁目</div>
+  <textarea class="note-input" placeholder="メモ" oninput="setNote('アットホーム:6988955420', this.value)"></textarea>
   <div class="card-footer">
-    <select class="status-sel" onchange="setStatus('アットホーム:6992275286', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
-    <a class="card-link" href="https://www.athome.co.jp/rent_store/6992275286/" target="_blank" rel="noopener">詳細 →</a>
+    <select class="status-sel" onchange="setStatus('アットホーム:6988955420', this.value)"><option selected>未調査</option><option>調査中</option><option>検討中</option><option>見送り</option><option>削除</option></select>
+    <a class="card-link" href="https://www.athome.co.jp/rent_store/6988955420/" target="_blank" rel="noopener">詳細 →</a>
   </div>
 </div>
 <div class="card" data-key="テナント.biz:64229" data-site="テナント.biz" data-status="未調査" data-new="false" data-first-seen="2026-10-13">
@@ -1450,7 +1678,7 @@ footer{text-align:center;padding:16px;font-size:0.73rem;color:#aaa}
   </div>
 </div>
 
-<footer>店舗物件自動収集ツール — 2026年10月28日 20:23 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
+<footer>店舗物件自動収集ツール — 2026年10月29日 20:32 生成 ／ ステータスはブラウザに保存されます（「💾 ステータス保存」でdata/status.jsonにエクスポート可）</footer>
 
 <script>
 const PREV_STATUSES = {};
